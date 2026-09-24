@@ -1,0 +1,375 @@
+@import "tailwindcss";
+
+/* Theme switching is driven by next-themes writing `class="dark"` on <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================================================
+   CONNECT FUNDED — Design tokens
+   Palette from the Connect Funded lockup: indigo (F / wordmark) as the
+   primary brand, teal (C) as the accent wash, mint for funded/profit
+   states. Light mode is a designed counterpart rather than an inversion.
+   ========================================================================= */
+
+:root {
+  --cf-bg: #f7f8fc;
+  --cf-bg-raised: #ffffff;
+  --cf-bg-panel: #ffffff;
+  --cf-bg-sunken: #eef0f8;
+
+  --cf-border: #dde0ef;
+  --cf-border-soft: #e9ebf6;
+
+  --cf-text: #0e1020;
+  --cf-text-muted: #545a78;
+  --cf-text-faint: #878da8;
+
+  --cf-brand: #334ba1;
+  --cf-brand-light: #006da0;
+  --cf-brand-dim: #e4eaf6;
+  --cf-brand-glow: 51 75 161;
+
+  --cf-mint: #0c9d76;
+  --cf-amber: #b0740a;
+  --cf-red: #d8385a;
+
+  --cf-shadow-color: 22 24 51;
+  --cf-shadow-strength: 0.06;
+
+  --cf-grid-line: rgb(14 16 32 / 0.045);
+  --cf-noise-opacity: 0.02;
+
+  color-scheme: light;
+}
+
+.dark {
+  --cf-bg: #090b14;
+  --cf-bg-raised: #10131f;
+  --cf-bg-panel: #12162a;
+  --cf-bg-sunken: #06070e;
+
+  --cf-border: #22273c;
+  --cf-border-soft: #1a1e30;
+
+  --cf-text: #eef0f8;
+  --cf-text-muted: #8a90ac;
+  --cf-text-faint: #565c78;
+
+  --cf-brand: #4a63c4;
+  --cf-brand-light: #3eb4dc;
+  --cf-brand-dim: #2a3a62;
+  --cf-brand-glow: 74 99 196;
+
+  --cf-mint: #2bd9a8;
+  --cf-amber: #f2b84b;
+  --cf-red: #f2617a;
+
+  --cf-shadow-color: 0 0 0;
+  --cf-shadow-strength: 0.5;
+
+  --cf-grid-line: rgb(238 240 248 / 0.035);
+  --cf-noise-opacity: 0.035;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--cf-bg);
+  --color-raised: var(--cf-bg-raised);
+  --color-panel: var(--cf-bg-panel);
+  --color-sunken: var(--cf-bg-sunken);
+
+  --color-line: var(--cf-border);
+  --color-line-soft: var(--cf-border-soft);
+
+  --color-ink: var(--cf-text);
+  --color-muted: var(--cf-text-muted);
+  --color-faint: var(--cf-text-faint);
+
+  --color-brand: var(--cf-brand);
+  --color-brand-light: var(--cf-brand-light);
+  --color-brand-dim: var(--cf-brand-dim);
+
+  --color-mint: var(--cf-mint);
+  --color-amber: var(--cf-amber);
+  --color-loss: var(--cf-red);
+
+  /* Headings share the Inter family with body copy; distinction comes from
+     weight and the tighter tracking baked into the type scale below. */
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+
+  /* Fluid type scale — clamps between a 360px and 1440px viewport. */
+  --text-display: clamp(2.75rem, 1.6rem + 5.1vw, 5.25rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.035em;
+  --text-h1: clamp(2.25rem, 1.45rem + 3.55vw, 4rem);
+  --text-h1--line-height: 1.04;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h2: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.025em;
+  --text-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --animate-ticker: ticker 60s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
+  --animate-shimmer: shimmer 2.4s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-aurora: aurora 22s ease-in-out infinite;
+
+  --container-page: 1240px;
+}
+
+@keyframes ticker {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(var(--cf-brand-glow) / 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgb(var(--cf-brand-glow) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--cf-brand-glow) / 0);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes aurora {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(4%, -6%, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(-5%, 4%, 0) scale(0.95);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--cf-border-soft);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Sticky header clearance for in-page anchors. */
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--cf-bg);
+    color: var(--cf-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--cf-text);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--cf-brand);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cf-brand-light);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Firefox / Safari scrollbar treatment to match the terminal aesthetic. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cf-border) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--cf-border);
+    border-radius: 100px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cf-text-faint);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  /* The chevron/flag lifted from the logomark — the site's signature motif,
+     reused as a wayfinding and divider element. */
+  .chev {
+    display: inline-block;
+    width: 0.62em;
+    height: 0.62em;
+    background: var(--cf-brand);
+    clip-path: polygon(0 0, 100% 0, 45% 100%, 0 100%);
+    flex: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cf-brand-light);
+  }
+
+  .surface {
+    background: var(--cf-bg-panel);
+    border: 1px solid var(--cf-border-soft);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Frosted panel used for floating UI (nav, chat, overlays). */
+  .glass {
+    background: color-mix(in oklab, var(--cf-bg-raised) 72%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid var(--cf-border-soft);
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      110deg,
+      var(--cf-brand) 0%,
+      #006da0 45%,
+      var(--cf-brand-light) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-glow {
+    box-shadow:
+      0 10px 30px -10px rgb(var(--cf-brand-glow) / 0.7),
+      inset 0 1px 0 0 rgb(255 255 255 / 0.14);
+  }
+
+  /* Hairline grid backdrop for section backgrounds. */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, var(--cf-grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--cf-grid-line) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .bg-noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: var(--cf-noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  .stroke-text {
+    -webkit-text-stroke: 1px var(--cf-border);
+    color: transparent;
+  }
+}
+
+/* Respect the OS motion preference across every animated surface. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
