@@ -1,0 +1,1069 @@
+@import "tailwindcss";
+
+/* Theme switching toggles the `dark` class on <html>. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* =========================================================================
+   CONNECT MARKETS — shared design tokens
+   The supplied six-colour palette drives all shared surfaces and controls.
+   Financial signal colours remain semantic so brand styling never obscures
+   market meaning.
+   ========================================================================= */
+
+:root {
+  --cf-palette-1: #536b8d;
+  --cf-palette-2: #3156b8;
+  --cf-palette-3: #557ab5;
+  --cf-palette-4: #6ca7d8;
+  --cf-palette-5: #2340a2;
+  --cf-palette-6: #aac6f1;
+
+  --cf-bg: #f6f8fc;
+  --cf-bg-rgb: 246 248 252;
+  --cf-bg-raised: #eff3f8;
+  --cf-bg-panel: #ffffff;
+  --cf-bg-sunken: #e9eff6;
+  --cf-section-white: #ffffff;
+  --cf-section-blue: #f0f6fc;
+  --cf-nav-text: #e2e8f0;
+  --cf-nav-muted: #cbd5e1;
+
+  --cf-border: #cbd5e1;
+  --cf-border-soft: #e2e8f0;
+
+  --cf-text: #17243b;
+  --cf-text-muted: #48566b;
+  --cf-text-faint: #64748b;
+
+  /* Primary and interactive surfaces use the Connect Funded logo navy. */
+  --cf-brand: #2340a2;
+  --cf-brand-light: #2340a2;
+  --cf-brand-dim: #dce8ff;
+  --cf-brand-hover: #182f7c;
+  --cf-brand-glow: 35 64 162;
+  --cf-blue-glow: 0 0 255;
+  --cf-sky-glow: 96 165 250;
+  --cf-green-glow: 60 179 113;
+  --cf-card-highlight: color-mix(in oklab, var(--cf-palette-5) 5%, var(--cf-bg-panel));
+  --cf-card-highlight-border: color-mix(in oklab, var(--cf-palette-5) 48%, var(--cf-border));
+  --cf-card-accent: var(--cf-palette-5);
+  --cf-market-forex: linear-gradient(128deg, #398bbd, #20518c);
+  --cf-market-stocks: linear-gradient(128deg, #667789, #384554);
+  --cf-market-indices: linear-gradient(128deg, #31845c, #1d543d);
+  --cf-market-metals: linear-gradient(128deg, #b7801e, #67460e);
+  --cf-market-crypto: linear-gradient(128deg, #3180a4, #174b69);
+  --cf-tier-standard-frame: linear-gradient(145deg, #68d0ff, #258ff0 48%, #1e65ca);
+  --cf-tier-standard-plate: linear-gradient(145deg, #244b78, #1c3d66 58%, #173455);
+  --cf-tier-pro-frame: linear-gradient(145deg, #e1e8f3, #aebbd0 48%, #7889a6);
+  --cf-tier-pro-plate: linear-gradient(145deg, #465363, #354252 58%, #2a3543);
+  --cf-tier-vip-frame: linear-gradient(145deg, #fff0a5, #e4b52e 48%, #a97812);
+  --cf-tier-vip-plate: linear-gradient(145deg, #8b6818, #74540e 58%, #5b4108);
+  --cf-tier-detail: #dce8f3;
+  --cf-tier-standard-accent: #8bdcff;
+  --cf-tier-pro-accent: #e7edf5;
+  --cf-tier-vip-accent: #ffdc75;
+  --cf-icon-blue: color-mix(in oklab, var(--cf-palette-2) 18%, var(--cf-bg-sunken));
+  --cf-icon-green: color-mix(in oklab, var(--cf-palette-3) 24%, var(--cf-bg-sunken));
+  --cf-icon-sky: color-mix(in oklab, var(--cf-palette-4) 22%, var(--cf-bg-sunken));
+  --cf-hero-bg: #14213a;
+  --cf-hero-scrim-90: color-mix(in srgb, var(--cf-hero-bg) 90%, transparent);
+  --cf-hero-scrim-85: color-mix(in srgb, var(--cf-hero-bg) 85%, transparent);
+  --cf-hero-scrim-75: color-mix(in srgb, var(--cf-hero-bg) 75%, transparent);
+  --cf-hero-scrim-62: color-mix(in srgb, var(--cf-hero-bg) 62%, transparent);
+  --cf-hero-scrim-55: color-mix(in srgb, var(--cf-hero-bg) 55%, transparent);
+  --cf-hero-scrim-45: color-mix(in srgb, var(--cf-hero-bg) 45%, transparent);
+  --cf-hero-rgb: 20 33 58;
+  --cf-hero-card-55: color-mix(in srgb, #1d2d4a 55%, transparent);
+  --cf-hero-card-20: color-mix(in srgb, #1d2d4a 20%, transparent);
+  --cf-terminal-bg: #101c32;
+  --cf-terminal-glass-80: color-mix(in srgb, var(--cf-terminal-bg) 80%, transparent);
+  --cf-terminal-glass-75: color-mix(in srgb, var(--cf-terminal-bg) 75%, transparent);
+  --cf-terminal-glass-90: color-mix(in srgb, var(--cf-terminal-raised) 90%, transparent);
+  --cf-terminal-glass-55: color-mix(in srgb, var(--cf-terminal-sunken) 55%, transparent);
+  --cf-terminal-surface: #1d2d4a;
+  --cf-terminal-raised: #17243c;
+  --cf-terminal-sunken: #0a1426;
+  --cf-terminal-accent: #9dbbff;
+  --cf-terminal-selected: #e0ecff;
+  --cf-terminal-selected-text: #122953;
+  --cf-terminal-accent-wash: color-mix(in srgb, var(--cf-terminal-accent) 10%, transparent);
+  --cf-terminal-accent-border: color-mix(in srgb, var(--cf-terminal-accent) 26%, transparent);
+
+  /* Sage accent — used for live data, eyebrows and restrained highlights. */
+  --cf-accent: #327452;
+  --cf-accent-glow: 60 179 113;
+
+  --cf-mint: #287456;
+  --cf-amber: #936c32;
+  --cf-red: #d32f4f;
+
+  --cf-shadow-color: 18 35 66;
+  --cf-shadow-strength: 0.07;
+
+  --cf-grid-line: rgb(35 64 162 / 0.075);
+  --cf-noise-opacity: 0.02;
+
+  color-scheme: light;
+}
+
+.dark {
+  /* Layered blue-slate surfaces keep dark mode comfortable and branded. */
+  --cf-bg: #14213a;
+  --cf-bg-rgb: 20 33 58;
+  --cf-bg-raised: #1a2a46;
+  --cf-bg-panel: #20334f;
+  --cf-bg-sunken: #101c32;
+  --cf-section-white: var(--cf-bg);
+  --cf-section-blue: color-mix(in srgb, #60a5fa 12%, var(--cf-bg));
+  --cf-nav-text: #e2e8f0;
+  --cf-nav-muted: #cbd5e1;
+
+  --cf-border: #526784;
+  --cf-border-soft: #354b68;
+
+  --cf-text: #f2f6ff;
+  --cf-text-muted: #bfcee3;
+  --cf-text-faint: #91a4c0;
+
+  --cf-brand: #2340a2;
+  --cf-brand-light: #9dbbff;
+  --cf-brand-dim: #1c2d50;
+  --cf-brand-hover: #3659c3;
+  --cf-brand-glow: 82 117 214;
+  --cf-card-highlight: color-mix(in oklab, var(--cf-palette-5) 20%, var(--cf-bg-panel));
+  --cf-card-highlight-border: color-mix(in oklab, var(--cf-palette-5) 70%, var(--cf-border));
+  --cf-card-accent: var(--cf-brand-light);
+  --cf-market-forex: linear-gradient(128deg, #398bbd, #20518c);
+  --cf-market-stocks: linear-gradient(128deg, #667789, #384554);
+  --cf-market-indices: linear-gradient(128deg, #31845c, #1d543d);
+  --cf-market-metals: linear-gradient(128deg, #b7801e, #67460e);
+  --cf-market-crypto: linear-gradient(128deg, #3180a4, #174b69);
+  --cf-tier-standard-frame: linear-gradient(145deg, #68d0ff, #258ff0 48%, #1e65ca);
+  --cf-tier-standard-plate: linear-gradient(145deg, #244b78, #1c3d66 58%, #173455);
+  --cf-tier-pro-frame: linear-gradient(145deg, #e1e8f3, #aebbd0 48%, #7889a6);
+  --cf-tier-pro-plate: linear-gradient(145deg, #465363, #354252 58%, #2a3543);
+  --cf-tier-vip-frame: linear-gradient(145deg, #fff0a5, #e4b52e 48%, #a97812);
+  --cf-tier-vip-plate: linear-gradient(145deg, #8b6818, #74540e 58%, #5b4108);
+  --cf-tier-detail: #dce8f3;
+  --cf-tier-standard-accent: #8bdcff;
+  --cf-tier-pro-accent: #e7edf5;
+  --cf-tier-vip-accent: #ffdc75;
+  --cf-icon-blue: color-mix(in oklab, var(--cf-palette-2) 22%, var(--cf-bg-sunken));
+  --cf-icon-green: color-mix(in oklab, var(--cf-palette-3) 20%, var(--cf-bg-sunken));
+  --cf-icon-sky: color-mix(in oklab, var(--cf-palette-4) 28%, var(--cf-bg-sunken));
+  --cf-hero-bg: #14213a;
+  --cf-hero-scrim-90: color-mix(in srgb, var(--cf-hero-bg) 90%, transparent);
+  --cf-hero-scrim-85: color-mix(in srgb, var(--cf-hero-bg) 85%, transparent);
+  --cf-hero-scrim-75: color-mix(in srgb, var(--cf-hero-bg) 75%, transparent);
+  --cf-hero-scrim-62: color-mix(in srgb, var(--cf-hero-bg) 62%, transparent);
+  --cf-hero-scrim-55: color-mix(in srgb, var(--cf-hero-bg) 55%, transparent);
+  --cf-hero-scrim-45: color-mix(in srgb, var(--cf-hero-bg) 45%, transparent);
+  --cf-hero-rgb: 20 33 58;
+  --cf-hero-card-55: color-mix(in srgb, #20334f 55%, transparent);
+  --cf-hero-card-20: color-mix(in srgb, #20334f 20%, transparent);
+  --cf-terminal-bg: #13213a;
+  --cf-terminal-glass-80: color-mix(in srgb, var(--cf-terminal-bg) 80%, transparent);
+  --cf-terminal-glass-75: color-mix(in srgb, var(--cf-terminal-bg) 75%, transparent);
+  --cf-terminal-glass-90: color-mix(in srgb, var(--cf-terminal-raised) 90%, transparent);
+  --cf-terminal-glass-55: color-mix(in srgb, var(--cf-terminal-sunken) 55%, transparent);
+  --cf-terminal-surface: #223752;
+  --cf-terminal-raised: #1a2a46;
+  --cf-terminal-sunken: #0f1b30;
+  --cf-terminal-accent: #a9c5ff;
+  --cf-terminal-selected: #dce8ff;
+  --cf-terminal-selected-text: #10234a;
+  --cf-terminal-accent-wash: color-mix(in srgb, var(--cf-terminal-accent) 10%, transparent);
+  --cf-terminal-accent-border: color-mix(in srgb, var(--cf-terminal-accent) 26%, transparent);
+
+  --cf-accent: #93cbb2;
+  --cf-accent-glow: 147 203 178;
+
+  --cf-mint: #72d9a8;
+  --cf-amber: #e7bd78;
+  --cf-red: #ff5d75;
+
+  --cf-shadow-color: 3 11 28;
+  --cf-shadow-strength: 0.55;
+
+  --cf-grid-line: rgb(96 165 250 / 0.18);
+  --cf-noise-opacity: 0.035;
+
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-bg: var(--cf-bg);
+  --color-raised: var(--cf-bg-raised);
+  --color-panel: var(--cf-bg-panel);
+  --color-sunken: var(--cf-bg-sunken);
+
+  --color-line: var(--cf-border);
+  --color-line-soft: var(--cf-border-soft);
+
+  --color-ink: var(--cf-text);
+  --color-muted: var(--cf-text-muted);
+  --color-faint: var(--cf-text-faint);
+
+  --color-brand: var(--cf-brand);
+  --color-brand-light: var(--cf-brand-light);
+  --color-brand-dim: var(--cf-brand-dim);
+  --color-accent: var(--cf-accent);
+
+  --color-mint: var(--cf-mint);
+  --color-amber: var(--cf-amber);
+  --color-loss: var(--cf-red);
+  --color-palette-neutral: var(--cf-palette-1);
+  --color-palette-blue: var(--cf-palette-2);
+  --color-palette-green: var(--cf-palette-3);
+  --color-palette-sky: var(--cf-palette-4);
+  --color-palette-navy: var(--cf-palette-5);
+  --color-palette-sage: var(--cf-palette-6);
+
+  /* Headings share the Inter family with body copy; distinction comes from
+     weight and the tighter tracking baked into the type scale below. */
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 30px;
+
+  /* Fluid type scale — clamps between a 360px and 1440px viewport. */
+  --text-display: clamp(2.75rem, 1.6rem + 5.1vw, 5.25rem);
+  --text-display--line-height: 0.98;
+  --text-display--letter-spacing: -0.035em;
+  --text-h1: clamp(2.25rem, 1.45rem + 3.55vw, 4rem);
+  --text-h1--line-height: 1.04;
+  --text-h1--letter-spacing: -0.03em;
+  --text-h2: clamp(1.75rem, 1.3rem + 2vw, 2.75rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.025em;
+  --text-h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem);
+  --text-h3--line-height: 1.2;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --animate-ticker: ticker 60s linear infinite;
+  --animate-pulse-ring: pulse-ring 2s ease-out infinite;
+  --animate-shimmer: shimmer 2.4s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-aurora: aurora 22s ease-in-out infinite;
+  --animate-market-scan: market-scan 3.5s ease-in-out infinite;
+  --animate-orbit: orbit 14s linear infinite;
+
+  --container-page: 1240px;
+}
+
+html[lang="ar"] body {
+  --font-inter: "Noto Sans Arabic", "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+@keyframes ticker {
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgb(var(--cf-brand-glow) / 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgb(var(--cf-brand-glow) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgb(var(--cf-brand-glow) / 0);
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes aurora {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(4%, -6%, 0) scale(1.08);
+  }
+  66% {
+    transform: translate3d(-5%, 4%, 0) scale(0.95);
+  }
+}
+
+@keyframes market-scan {
+  0%,
+  100% {
+    transform: translateX(-110%);
+    opacity: 0;
+  }
+  18%,
+  72% {
+    opacity: 0.8;
+  }
+  82% {
+    transform: translateX(110%);
+    opacity: 0;
+  }
+}
+
+@keyframes orbit {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--cf-border-soft);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    /* Sticky header clearance for in-page anchors. */
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background:
+      radial-gradient(ellipse 72% 30% at 7% 0%, rgb(var(--cf-brand-glow) / 0.055), transparent 72%),
+      radial-gradient(ellipse 48% 28% at 94% 18%, rgb(var(--cf-brand-glow) / 0.025), transparent 72%),
+      var(--cf-bg);
+    color: var(--cf-text);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    color: var(--cf-text);
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: var(--cf-brand);
+    color: #fff;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--cf-brand-light);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Firefox / Safari scrollbar treatment to match the terminal aesthetic. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--cf-border) transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--cf-border);
+    border-radius: 100px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--cf-text-faint);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  /* The chevron/flag lifted from the logomark — the site's signature motif,
+     reused as a wayfinding and divider element. */
+  .chev {
+    display: inline-block;
+    width: 0.62em;
+    height: 0.62em;
+    background: var(--cf-brand);
+    clip-path: polygon(0 0, 100% 0, 45% 100%, 0 100%);
+    flex: none;
+  }
+
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cf-brand-light);
+  }
+
+  .surface {
+    background: linear-gradient(145deg, var(--cf-card-highlight), var(--cf-bg-panel) 68%);
+    border: 1px solid var(--cf-border-soft);
+    border-radius: var(--radius-lg);
+  }
+
+  /* Existing sections outside an authored Reveal can use the shared
+     viewport observer for a gentle depth-and-pan entrance. */
+  [data-motion-reveal-pending],
+  [data-motion-reveal-visible] {
+    transition:
+      opacity 0.62s var(--ease-out-expo),
+      transform 0.62s var(--ease-out-expo);
+  }
+
+  [data-motion-reveal-pending] {
+    opacity: 0;
+    transform: translate3d(12px, 18px, 0) scale(0.992);
+  }
+
+  [data-motion-reveal-visible] {
+    opacity: 1;
+    transform: none;
+  }
+
+  html[dir="rtl"] [data-motion-reveal-pending] {
+    transform: translate3d(-12px, 18px, 0) scale(0.992);
+  }
+
+  /* Frosted panel used for floating UI (nav, chat, overlays). */
+  .glass {
+    background: color-mix(in oklab, var(--cf-bg-raised) 72%, transparent);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid var(--cf-border-soft);
+  }
+
+  .section-wash {
+    background:
+      radial-gradient(ellipse 80% 55% at 0% 0%, rgb(var(--cf-brand-glow) / 0.055), transparent 68%),
+      linear-gradient(135deg, var(--cf-section-blue) 0%, var(--cf-bg-panel) 58%, var(--cf-bg-raised) 100%);
+  }
+
+  .widget-wash {
+    background: linear-gradient(145deg, color-mix(in oklab, var(--cf-palette-4) 8%, var(--cf-bg-raised)), var(--cf-bg-panel));
+    box-shadow: 0 18px 45px -34px rgb(var(--cf-brand-glow) / 0.7);
+  }
+
+  .text-gradient {
+    background: linear-gradient(
+      110deg,
+      var(--cf-brand) 0%,
+      var(--cf-brand-light) 48%,
+      var(--cf-accent) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .btn-glow {
+    box-shadow:
+      0 10px 30px -10px rgb(var(--cf-brand-glow) / 0.7),
+      inset 0 1px 0 0 rgb(255 255 255 / 0.14);
+  }
+
+  /* Hairline grid backdrop for section backgrounds. */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, var(--cf-grid-line) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--cf-grid-line) 1px, transparent 1px),
+      radial-gradient(
+        ellipse 80% 70% at 100% 100%,
+        color-mix(in oklab, var(--cf-palette-2) 7%, transparent),
+        transparent 80%
+      );
+    background-size: 64px 64px;
+  }
+
+  .bg-noise::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: var(--cf-noise-opacity);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Palette-derived hero and section ground used by trading landing surfaces. */
+  .bg-deep {
+    background:
+      radial-gradient(
+        ellipse 120% 80% at 50% -10%,
+        rgb(var(--cf-brand-glow) / 0.22),
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 90% 60% at 85% 15%,
+        rgb(var(--cf-accent-glow) / 0.12),
+        transparent 55%
+      ),
+      var(--cf-bg-sunken);
+  }
+
+  .trading-horizon {
+    background:
+      radial-gradient(ellipse 80% 70% at 50% -20%, rgb(var(--cf-brand-glow) / 0.3), transparent 66%),
+      radial-gradient(ellipse 55% 55% at 100% 55%, rgb(var(--cf-accent-glow) / 0.12), transparent 72%),
+      linear-gradient(145deg, var(--cf-bg-sunken), var(--cf-bg) 54%, var(--cf-bg-raised));
+  }
+
+  .hero-photo-scrim {
+    background: linear-gradient(90deg, rgb(5 18 39 / 0.88) 0%, rgb(5 18 39 / 0.64) 48%, rgb(5 18 39 / 0.22) 100%);
+  }
+
+  .hero-photo-scrim:dir(rtl) {
+    background: linear-gradient(270deg, rgb(5 18 39 / 0.88) 0%, rgb(5 18 39 / 0.64) 48%, rgb(5 18 39 / 0.22) 100%);
+  }
+
+  .edge-chart-draw path:nth-of-type(2) {
+    stroke-dasharray: 1200;
+    stroke-dashoffset: 1200;
+    animation: edge-chart-line 2.2s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+  }
+
+  @keyframes edge-chart-line {
+    to { stroke-dashoffset: 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .edge-chart-draw path:nth-of-type(2) {
+      animation: none;
+      stroke-dashoffset: 0;
+    }
+  }
+
+  .scan-line {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    width: 35%;
+    background: linear-gradient(90deg, transparent, rgb(var(--cf-brand-glow) / 0.2), transparent);
+    animation: market-scan 3.5s ease-in-out infinite;
+    pointer-events: none;
+  }
+
+  /* Hairline top border that fades out at both ends — section divider. */
+  .rule-fade {
+    border-top: 1px solid transparent;
+    border-image: linear-gradient(
+        to right,
+        transparent,
+        var(--cf-border) 18%,
+        var(--cf-border) 82%,
+        transparent
+      )
+      1;
+  }
+
+  .tile[aria-selected="true"],
+  .tile[data-selected="true"] {
+    background: var(--cf-card-highlight);
+    border-color: var(--cf-card-highlight-border);
+  }
+
+  button:disabled,
+  input:disabled,
+  select:disabled,
+  textarea:disabled,
+  [aria-disabled="true"] {
+    cursor: not-allowed;
+    opacity: 0.58;
+  }
+
+  /* Sheen that sweeps a tile's top edge on hover. */
+  .tile-sheen::before {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    top: 0;
+    height: 1px;
+    opacity: 0;
+    background: linear-gradient(
+      to right,
+      transparent,
+      var(--cf-brand-light),
+      transparent
+    );
+    transition: opacity 0.35s var(--ease-out-expo);
+  }
+
+  .tile:hover .tile-sheen::before,
+  .tile-sheen:hover::before {
+    opacity: 1;
+  }
+
+  /* Monospace numeric readout for quotes, spreads and calculator output. */
+  .readout {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+    letter-spacing: -0.01em;
+  }
+
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      #000 8%,
+      #000 92%,
+      transparent
+    );
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, #000 55%, transparent);
+  }
+}
+
+@layer utilities {
+  .tabular {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+
+  .stroke-text {
+    -webkit-text-stroke: 1px var(--cf-border);
+    color: transparent;
+  }
+}
+
+/* Respect the OS motion preference across every animated surface. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .font-mono,
+html[dir="rtl"] .tabular,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] select {
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .font-mono,
+html[dir="rtl"] .tabular {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+/* Palette-backed icon containers are deliberately different from each
+   other, while their foregrounds stay readable in both theme modes. */
+.icon-box-markets {
+  background-color: var(--cf-icon-green) !important;
+  color: var(--cf-accent);
+}
+
+.icon-box-platforms {
+  background-color: var(--cf-icon-sky) !important;
+  color: var(--cf-brand-light);
+}
+
+.step-detail-surface {
+  --step-wash: color-mix(in srgb, var(--step-accent) 15%, var(--cf-bg-panel));
+  background-image: none;
+  background-color: var(--step-wash);
+  border-color: color-mix(in srgb, var(--step-accent) 40%, var(--cf-border-soft));
+}
+
+.step-detail-surface[data-step="verification"] {
+  --step-wash: color-mix(in srgb, var(--step-accent) 22%, var(--cf-bg-panel));
+  background-color: var(--step-wash);
+  border-color: color-mix(in srgb, var(--step-accent) 62%, var(--cf-border));
+  box-shadow: 0 20px 44px -34px color-mix(in srgb, var(--step-accent) 85%, transparent);
+}
+
+.signup-step-card[data-step="verification"].is-active {
+  background: linear-gradient(145deg, #0b6843, #06452f);
+  border-color: #0b6843;
+  box-shadow: 0 14px 30px -20px rgb(6 69 47 / 0.75);
+}
+
+.signup-step-card[data-step="verification"].is-active .signup-step-number,
+.signup-step-card[data-step="verification"].is-active .signup-step-icon {
+  color: #f0fff7;
+}
+
+.signup-step-card[data-step="verification"].is-active .signup-step-icon {
+  border-color: rgb(240 255 247 / 0.35);
+  background: rgb(240 255 247 / 0.12);
+}
+
+.signup-step-card {
+  --step-wash: color-mix(in srgb, var(--step-accent) 9%, var(--cf-bg-panel));
+  --step-selected-wash: color-mix(in srgb, var(--step-accent) 15%, var(--cf-bg-panel));
+  background-color: var(--step-wash);
+  border-color: color-mix(in srgb, var(--step-accent) 38%, var(--cf-border-soft));
+  outline-color: var(--step-accent);
+}
+
+.signup-step-card.is-active {
+  background-color: var(--step-selected-wash);
+  border-color: color-mix(in srgb, var(--step-accent) 68%, var(--cf-border));
+  box-shadow: 0 16px 36px -28px color-mix(in srgb, var(--step-accent) 88%, transparent), 0 0 0 1px color-mix(in srgb, var(--step-accent) 30%, transparent);
+}
+
+.signup-step-accent-line,
+.signup-step-bullet {
+  background-color: var(--step-accent);
+}
+
+.signup-step-icon {
+  color: var(--step-accent);
+  border-color: color-mix(in srgb, var(--step-accent) 42%, var(--cf-border-soft));
+  background: color-mix(in srgb, var(--step-accent) 14%, var(--cf-bg-panel));
+}
+
+.signup-step-number {
+  color: var(--step-accent);
+}
+
+footer nav a,
+footer ul a {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  footer nav a:hover,
+  footer ul a:hover {
+    transform: translateX(3px);
+  }
+
+  html[dir="rtl"] footer nav a:hover,
+  html[dir="rtl"] footer ul a:hover {
+    transform: translateX(-3px);
+  }
+}
+
+/* Light-mode controls get a restrained lift and clearer surface shadow. The
+   dark theme keeps its existing button treatment. */
+:root:not(.dark) .cf-button-primary:not(:disabled):hover:not(:active) {
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 0 rgb(255 255 255 / 0.16),
+    0 12px 24px -14px rgb(var(--cf-brand-glow) / 0.72);
+}
+
+:root:not(.dark) .cf-button-soft:not(:disabled):hover:not(:active) {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -16px rgb(var(--cf-shadow-color) / 0.45);
+}
+
+.step-detail-surface .eyebrow {
+  color: var(--step-accent);
+}
+
+.step-detail-surface .border-line-soft {
+  border-color: color-mix(in srgb, var(--step-accent) 24%, var(--cf-border-soft));
+}
+
+/* A restrained accent cycle gives existing card grids more depth without
+   changing their content or making every tile use the same blue wash. */
+.grid > :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]:nth-child(4n + 1) {
+  --cf-card-accent: var(--cf-palette-2);
+}
+
+.grid > :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]:nth-child(4n + 2) {
+  --cf-card-accent: var(--cf-palette-4);
+}
+
+.grid > :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]:nth-child(4n + 3) {
+  --cf-card-accent: var(--cf-palette-1);
+}
+
+.grid > :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]:nth-child(4n) {
+  --cf-card-accent: var(--cf-palette-5);
+}
+
+.grid > .tile:nth-child(4n + 1) { --cf-card-accent: var(--cf-palette-2); }
+.grid > .tile:nth-child(4n + 2) { --cf-card-accent: var(--cf-palette-4); }
+.grid > .tile:nth-child(4n + 3) { --cf-card-accent: var(--cf-palette-1); }
+.grid > .tile:nth-child(4n) { --cf-card-accent: var(--cf-palette-5); }
+
+.grid > :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"] {
+  background-image: radial-gradient(
+    ellipse at 100% 0%,
+    color-mix(in srgb, var(--cf-card-accent, var(--cf-palette-5)) 11%, transparent),
+    transparent 58%
+  );
+  background-repeat: no-repeat;
+  background-size: 145% 145%;
+}
+
+.grid > .tile {
+  background-image:
+    radial-gradient(
+      ellipse at 100% 0%,
+      color-mix(in srgb, var(--cf-card-accent, var(--cf-palette-5)) 12%, transparent),
+      transparent 58%
+    ),
+    linear-gradient(145deg, var(--cf-card-highlight), var(--cf-bg-panel) 72%);
+  background-repeat: no-repeat;
+  background-size: 145% 145%, 100% 100%;
+}
+
+/* Account packages keep their tier identity in both color themes. */
+.account-tier-frame-standard { background: var(--cf-tier-standard-frame); }
+.account-tier-frame-pro { background: var(--cf-tier-pro-frame); }
+.account-tier-frame-vip { background: var(--cf-tier-vip-frame); }
+.account-tier-plate-standard { background-image: var(--cf-tier-standard-plate); }
+.account-tier-plate-pro { background-image: var(--cf-tier-pro-plate); }
+.account-tier-plate-vip { background-image: var(--cf-tier-vip-plate); }
+.account-tier-border-standard { --cf-card-accent: var(--cf-tier-standard-accent); }
+.account-tier-border-pro { --cf-card-accent: var(--cf-tier-pro-accent); }
+.account-tier-border-vip { --cf-card-accent: var(--cf-tier-vip-accent); }
+.account-tier-detail { color: var(--cf-tier-detail); }
+.account-tier-title-standard,
+.account-tier-spread-standard,
+.account-tier-check-standard { color: var(--cf-tier-standard-accent); }
+.account-tier-title-pro,
+.account-tier-spread-pro,
+.account-tier-check-pro { color: var(--cf-tier-pro-accent); }
+.account-tier-title-vip,
+.account-tier-spread-vip,
+.account-tier-check-vip { color: var(--cf-tier-vip-accent); }
+.account-type-card {
+  --account-glow: 104 202 255;
+  transform-origin: center bottom;
+  transition:
+    transform 0.42s var(--ease-out-expo),
+    box-shadow 0.42s ease,
+    filter 0.42s ease;
+}
+.account-type-card[data-tier="pro"] { --account-glow: 205 218 235; }
+.account-type-card[data-tier="vip"] {
+  --account-glow: 246 195 61;
+  background-size: 160% 160%;
+  background-position: 0% 50%;
+  transition:
+    transform 0.46s var(--ease-out-expo),
+    box-shadow 0.46s ease,
+    filter 0.46s ease,
+    background-position 0.72s var(--ease-out-expo);
+}
+.account-type-card:focus-within { box-shadow: 0 20px 48px -34px rgb(var(--account-glow) / 0.72); }
+.account-type-card article {
+  isolation: isolate;
+  box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.14);
+  transition: box-shadow 0.42s ease;
+}
+.account-type-card article::before {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  background: linear-gradient(112deg, transparent 28%, rgb(255 255 255 / 0.075) 46%, rgb(255 255 255 / 0.13) 50%, transparent 66%);
+  content: "";
+  pointer-events: none;
+  transform: translateX(-115%);
+}
+.account-tier-icon {
+  background: color-mix(in srgb, var(--cf-tier-standard-accent) 12%, transparent);
+  border-color: color-mix(in srgb, var(--cf-tier-standard-accent) 32%, transparent);
+  color: var(--cf-tier-standard-accent);
+  animation: account-icon-drift 4.8s ease-in-out infinite;
+  transition: transform 0.36s var(--ease-out-expo), box-shadow 0.36s ease, background-color 0.36s ease;
+}
+.account-tier-icon-pro {
+  background: rgb(225 233 243 / 0.11);
+  border-color: rgb(225 233 243 / 0.34);
+  color: var(--cf-tier-pro-accent);
+}
+.account-tier-icon-vip {
+  background: rgb(255 220 117 / 0.18);
+  border-color: rgb(255 220 117 / 0.52);
+  color: #ffe18a;
+}
+.account-price { transition: transform 0.36s var(--ease-out-expo); }
+
+@keyframes account-icon-drift {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+@keyframes vip-gold-glow {
+  0%, 100% { box-shadow: inset 0 1px 0 rgb(255 245 199 / 0.2), 0 0 28px -16px rgb(255 204 72 / 0.58); }
+  50% { box-shadow: inset 0 1px 0 rgb(255 249 220 / 0.32), 0 0 42px -14px rgb(255 204 72 / 0.78); }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .account-type-card:hover {
+    transform: translateY(-13px) scale(1.03) rotate(-0.35deg);
+    box-shadow: 0 36px 72px -34px rgb(var(--account-glow) / 0.9);
+    filter: saturate(1.08);
+    background-position: 100% 50%;
+  }
+  .account-type-card:hover article { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26), 0 0 36px -16px rgb(var(--account-glow) / 0.58); }
+  .account-type-card:hover article::before { transition: transform 1s var(--ease-out-expo); transform: translateX(115%); }
+  .account-type-card:hover .account-tier-icon {
+    animation-play-state: paused;
+    transform: translateY(-4px) rotate(-7deg) scale(1.13);
+    box-shadow: 0 10px 24px -10px rgb(var(--account-glow) / 0.9);
+  }
+  .account-type-card:hover .account-price { transform: translateY(-3px) scale(1.025); }
+  .account-type-card[data-tier="vip"]:hover {
+    transform: translateY(-16px) scale(1.04) rotate(-0.45deg);
+    box-shadow: 0 42px 82px -32px rgb(246 195 61 / 0.96);
+    filter: saturate(1.13);
+  }
+  .account-type-card[data-tier="vip"]:hover article {
+    animation: vip-gold-glow 2.4s ease-in-out infinite;
+  }
+}
+
+.account-type-card[data-featured] { filter: drop-shadow(0 12px 18px rgb(var(--account-glow) / 0.12)); }
+.account-type-card[data-featured]:hover { filter: saturate(1.055) drop-shadow(0 16px 20px rgb(var(--account-glow) / 0.2)); }
+
+@media (prefers-reduced-motion: reduce) {
+  .account-tier-icon { animation: none; }
+}
+
+.account-tier-plate {
+  background-color: var(--cf-bg-raised);
+  color: #fff;
+  display: flex;
+  min-height: 22.5rem;
+  flex-direction: column;
+}
+
+@media (max-width: 639px) {
+  .account-tier-plate { min-height: 20rem; }
+}
+
+:root:not(.dark) .icon-box-markets {
+  color: var(--cf-accent);
+}
+
+:root.dark .step-detail-surface {
+  --step-wash: color-mix(in srgb, var(--step-accent) 23%, var(--cf-bg-panel));
+}
+
+:root.dark .signup-step-card {
+  --step-wash: color-mix(in srgb, var(--step-accent) 15%, var(--cf-bg-panel));
+  --step-selected-wash: color-mix(in srgb, var(--step-accent) 23%, var(--cf-bg-panel));
+}
+
+/* Reusable shared card behavior. Existing semantic panels are picked up
+   automatically; new reusable panels can opt in with .cf-interactive-card. */
+:is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]) {
+  position: relative;
+  transition-property: transform;
+  transition-duration: 0.28s;
+  transition-timing-function: var(--ease-out-expo);
+}
+
+:root:not(.dark) :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]) {
+  box-shadow: 0 12px 30px -28px rgb(var(--cf-shadow-color) / 0.42);
+}
+
+:is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"])::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--cf-card-accent) 62%, transparent),
+    0 16px 36px -30px color-mix(in srgb, var(--cf-card-accent) 70%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.24s ease-out;
+}
+
+:is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):is(:focus-within, [aria-selected="true"], [data-selected="true"])::after {
+  opacity: 1;
+}
+
+:is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):active {
+  transform: translateY(-1px) scale(0.997);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):hover {
+    transform: translateY(-3px);
+  }
+
+  :root:not(.dark) :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):hover {
+    box-shadow: 0 18px 38px -28px rgb(var(--cf-shadow-color) / 0.5);
+  }
+
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):hover::after {
+    opacity: 1;
+  }
+
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):hover > svg,
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]):hover > :is(span, div) > svg {
+    transform: translateY(-2px) scale(1.04);
+  }
+
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]) > svg,
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"]) > :is(span, div) > svg {
+    transition: transform 0.22s ease-out;
+  }
+
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"][class*="overflow-hidden"]):hover img {
+    transform: scale(1.025);
+  }
+
+  :is(.cf-interactive-card, .tile, .surface, [data-card], :is(article, div)[class*="rounded-"][class*="border"][class*="bg-"][class*="overflow-hidden"]) img {
+    transition: transform 0.35s ease-out;
+  }
+}

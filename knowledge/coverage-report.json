@@ -1,0 +1,1939 @@
+{
+  "generatedAt": "2026-10-07T14:42:50.501Z",
+  "contentVersion": "website-source-v2",
+  "scope": {
+    "discoveredPageFiles": 43,
+    "excludedPrivateRoutes": [
+      {
+        "route": "/admin/content",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/content/:key",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/knowledge",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/kyc",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/leads",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/media",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/payouts",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/admin/support",
+        "reason": "admin-only route"
+      },
+      {
+        "route": "/portal/accounts",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal/kyc",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal/payouts",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal/support",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal/support/:ticketId",
+        "reason": "private portal route"
+      },
+      {
+        "route": "/portal/login",
+        "reason": "private portal route"
+      }
+    ],
+    "indexedRoutes": [
+      "/",
+      "/about",
+      "/broker",
+      "/broker/coming-soon",
+      "/contact",
+      "/education",
+      "/faq",
+      "/legal/:slug",
+      "/markets",
+      "/news/:slug",
+      "/payments",
+      "/platforms",
+      "/products",
+      "/register",
+      "/tools",
+      "/tools/calculator",
+      "/tools/economic-calendar",
+      "/trade",
+      "/trade/:asset",
+      "/trading",
+      "/trading-edge",
+      "/trading-edge/:section",
+      "/trading-edge/strategies/:slug",
+      "/trading/accounts",
+      "/trading/coming-soon",
+      "/trading/conditions",
+      "/trading/how-it-works"
+    ],
+    "routesNotIndexed": [],
+    "indexedSourceFiles": 126
+  },
+  "counts": {
+    "pagesScanned": 27,
+    "pagesIndexed": 27,
+    "sectionsScanned": 759,
+    "knowledgeItems": 36,
+    "numericalFacts": 81,
+    "tradingConditionRecords": 3,
+    "accountConditionRecords": 6,
+    "faqRecords": 2,
+    "platformRecords": 2,
+    "instrumentRecords": 3,
+    "paymentRecords": 3
+  },
+  "languageCoverage": {
+    "en": 27,
+    "fr": 27,
+    "ar": 27
+  },
+  "countDefinitions": {
+    "domainCounts": "Trading-condition, account, FAQ, platform, instrument, and payment counts are source knowledge records, not counts of individual live database entities.",
+    "numericalFacts": "Occurrences found in generated source-page text. Runtime CMS/database/feed values are reported separately as missing from this build-only count.",
+    "sectionsScanned": "Distinct heading entries retained per generated route."
+  },
+  "numericalFacts": [
+    {
+      "topic": "About Us",
+      "value": "$100,",
+      "originalText": "ez toutes les classes d’actifs avec un seul solde et conservez vos gains. Open an account from $100, trade all asset classes on one balance, and keep every dollar you make. إنشاء حساب Créer un co",
+      "context": "ez toutes les classes d’actifs avec un seul solde et conservez vos gains. Open an account from $100, trade all asset classes on one balance, and keep every dollar you make. إنشاء حساب Créer un co",
+      "category": "about",
+      "language": "en",
+      "sourcePage": "/about",
+      "section": "About Us",
+      "sourceRoutes": [
+        "/about"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+    },
+    {
+      "topic": "Forex",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ object-cover Connect Funded Trade global markets with MT5. Trade forex, indices, metals, ene",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ object-cover Connect Funded Trade global markets with MT5. Trade forex, indices, metals, ene",
+      "category": "about",
+      "language": "en",
+      "sourcePage": "/about",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/about"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "about",
+      "language": "en",
+      "sourcePage": "/about",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/about"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "broker",
+      "language": "en",
+      "sourcePage": "/broker/coming-soon",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/broker/coming-soon"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "52f0b43e6c6708398e78503820fede0145b299cfd4edff49e192bddc9a47570d"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "broker",
+      "language": "en",
+      "sourcePage": "/broker",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/broker"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "52f0b43e6c6708398e78503820fede0145b299cfd4edff49e192bddc9a47570d"
+    },
+    {
+      "topic": "Partnerships & affiliates",
+      "value": "$400,000",
+      "originalText": "e risk per trade, how scaling works before you commit, and multi-account structures inside the $400,000 combined allocation cap. Compare account tiers Partnerships & affiliates Introducing brokers,",
+      "context": "e risk per trade, how scaling works before you commit, and multi-account structures inside the $400,000 combined allocation cap. Compare account tiers Partnerships & affiliates Introducing brokers,",
+      "category": "contact",
+      "language": "en",
+      "sourcePage": "/contact",
+      "section": "Partnerships & affiliates",
+      "sourceRoutes": [
+        "/contact"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+    },
+    {
+      "topic": "Contact",
+      "value": "24 hours",
+      "originalText": "the exact execution record rather than reconstruct it. Do you reply at weekends? Support runs 24 hours a day, five days a week, from the Sydney open on Monday to the New York close on Friday. Messa",
+      "context": "the exact execution record rather than reconstruct it. Do you reply at weekends? Support runs 24 hours a day, five days a week, from the Sydney open on Monday to the New York close on Friday. Messa",
+      "category": "contact",
+      "language": "en",
+      "sourcePage": "/contact",
+      "section": "Contact",
+      "sourceRoutes": [
+        "/contact"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+    },
+    {
+      "topic": "Contact",
+      "value": "24 hours",
+      "originalText": "فريق التوظيف. اذكر الوظيفة في بداية الرسالة وخبراتك ذات الصلة. يراجع أحد أعضاء الفريق كل طلب. 24 hours a day, five days a week — from the Sydney open on Monday to the New York close on Friday. Week",
+      "context": "فريق التوظيف. اذكر الوظيفة في بداية الرسالة وخبراتك ذات الصلة. يراجع أحد أعضاء الفريق كل طلب. 24 hours a day, five days a week — from the Sydney open on Monday to the New York close on Friday. Week",
+      "category": "contact",
+      "language": "en",
+      "sourcePage": "/contact",
+      "section": "Contact",
+      "sourceRoutes": [
+        "/contact"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "contact",
+      "language": "en",
+      "sourcePage": "/contact",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/contact"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "education",
+      "language": "en",
+      "sourcePage": "/education",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/education"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "c4cebecd2d2a36b86bc27f6dfa8728d4e69d17c272b60e1d3467aeb4b280c3e7"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "faq",
+      "language": "en",
+      "sourcePage": "/faq",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/faq"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "00ae82ab0266ca3063be57c53c9045e067f99cab29dfc2507dacd88c53265f9f"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "legal",
+      "language": "en",
+      "sourcePage": "/legal/:slug",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/legal/:slug"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "f17f67c0098e869883e8f9b57b31db26b3059d7875115f911c43fb4767b06dcb"
+    },
+    {
+      "topic": "Market Terminal",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Trade $ Now View in trading view",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Trade $ Now View in trading view",
+      "category": "markets",
+      "language": "en",
+      "sourcePage": "/markets",
+      "section": "Market Terminal",
+      "sourceRoutes": [
+        "/markets"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "65d2f5f9b1fb4b9ddaebb7b33d72ad3ffbaeed05442c358d6f9c40a5fe14f911"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "news",
+      "language": "en",
+      "sourcePage": "/news/:slug",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/news/:slug"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "376bf7c8fd5695a999914ee4a09be8dc78437d101bd8bd8bf784165f05d4295d"
+    },
+    {
+      "topic": "Forex",
+      "value": "1:100",
+      "originalText": "tals indices home.command.indices home.command.crypto watchlist home.command.watchlist mt5 MT5 1:100 1:200 Live market tape Connect Funded Trade global markets with MT5. Trade forex, indices, met",
+      "context": "tals indices home.command.indices home.command.crypto watchlist home.command.watchlist mt5 MT5 1:100 1:200 Live market tape Connect Funded Trade global markets with MT5. Trade forex, indices, met",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Forex",
+      "value": "1:200",
+      "originalText": "ndices home.command.indices home.command.crypto watchlist home.command.watchlist mt5 MT5 1:100 1:200 Live market tape Connect Funded Trade global markets with MT5. Trade forex, indices, metals, e",
+      "context": "ndices home.command.indices home.command.crypto watchlist home.command.watchlist mt5 MT5 1:100 1:200 Live market tape Connect Funded Trade global markets with MT5. Trade forex, indices, metals, e",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Forex",
+      "value": "$100",
+      "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits",
+      "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Indices",
+      "value": "5 Market",
+      "originalText": "als, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "context": "als, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Indices",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Your account. Your balance. Our execution.",
+      "value": "$100,",
+      "originalText": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "context": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Your account. Your balance. Our execution.",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "home.steps.register.title",
+      "value": "$100",
+      "originalText": "ard, Pro or VIP. Keep every dollar you make. Open a Standard, Pro or VIP account, deposit from $100 and trade all asset classes on one balance — no profit split, no lock-up, withdrawals on your",
+      "context": "ard, Pro or VIP. Keep every dollar you make. Open a Standard, Pro or VIP account, deposit from $100 and trade all asset classes on one balance — no profit split, no lock-up, withdrawals on your",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "home.steps.register.title",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Withdrawals on your schedule",
+      "value": "$100",
+      "originalText": "asset classes on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP fro",
+      "context": "asset classes on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP fro",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Withdrawals on your schedule",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Withdrawals on your schedule",
+      "value": "$1,000",
+      "originalText": "on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live t",
+      "context": "on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live t",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Withdrawals on your schedule",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Withdrawals on your schedule",
+      "value": "$50,000",
+      "originalText": "no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A",
+      "context": "no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "Withdrawals on your schedule",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "home.steps.register.title",
+      "value": "$1,000",
+      "originalText": "on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A broker built for traders who read the s",
+      "context": "on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A broker built for traders who read the s",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "home.steps.register.title",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "A broker built for traders who read the spec sheet.",
+      "value": "$50",
+      "originalText": "e. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A broker built for traders who read the spec sheet. We",
+      "context": "e. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A broker built for traders who read the spec sheet. We",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "A broker built for traders who read the spec sheet.",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "home.steps.register.title",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Jordan Malik you@example.com left 1rem center right 1rem center idle success error submittin",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Jordan Malik you@example.com left 1rem center right 1rem center idle success error submittin",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "home.steps.register.title",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "home.steps.register.title",
+      "value": "1 day",
+      "originalText": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 FAQ Open site search",
+      "context": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 FAQ Open site search",
+      "category": "home",
+      "language": "en",
+      "sourcePage": "/",
+      "section": "home.steps.register.title",
+      "sourceRoutes": [
+        "/"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+    },
+    {
+      "topic": "Payment Methods",
+      "value": "24 hours",
+      "originalText": "in one hour Withdrawal requests are reviewed within one hour. Once approved, funds move within 24 hours, and in practice a stablecoin transfer usually settles the same afternoon. Priced in dollars,",
+      "context": "in one hour Withdrawal requests are reviewed within one hour. Once approved, funds move within 24 hours, and in practice a stablecoin transfer usually settles the same afternoon. Priced in dollars,",
+      "category": "payments",
+      "language": "en",
+      "sourcePage": "/payments",
+      "section": "Payment Methods",
+      "sourceRoutes": [
+        "/payments"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+    },
+    {
+      "topic": "Payment Methods",
+      "value": "24 hours",
+      "originalText": "ss day. Withdrawal requests are then reviewed within one hour, and the transfer follows within 24 hours. No. You can request any amount up to your free margin, and there is no penalty for taking a s",
+      "context": "ss day. Withdrawal requests are then reviewed within one hour, and the transfer follows within 24 hours. No. You can request any amount up to your free margin, and there is no penalty for taking a s",
+      "category": "payments",
+      "language": "en",
+      "sourcePage": "/payments",
+      "section": "Payment Methods",
+      "sourceRoutes": [
+        "/payments"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+    },
+    {
+      "topic": "Forex",
+      "value": "$3.1",
+      "originalText": "nomique intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ $3.1B+ Connect Funded Trade global markets with MT5. Trade forex, indices, metals, energies, stocks",
+      "context": "nomique intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ $3.1B+ Connect Funded Trade global markets with MT5. Trade forex, indices, metals, energies, stocks",
+      "category": "payments",
+      "language": "en",
+      "sourcePage": "/payments",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/payments"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "payments",
+      "language": "en",
+      "sourcePage": "/payments",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/payments"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+    },
+    {
+      "topic": "Bitcoin",
+      "value": "$24,680.42",
+      "originalText": "ollar Nasdaq 100 Bitcoin Connect desk MT5-connected workspace Trading app views Account equity $24,680.42 +4.82% this month Live workspace STREAMING markets charts risk assistant Portfolio pulse Today",
+      "context": "ollar Nasdaq 100 Bitcoin Connect desk MT5-connected workspace Trading app views Account equity $24,680.42 +4.82% this month Live workspace STREAMING markets charts risk assistant Portfolio pulse Today",
+      "category": "platforms",
+      "language": "en",
+      "sourcePage": "/platforms",
+      "section": "Bitcoin",
+      "sourceRoutes": [
+        "/platforms"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+    },
+    {
+      "topic": "EUR/USD",
+      "value": "$842.18",
+      "originalText": "4.82% this month Live workspace STREAMING markets charts risk assistant Portfolio pulse Today +$842.18 Selected instrument TradingView-style chart Position risk preview EUR/USD · 0.50 lots 0% risk",
+      "context": "4.82% this month Live workspace STREAMING markets charts risk assistant Portfolio pulse Today +$842.18 Selected instrument TradingView-style chart Position risk preview EUR/USD · 0.50 lots 0% risk",
+      "category": "platforms",
+      "language": "en",
+      "sourcePage": "/platforms",
+      "section": "EUR/USD",
+      "sourceRoutes": [
+        "/platforms"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+    },
+    {
+      "topic": "EUR/USD",
+      "value": "0.50 lots",
+      "originalText": "lse Today +$842.18 Selected instrument TradingView-style chart Position risk preview EUR/USD · 0.50 lots 0% risk 0.68% projected 2% limit Connect AI assistant Grounded market education, not trade sig",
+      "context": "lse Today +$842.18 Selected instrument TradingView-style chart Position risk preview EUR/USD · 0.50 lots 0% risk 0.68% projected 2% limit Connect AI assistant Grounded market education, not trade sig",
+      "category": "platforms",
+      "language": "en",
+      "sourcePage": "/platforms",
+      "section": "EUR/USD",
+      "sourceRoutes": [
+        "/platforms"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+    },
+    {
+      "topic": "EUR/USD",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD FX:EURUSD EUR/USD",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD FX:EURUSD EUR/USD",
+      "category": "platforms",
+      "language": "en",
+      "sourcePage": "/platforms",
+      "section": "EUR/USD",
+      "sourceRoutes": [
+        "/platforms"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+    },
+    {
+      "topic": "No dealing-desk intervention",
+      "value": "$10,000",
+      "originalText": "d non-bank market makers. The best available bid and offer is what reaches your terminal — the $10,000 account routes through the same bridge as the $200,000 one. No dealing-desk intervention There",
+      "context": "d non-bank market makers. The best available bid and offer is what reaches your terminal — the $10,000 account routes through the same bridge as the $200,000 one. No dealing-desk intervention There",
+      "category": "products",
+      "language": "en",
+      "sourcePage": "/products",
+      "section": "No dealing-desk intervention",
+      "sourceRoutes": [
+        "/products"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+    },
+    {
+      "topic": "No dealing-desk intervention",
+      "value": "$200,000",
+      "originalText": "ffer is what reaches your terminal — the $10,000 account routes through the same bridge as the $200,000 one. No dealing-desk intervention There is no manual desk sitting between your order and the a",
+      "context": "ffer is what reaches your terminal — the $10,000 account routes through the same bridge as the $200,000 one. No dealing-desk intervention There is no manual desk sitting between your order and the a",
+      "category": "products",
+      "language": "en",
+      "sourcePage": "/products",
+      "section": "No dealing-desk intervention",
+      "sourceRoutes": [
+        "/products"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "products",
+      "language": "en",
+      "sourcePage": "/products",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/products"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD FX",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD FX",
+      "category": "tools",
+      "language": "en",
+      "sourcePage": "/tools/calculator",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/tools/calculator"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2eda6911517306fd88a307a76a49177198f39ccf7dc89dba75ae1b48c552c5ae"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "tools",
+      "language": "en",
+      "sourcePage": "/tools/economic-calendar",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/tools/economic-calendar"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "c9ba87fcd74e8f504bf44cda2fd0e1d030b46ab06c28e1398bf4f8498ad837d1"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "tools",
+      "language": "en",
+      "sourcePage": "/tools",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/tools"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "7119979c480653f91aecc0ce35ef9a7cfd9eaa55e60ff7cd60106b8b372778b5"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trade",
+      "language": "en",
+      "sourcePage": "/trade",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trade"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "185f64a0e61c95833c49d644e3e5d5924e97d913e7e806a77831747093953897"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD FX",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD FX",
+      "category": "trade",
+      "language": "en",
+      "sourcePage": "/trade/:asset",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trade/:asset"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "e5af888c99cbf9186555945410dc0e2350539abe66fe9e9bcc15e82099e9bf02"
+    },
+    {
+      "topic": "Getting started",
+      "value": "$100",
+      "originalText": "minimum deposits and included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started",
+      "context": "minimum deposits and included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Getting started",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Getting started",
+      "value": "$1,000",
+      "originalText": "included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads",
+      "context": "included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Getting started",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Getting started",
+      "value": "$50,000",
+      "originalText": "ts — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads predictable and c",
+      "context": "ts — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads predictable and c",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Getting started",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "High-volume or systematic",
+      "value": "$50,000",
+      "originalText": "ecution — the usual step once your size and frequency grow. High-volume or systematic VIP from $50,000 — super-tight spreads, institutional liquidity, a personal trading advisor and custom solution",
+      "context": "ecution — the usual step once your size and frequency grow. High-volume or systematic VIP from $50,000 — super-tight spreads, institutional liquidity, a personal trading advisor and custom solution",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "High-volume or systematic",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Bien débuter",
+      "value": "$ 1",
+      "originalText": "ght spreads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévi",
+      "context": "ght spreads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévi",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Bien débuter",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Bien débuter",
+      "value": "$ 50",
+      "originalText": "ads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sa",
+      "context": "ads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sa",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Bien débuter",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Bien débuter",
+      "value": "$ 1,000",
+      "originalText": "ty, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix p",
+      "context": "ty, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix p",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Bien débuter",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Bien débuter",
+      "value": "$ 50,000",
+      "originalText": "rsonal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix pour un co",
+      "context": "rsonal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix pour un co",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Bien débuter",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Forex",
+      "value": "$100",
+      "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Forex",
+      "value": "1:200",
+      "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Crypto",
+      "value": "5 Market",
+      "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Your account. Your balance. Our execution.",
+      "value": "$100,",
+      "originalText": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "context": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Your account. Your balance. Our execution.",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Live Trading Account Types",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Live Trading Account Types",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/accounts",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading/accounts"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/coming-soon",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading/coming-soon"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "6c64ab42289c3da6d42de72554da134d81e0a9b69a1224d1198076dacbf030cf"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EUR/USD F",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EUR/USD F",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/conditions",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading/conditions"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "b3ad51a1d3e226687cdc21cd937ca6d38b9ca4de1b7ffa52a38f2d9589583465"
+    },
+    {
+      "topic": "How Live Trading Works",
+      "value": "$100",
+      "originalText": "in one to two business days. There is no deposit fee on the published rails. Minimums start at $100 on Standard. Your full cleared balance is tradable from the moment it lands — nothing is held",
+      "context": "in one to two business days. There is no deposit fee on the published rails. Minimums start at $100 on Standard. Your full cleared balance is tradable from the moment it lands — nothing is held",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "How Live Trading Works",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Crypto",
+      "value": "1:500",
+      "originalText": "crypto under the account type you selected. Leverage is published on Standard and Pro — up to 1:500. Ask the desk for VIP terms. Request a withdrawal on the same rail you deposited with; reviews",
+      "context": "crypto under the account type you selected. Leverage is published on Standard and Pro — up to 1:500. Ask the desk for VIP terms. Request a withdrawal on the same rail you deposited with; reviews",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Créez votre profil",
+      "value": "24 hours",
+      "originalText": "r VIP terms. Request a withdrawal on the same rail you deposited with; reviews complete within 24 hours on open market days. Créez votre profil Inscrivez-vous par e-mail, choisissez Standard, Pro ou",
+      "context": "r VIP terms. Request a withdrawal on the same rail you deposited with; reviews complete within 24 hours on open market days. Créez votre profil Inscrivez-vous par e-mail, choisissez Standard, Pro ou",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Créez votre profil",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Indices",
+      "value": "1:500",
+      "originalText": "l’énergie, les indices et les cryptomonnaies selon le compte choisi. Le levier publié atteint 1:500 pour Standard et Pro. Contactez l’équipe pour les conditions VIP. Demandez un retrait par le m",
+      "context": "l’énergie, les indices et les cryptomonnaies selon le compte choisi. Le levier publié atteint 1:500 pour Standard et Pro. Contactez l’équipe pour les conditions VIP. Demandez un retrait par le m",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Indices",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "How Live Trading Works",
+      "value": "1:500",
+      "originalText": "رات والعملات الرقمية وفق نوع الحساب الذي اخترته. الرافعة المنشورة لحسابي Standard وPro تصل إلى 1:500. تواصل مع الفريق لمعرفة شروط VIP. اطلب السحب عبر وسيلة الإيداع نفسها؛ وتُراجع الطلبات خلال 24",
+      "context": "رات والعملات الرقمية وفق نوع الحساب الذي اخترته. الرافعة المنشورة لحسابي Standard وPro تصل إلى 1:500. تواصل مع الفريق لمعرفة شروط VIP. اطلب السحب عبر وسيلة الإيداع نفسها؛ وتُراجع الطلبات خلال 24",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "How Live Trading Works",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Forex",
+      "value": "$100",
+      "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Forex",
+      "value": "1:200",
+      "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Crypto",
+      "value": "5 Market",
+      "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Your account. Your balance. Our execution.",
+      "value": "$100,",
+      "originalText": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "context": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Your account. Your balance. Our execution.",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "How Live Trading Works",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "How Live Trading Works",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading/how-it-works",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading/how-it-works"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+    },
+    {
+      "topic": "Forex",
+      "value": "$100",
+      "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "Forex",
+      "value": "1:200",
+      "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "Crypto",
+      "value": "5 Market",
+      "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "Your account. Your balance. Our execution.",
+      "value": "$100,",
+      "originalText": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "context": "il you deposited with. Your account. Your balance. Our execution. Open a Standard account from $100, upgrade when your volume warrants it, and trade the same instruments funded traders use — on c",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "Your account. Your balance. Our execution.",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "A trading experience designed to be understood.",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 FAQ Open site search Search Search pag",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 FAQ Open site search Search Search pag",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "A trading experience designed to be understood.",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading",
+      "language": "en",
+      "sourcePage": "/trading",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading-edge",
+      "language": "en",
+      "sourcePage": "/trading-edge",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading-edge"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "c84bdd12d57203acf6321f674221133fe46e997d41caf0211d8050b9f8a6edbf"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "trading-edge",
+      "language": "en",
+      "sourcePage": "/trading-edge/strategies/:slug",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/trading-edge/strategies/:slug"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "71c05b4a96ba87f9a8e41f03aa8fc8eeba761ed7ce855e5c84717b4f57e413e1"
+    },
+    {
+      "topic": "Trading Hub",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view",
+      "category": "trading-edge",
+      "language": "en",
+      "sourcePage": "/trading-edge/:section",
+      "section": "Trading Hub",
+      "sourceRoutes": [
+        "/trading-edge/:section"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "1b8a610966e49063031077448d81fefbee2aa307185ec0d1fc77e686ad6cab0a"
+    },
+    {
+      "topic": "Create your account",
+      "value": "$10,000",
+      "originalText": "onnect Funded evaluation with AI-guided onboarding or the classic form. Choose an account from $10,000 to $200,000 and keep up to 90% of the profit. Inscription Commencez votre parcours avec un acc",
+      "context": "onnect Funded evaluation with AI-guided onboarding or the classic form. Choose an account from $10,000 to $200,000 and keep up to 90% of the profit. Inscription Commencez votre parcours avec un acc",
+      "category": "register",
+      "language": "en",
+      "sourcePage": "/register",
+      "section": "Create your account",
+      "sourceRoutes": [
+        "/register"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d635d5b68bb1f11a6e3c5d8929ff8364463d002fda9b90a170edecbf6107f43a"
+    },
+    {
+      "topic": "Create your account",
+      "value": "$200,000",
+      "originalText": "ed evaluation with AI-guided onboarding or the classic form. Choose an account from $10,000 to $200,000 and keep up to 90% of the profit. Inscription Commencez votre parcours avec un accompagnement",
+      "context": "ed evaluation with AI-guided onboarding or the classic form. Choose an account from $10,000 to $200,000 and keep up to 90% of the profit. Inscription Commencez votre parcours avec un accompagnement",
+      "category": "register",
+      "language": "en",
+      "sourcePage": "/register",
+      "section": "Create your account",
+      "sourceRoutes": [
+        "/register"
+      ],
+      "lastUpdated": "2026-10-07T14:42:50.501Z",
+      "contentVersion": "d635d5b68bb1f11a6e3c5d8929ff8364463d002fda9b90a170edecbf6107f43a"
+    }
+  ],
+  "duplicateCandidates": [
+    [
+      {
+        "id": "website:broker-coming-soon",
+        "title": "Gold",
+        "sourceRoutes": [
+          "/broker/coming-soon"
+        ]
+      },
+      {
+        "id": "website:broker",
+        "title": "Gold",
+        "sourceRoutes": [
+          "/broker"
+        ]
+      }
+    ]
+  ],
+  "conflictingValueCandidates": [
+    {
+      "key": "/|leverage",
+      "values": [
+        {
+          "value": "$100",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "$100",
+              "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits",
+              "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            }
+          ]
+        },
+        {
+          "value": "5 Market",
+          "occurrences": [
+            {
+              "topic": "Indices",
+              "value": "5 Market",
+              "originalText": "als, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "context": "als, indices and crypto — no evaluation, no profit split. $100 Standard from Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "Indices",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/|profit split",
+      "values": [
+        {
+          "value": "$100",
+          "occurrences": [
+            {
+              "topic": "home.steps.register.title",
+              "value": "$100",
+              "originalText": "ard, Pro or VIP. Keep every dollar you make. Open a Standard, Pro or VIP account, deposit from $100 and trade all asset classes on one balance — no profit split, no lock-up, withdrawals on your",
+              "context": "ard, Pro or VIP. Keep every dollar you make. Open a Standard, Pro or VIP account, deposit from $100 and trade all asset classes on one balance — no profit split, no lock-up, withdrawals on your",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "home.steps.register.title",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            },
+            {
+              "topic": "Withdrawals on your schedule",
+              "value": "$100",
+              "originalText": "asset classes on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP fro",
+              "context": "asset classes on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP fro",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "Withdrawals on your schedule",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            }
+          ]
+        },
+        {
+          "value": "$1,000",
+          "occurrences": [
+            {
+              "topic": "Withdrawals on your schedule",
+              "value": "$1,000",
+              "originalText": "on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live t",
+              "context": "on one balance — no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live t",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "Withdrawals on your schedule",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            }
+          ]
+        },
+        {
+          "value": "$50,000",
+          "occurrences": [
+            {
+              "topic": "Withdrawals on your schedule",
+              "value": "$50,000",
+              "originalText": "no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A",
+              "context": "no profit split, no lock-up, withdrawals on your schedule. From $100 Pro from $1,000 VIP from $50,000 Your withdrawals Minimum deposit $1,000 Pro from $50K VIP from Explore live trading About us A",
+              "category": "home",
+              "language": "en",
+              "sourcePage": "/",
+              "section": "Withdrawals on your schedule",
+              "sourceRoutes": [
+                "/"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/trading/accounts|spread",
+      "values": [
+        {
+          "value": "$1,000",
+          "occurrences": [
+            {
+              "topic": "Getting started",
+              "value": "$1,000",
+              "originalText": "included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads",
+              "context": "included benefits — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Getting started",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$50,000",
+          "occurrences": [
+            {
+              "topic": "Getting started",
+              "value": "$50,000",
+              "originalText": "ts — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads predictable and c",
+              "context": "ts — then open the account that matches your volume. From $100 Minimum deposit $1,000 Pro from $50,000 VIP from No split Keep 100% of profit Getting started Standard keeps spreads predictable and c",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Getting started",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            },
+            {
+              "topic": "High-volume or systematic",
+              "value": "$50,000",
+              "originalText": "ecution — the usual step once your size and frequency grow. High-volume or systematic VIP from $50,000 — super-tight spreads, institutional liquidity, a personal trading advisor and custom solution",
+              "context": "ecution — the usual step once your size and frequency grow. High-volume or systematic VIP from $50,000 — super-tight spreads, institutional liquidity, a personal trading advisor and custom solution",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "High-volume or systematic",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$ 1",
+          "occurrences": [
+            {
+              "topic": "Bien débuter",
+              "value": "$ 1",
+              "originalText": "ght spreads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévi",
+              "context": "ght spreads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévi",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Bien débuter",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$ 50",
+          "occurrences": [
+            {
+              "topic": "Bien débuter",
+              "value": "$ 50",
+              "originalText": "ads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sa",
+              "context": "ads, institutional liquidity, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sa",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Bien débuter",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$ 1,000",
+          "occurrences": [
+            {
+              "topic": "Bien débuter",
+              "value": "$ 1,000",
+              "originalText": "ty, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix p",
+              "context": "ty, a personal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix p",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Bien débuter",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$ 50,000",
+          "occurrences": [
+            {
+              "topic": "Bien débuter",
+              "value": "$ 50,000",
+              "originalText": "rsonal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix pour un co",
+              "context": "rsonal trading advisor and custom solutions. Dès 100 $ 1 000 $ 50 000 $ ابتداءً من 100 $ 1,000 $ 50,000 $ Bien débuter Standard offre des spreads prévisibles sans commission. Un bon choix pour un co",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Bien débuter",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "$3.1",
+          "occurrences": [
+            {
+              "topic": "Live Trading Account Types",
+              "value": "$3.1",
+              "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+              "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Live Trading Account Types",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "1 day",
+          "occurrences": [
+            {
+              "topic": "Gold",
+              "value": "1 day",
+              "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+              "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Gold",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/trading/accounts|leverage",
+      "values": [
+        {
+          "value": "$100",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "$100",
+              "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "1:200",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "1:200",
+              "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        },
+        {
+          "value": "5 Market",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "5 Market",
+              "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/accounts",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/trading/accounts"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/trading/how-it-works|leverage",
+      "values": [
+        {
+          "value": "1:500",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "1:500",
+              "originalText": "crypto under the account type you selected. Leverage is published on Standard and Pro — up to 1:500. Ask the desk for VIP terms. Request a withdrawal on the same rail you deposited with; reviews",
+              "context": "crypto under the account type you selected. Leverage is published on Standard and Pro — up to 1:500. Ask the desk for VIP terms. Request a withdrawal on the same rail you deposited with; reviews",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        },
+        {
+          "value": "$100",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "$100",
+              "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        },
+        {
+          "value": "1:200",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "1:200",
+              "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        },
+        {
+          "value": "5 Market",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "5 Market",
+              "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/trading/how-it-works|spread",
+      "values": [
+        {
+          "value": "$3.1",
+          "occurrences": [
+            {
+              "topic": "How Live Trading Works",
+              "value": "$3.1",
+              "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+              "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Create account Compare account tiers Raw spreads · zero commission 0% commission. Trade the",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "How Live Trading Works",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        },
+        {
+          "value": "1 day",
+          "occurrences": [
+            {
+              "topic": "Gold",
+              "value": "1 day",
+              "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+              "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading/how-it-works",
+              "section": "Gold",
+              "sourceRoutes": [
+                "/trading/how-it-works"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/trading|leverage",
+      "values": [
+        {
+          "value": "$100",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "$100",
+              "originalText": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "context": "your own balance and trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account tha",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+            }
+          ]
+        },
+        {
+          "value": "1:200",
+          "occurrences": [
+            {
+              "topic": "Forex",
+              "value": "1:200",
+              "originalText": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "context": "d trade forex, metals, indices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the sa",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading",
+              "section": "Forex",
+              "sourceRoutes": [
+                "/trading"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+            }
+          ]
+        },
+        {
+          "value": "5 Market",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "5 Market",
+              "originalText": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "context": "ndices and crypto — no evaluation, no profit split. $100 Standard from 1:200 Leverage up to 24/5 Market access Three account types Pick the account that fits. Trade the same markets. Standard, Pro o",
+              "category": "trading",
+              "language": "en",
+              "sourcePage": "/trading",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/trading"
+              ],
+              "lastUpdated": "2026-10-07T14:42:50.501Z",
+              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "missingInformation": [
+    "Published FAQs, CMS-managed home/trading copy, active instrument rows, published news, quotes, and calendar entries are dynamic database/feed sources and are loaded by chat at request time; the source-only scan cannot report their live totals.",
+    "Live account balances, verification state, payouts, and other visitor-specific portal values are not added to the public chatbot index."
+  ],
+  "reviewNotes": [
+    "Duplicate and conflicting-value groups are review candidates; do not resolve them automatically.",
+    "Runtime CMS, published FAQ, instrument, news, economic-calendar, quote, and account data are fetched by the chatbot when the database/feed is available; they are not part of this source-only build scan.",
+    "Parameterized routes are indexed as templates. Their live record values depend on the current published database content.",
+    "Authentication-only account records and visitor-specific values are intentionally not copied into the public knowledge index."
+  ]
+}

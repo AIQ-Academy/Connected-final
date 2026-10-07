@@ -1,0 +1,100 @@
+[
+  {
+    "id": "greeting",
+    "intent": "greeting",
+    "keywords": {
+      "en": ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"],
+      "fr": ["bonjour", "bonsoir", "salut", "coucou"],
+      "ar": ["مرحبا", "مرحباً", "السلام عليكم", "أهلاً", "اهلا", "صباح الخير", "مساء الخير"]
+    },
+    "response": {
+      "en": "Hello. I’m the Connect Funded website assistant. I can help with funded evaluations, live trading accounts, markets, platforms, payments, and support. What would you like to know?",
+      "fr": "Bonjour. Je suis l’assistant du site Connect Funded. Je peux vous renseigner sur les évaluations financées, les comptes de trading en direct, les marchés, les plateformes, les paiements et l’assistance. Que souhaitez-vous savoir ?",
+      "ar": "مرحباً، أنا مساعد موقع Connect Funded. يمكنني المساعدة بشأن التقييمات الممولة وحسابات التداول المباشر والأسواق والمنصات والمدفوعات والدعم. ما الذي تود معرفته؟"
+    }
+  },
+  {
+    "id": "contact",
+    "intent": "contact",
+    "keywords": {
+      "en": ["contact", "email", "phone number", "telephone", "address", "where are you located", "location"],
+      "fr": ["contact", "contacter", "joindre", "équipe", "courriel", "email", "téléphone", "numéro", "adresse", "où êtes-vous", "localisation"],
+      "ar": ["تواصل", "أتواصل", "اتصل", "البريد الإلكتروني", "بريد", "هاتف", "رقم الهاتف", "عنوان", "أين تقع", "موقعكم"]
+    },
+    "response": {
+      "en": "You can reach the desk at support@connectfunded.com or +1 (555) 018-2200. The published address is Beirut, Lebanon. Sales enquiries can go to sales@connectfunded.com. The contact page is /contact.",
+      "fr": "Vous pouvez joindre l’équipe à support@connectfunded.com ou au +1 (555) 018-2200. L’adresse publiée est Beyrouth, au Liban. Pour les demandes commerciales : sales@connectfunded.com. La page de contact est /contact.",
+      "ar": "يمكنك التواصل مع الفريق عبر support@connectfunded.com أو ‎+1 (555) 018-2200. العنوان المنشور هو بيروت، لبنان. للاستفسارات التجارية: sales@connectfunded.com. صفحة التواصل: /contact."
+    }
+  },
+  {
+    "id": "registration",
+    "intent": "registration",
+    "keywords": {
+      "en": ["register", "registration", "sign up", "signup", "how do i open an account", "create an account", "start an account"],
+      "fr": ["inscription", "m’inscrire", "comment ouvrir un compte", "créer un compte", "ouvrir un compte", "enregistrer"],
+      "ar": ["كيف أسجل", "كيفية التسجيل", "التسجيل", "إنشاء حساب", "فتح حساب", "أفتح حساب"]
+    },
+    "response": {
+      "en": "Start at /register. The page opens the funded-evaluation path by default and also provides a separate broker signup option. Choose the product that matches what you want. Enter passwords and identity documents only in the secure form or client portal, never in chat.",
+      "fr": "Commencez sur /register. Le parcours des évaluations financées s’ouvre par défaut ; une inscription distincte au courtage est également proposée. Choisissez le produit adapté. Saisissez vos mots de passe et documents uniquement dans le formulaire sécurisé ou le portail, jamais dans le chat.",
+      "ar": "ابدأ من /register. يفتح الموقع افتراضياً مسار التقييمات الممولة، مع خيار منفصل للتسجيل في الوساطة المباشرة. اختر المنتج المناسب لك. أدخل كلمات المرور ومستندات الهوية في النموذج الآمن أو بوابة العميل فقط، وليس في المحادثة."
+    }
+  },
+  {
+    "id": "payments",
+    "intent": "payments",
+    "keywords": {
+      "en": ["payment methods", "ways to deposit", "how can i deposit", "deposit methods", "withdrawal methods", "how do i withdraw", "payment options"],
+      "fr": ["moyens de paiement", "comment déposer", "méthodes de dépôt", "moyens de retrait", "comment retirer", "options de paiement"],
+      "ar": ["طرق الدفع", "وسائل الدفع", "كيف أودع", "طرق الإيداع", "وسائل السحب", "كيف أسحب", "خيارات الدفع"]
+    },
+    "response": {
+      "en": "The payments page currently lists Visa, local bank transfer, USDT (Tether), Whish Money, OMT, and BOB Finance. Published limits and settlement times vary by method, and the FAQ contains a broader list that does not fully match the payments page. Check /payments and the secure checkout for current availability, fees, and timing.",
+      "fr": "La page des paiements liste actuellement Visa, les virements bancaires locaux, USDT (Tether), Whish Money, OMT et BOB Finance. Les plafonds et délais varient selon la méthode ; la FAQ présente une liste plus large qui ne correspond pas entièrement à la page des paiements. Vérifiez /payments et le paiement sécurisé pour connaître les options, frais et délais en vigueur.",
+      "ar": "تعرض صفحة المدفوعات حالياً Visa والتحويل البنكي المحلي وUSDT (Tether) وWhish Money وOMT وBOB Finance. تختلف الحدود ومواعيد التسوية حسب الوسيلة، كما تعرض الأسئلة الشائعة قائمة أوسع لا تطابق صفحة المدفوعات تماماً. تحقق من /payments وصفحة الدفع الآمنة لمعرفة التوفر والرسوم والمواعيد الحالية."
+    }
+  },
+  {
+    "id": "support",
+    "intent": "support",
+    "keywords": {
+      "en": ["support", "help desk", "customer service", "speak to a person", "human agent", "talk to someone"],
+      "fr": ["assistance", "support", "service client", "parler à une personne", "agent humain", "parler à quelqu’un"],
+      "ar": ["الدعم", "المساعدة", "خدمة العملاء", "موظف", "التحدث إلى شخص", "فريق الدعم"]
+    },
+    "response": {
+      "en": "The desk can be reached at support@connectfunded.com or through /contact. The site lists a first-reply target of one business hour during market sessions; this is a response target, not a guarantee for account-specific resolution times.",
+      "fr": "Vous pouvez joindre l’équipe à support@connectfunded.com ou via /contact. Le site indique un premier délai de réponse cible d’une heure ouvrée pendant les sessions de marché ; cela ne garantit pas le délai de résolution d’un dossier particulier.",
+      "ar": "يمكنك التواصل مع الفريق عبر support@connectfunded.com أو /contact. يذكر الموقع هدفاً للرد الأول خلال ساعة عمل أثناء جلسات السوق؛ وهذا هدف للرد وليس ضماناً لمدة حل كل حالة."
+    }
+  },
+  {
+    "id": "market-hours",
+    "intent": "market hours",
+    "keywords": {
+      "en": ["market hours", "trading hours", "when do markets open", "when are you open", "working hours", "opening hours"],
+      "fr": ["horaires de marché", "heures de trading", "ouverture des marchés", "horaires d’ouverture", "heures d’ouverture"],
+      "ar": ["ساعات السوق", "ساعات التداول", "متى تفتح الأسواق", "متى تفتحون", "ساعات العمل", "أوقات الدوام"]
+    },
+    "response": {
+      "en": "Trading hours depend on the instrument: the published catalogue lists many FX and metals symbols at 24/5, crypto at 24/7, and other sessions by market. Check the instrument page or /products for its exact schedule. The site does not publish fixed office opening hours.",
+      "fr": "Les horaires dépendent de l’instrument : le catalogue indique notamment le forex et les métaux en 24/5, les cryptos en 24/7, et des sessions propres aux autres marchés. Consultez la fiche de l’instrument ou /products pour son horaire exact. Le site ne publie pas d’horaires fixes pour les bureaux.",
+      "ar": "تختلف ساعات التداول حسب الأداة: تعرض القائمة كثيراً من أزواج الفوركس والمعادن بنظام 24/5، والعملات الرقمية 24/7، وجلسات خاصة لبقية الأسواق. تحقق من صفحة الأداة أو /products لمعرفة جدولها الدقيق. لا ينشر الموقع ساعات ثابتة لفتح المكتب."
+    }
+  },
+  {
+    "id": "risk-advice",
+    "intent": "financial advice",
+    "keywords": {
+      "en": ["should i buy", "should i sell", "what should i trade", "entry price", "exit price", "predict the price", "will gold go up", "investment advice"],
+      "fr": ["dois-je acheter", "dois-je vendre", "que dois-je trader", "prix d’entrée", "prix de sortie", "prédire le prix", "conseil en investissement"],
+      "ar": ["هل أشتري", "هل أبيع", "ماذا أتداول", "سعر الدخول", "سعر الخروج", "توقع السعر", "نصيحة استثمارية"]
+    },
+    "response": {
+      "en": "I can’t recommend a trade, entry, exit, or predict a market move. Leveraged trading can amplify losses as well as gains. I can explain the instruments, published trading conditions, or how the position calculator works.",
+      "fr": "Je ne peux pas recommander un trade, un point d’entrée ou de sortie, ni prévoir un mouvement de marché. Le trading avec effet de levier amplifie les pertes comme les gains. Je peux expliquer les instruments, les conditions publiées ou le fonctionnement du calculateur de position.",
+      "ar": "لا يمكنني التوصية بصفقة أو نقطة دخول أو خروج، ولا توقع حركة السوق. قد يضاعف التداول بالرافعة الخسائر كما يضاعف الأرباح. يمكنني شرح الأدوات وشروط التداول المنشورة أو طريقة استخدام حاسبة حجم المركز."
+    }
+  }
+]
