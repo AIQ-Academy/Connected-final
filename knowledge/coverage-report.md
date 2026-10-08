@@ -1,6 +1,6 @@
 # Website knowledge coverage report
 
-Generated: 2026-10-07T14:42:50.501Z
+Generated: 2026-10-07T14:40:00.130Z
 Content version: website-source-v2
 
 ## Coverage counts

@@ -3,21 +3,22 @@ import Link from "next/link";
 import type { ComponentProps } from "react";
 
 import { cn } from "@/lib/utils";
+import { isSignupDestination } from "@/lib/site";
 
 // Buttons are pills, and the square icon sizes are therefore circles. Every size
 // below has a fixed height, so `rounded-full` is the shape as designed rather
 // than a radius that happens to be larger than the control.
 export const buttonVariants = cva(
-  "relative inline-flex shrink-0 items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color] duration-200 outline-none select-none active:translate-y-px disabled:pointer-events-none disabled:opacity-50 [&_svg]:shrink-0",
+  "relative inline-flex shrink-0 items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap transition-[transform,box-shadow,background-color,border-color,color] duration-200 outline-none select-none hover:-translate-y-0.5 active:translate-y-px focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-light focus-visible:ring-4 focus-visible:ring-brand/20 disabled:pointer-events-none disabled:opacity-50 [&_svg]:shrink-0",
   {
     variants: {
       variant: {
         primary:
-          "cf-button-primary bg-brand text-white shadow-[inset_0_1px_0_0_rgb(255_255_255/0.16)] hover:bg-[var(--cf-brand-hover)]",
-        soft: "cf-button-soft bg-panel text-ink border border-line hover:border-brand-light/70 hover:bg-brand-dim/25",
+          "cf-button-primary bg-brand text-white shadow-[inset_0_1px_0_0_rgb(255_255_255/0.16)] hover:bg-[var(--cf-brand-hover)] hover:shadow-[0_10px_24px_-14px_rgb(var(--cf-brand-glow)/0.48)]",
+        soft: "cf-button-soft bg-panel text-ink border border-line hover:border-brand-light/70 hover:bg-brand-dim/25 hover:shadow-[0_8px_20px_-16px_rgb(var(--cf-shadow-color)/0.5)]",
         ghost: "text-muted hover:bg-brand-dim/25 hover:text-ink",
         outline:
-          "border border-line text-ink hover:border-brand-light hover:text-brand-light",
+          "border border-line text-ink hover:border-brand-light hover:bg-brand-dim/15 hover:text-brand-light",
         mint: "bg-mint text-[#ffffff] hover:brightness-110 dark:text-[#04140f]",
         danger: "bg-loss text-white hover:brightness-110",
       },
@@ -56,10 +57,17 @@ export function ButtonLink({
   variant,
   size,
   block,
+  href,
+  target,
+  rel,
   ...props
 }: ComponentProps<typeof Link> & ButtonBaseProps) {
+  const opensSignup = isSignupDestination(href);
   return (
     <Link
+      href={href}
+      target={target ?? (opensSignup ? "_blank" : undefined)}
+      rel={rel ?? (opensSignup ? "noopener noreferrer" : undefined)}
       className={cn(buttonVariants({ variant, size, block }), className)}
       {...props}
     />

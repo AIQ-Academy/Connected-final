@@ -18,14 +18,10 @@ import {
   type SearchResultKind,
 } from "@/lib/search-index";
 import { cn } from "@/lib/utils";
-
-const kindLabels: Record<SearchResultKind, string> = {
-  page: "Pages",
-  faq: "FAQ",
-  instrument: "Markets",
-};
+import { useLocale } from "@/components/i18n/locale-provider";
 
 export function SiteSearch({ className }: { className?: string }) {
+  const { t, direction } = useLocale();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState("");
   const [activeIndex, setActiveIndex] = useState(0);
@@ -130,10 +126,10 @@ export function SiteSearch({ className }: { className?: string }) {
           "border-line text-muted hover:text-ink hover:border-brand-light/50 hidden items-center gap-2 rounded-lg border px-3 py-1.5 text-sm transition-colors md:inline-flex",
           className,
         )}
-        aria-label="Open site search"
+        aria-label={t("ui.searchOpen")}
       >
         <Search className="size-4" aria-hidden="true" />
-        <span className="hidden lg:inline">Search</span>
+        <span className="hidden lg:inline">{t("header.search")}</span>
         <kbd className="border-line bg-sunken text-faint hidden rounded px-1.5 py-0.5 font-mono text-[0.625rem] lg:inline">
           ⌘K
         </kbd>
@@ -142,7 +138,7 @@ export function SiteSearch({ className }: { className?: string }) {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        aria-label="Open site search"
+        aria-label={t("ui.searchOpen")}
         className={cn(
           "border-line text-ink grid size-9 place-items-center rounded-lg border md:hidden",
           className,
@@ -197,7 +193,7 @@ export function SiteSearch({ className }: { className?: string }) {
                     setActiveIndex(0);
                   }}
                   onKeyDown={onInputKeyDown}
-                  placeholder="Search pages, FAQ, instruments…"
+                  placeholder={t("ui.searchPlaceholder")}
                   className="text-ink placeholder:text-faint h-12 flex-1 bg-transparent text-sm outline-none"
                   aria-controls="site-search-results"
                   aria-autocomplete="list"
@@ -205,7 +201,7 @@ export function SiteSearch({ className }: { className?: string }) {
                 <button
                   type="button"
                   onClick={close}
-                  aria-label="Close search"
+                  aria-label={t("ui.searchClose")}
                   className="text-muted hover:text-ink grid size-8 place-items-center rounded-lg transition-colors"
                 >
                   <X className="size-4" />
@@ -216,22 +212,21 @@ export function SiteSearch({ className }: { className?: string }) {
                 id="site-search-results"
                 className="max-h-[min(60vh,420px)] overflow-y-auto p-2"
                 role="listbox"
-                aria-label="Search results"
+                aria-label={t("ui.searchResults")}
               >
                 <p id={dialogTitleId} className="sr-only">
-                  Site search
+                  {t("ui.searchSite")}
                 </p>
 
                 {flatResults.length === 0 ? (
                   <p className="text-muted px-3 py-8 text-center text-sm">
-                    No matches for &ldquo;{query}&rdquo;. Try a symbol like
-                    EUR/USD or a topic like payouts.
+                    {t("ui.searchEmpty").replace("{query}", query)}
                   </p>
                 ) : (
                   grouped.map((group) => (
                     <div key={group.kind} className="mb-2">
                       <p className="text-faint px-3 py-2 font-mono text-[0.625rem] tracking-[0.14em] uppercase">
-                        {kindLabels[group.kind]}
+                        {t(`ui.search${group.kind === "page" ? "Pages" : group.kind === "faq" ? "Faq" : "Markets"}` as "ui.searchPages" | "ui.searchFaq" | "ui.searchMarkets")}
                       </p>
                       <ul className="space-y-0.5">
                         {group.items.map((result) => {
@@ -265,6 +260,7 @@ export function SiteSearch({ className }: { className?: string }) {
                                 <ArrowRight
                                   className={cn(
                                     "size-3.5 shrink-0 transition-opacity",
+                                    direction === "rtl" && "rotate-180",
                                     active ? "opacity-70" : "opacity-0",
                                   )}
                                   aria-hidden="true"
@@ -280,8 +276,8 @@ export function SiteSearch({ className }: { className?: string }) {
               </div>
 
               <div className="border-line-soft text-faint flex items-center justify-between gap-3 border-t px-4 py-2.5 font-mono text-[0.625rem] tracking-wide">
-                <span>↑↓ navigate · ↵ open</span>
-                <span>esc close</span>
+                <span>{t("ui.searchNavigation")}</span>
+                <span>{t("ui.searchDismiss")}</span>
               </div>
             </motion.div>
           </motion.div>

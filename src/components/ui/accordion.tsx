@@ -30,7 +30,7 @@ export function AccordionItem({
           aria-controls={`${id}-panel`}
           id={`${id}-trigger`}
           onClick={() => setOpen((v) => !v)}
-          className="group flex w-full items-start justify-between gap-6 py-5 text-start"
+          className="group flex w-full items-start justify-between gap-6 rounded-xl px-3 py-5 text-start transition-colors hover:bg-sunken/40"
         >
           <span className="text-ink font-display text-[0.9375rem] leading-snug font-semibold sm:text-base">
             {question}

@@ -20,8 +20,8 @@ export function Container({
  * between sections that they never read as one continuous grid.
  */
 const sectionPadding = {
-  default: "py-20 sm:py-24 lg:py-28",
-  spacious: "py-20 sm:py-32 lg:py-40",
+  default: "py-16 sm:py-20 lg:py-24",
+  spacious: "py-16 sm:py-28 lg:py-36",
 } as const;
 
 export function Section({

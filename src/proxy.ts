@@ -25,8 +25,40 @@ export function proxy(request: NextRequest) {
   const segments = request.nextUrl.pathname.split("/");
   const requestedLocale = segments[1];
   if (!isLocale(requestedLocale)) {
+    // The unprefixed site root is the default English entry point. Localized
+    // home links use /fr or /ar, so returning visitors keep their language.
+    if (request.nextUrl.pathname === "/") {
+      const requestHeaders = new Headers(request.headers);
+      requestHeaders.set("x-connect-locale", "en");
+      requestHeaders.set("x-connect-path", "/");
+      return NextResponse.next({ request: { headers: requestHeaders } });
+    }
+
+    const savedLocale = request.cookies.get(LOCALE_COOKIE)?.value;
+    const locale = isLocale(savedLocale) ? savedLocale : "en";
+    const canonicalPath = locale === "en"
+      ? request.nextUrl.pathname
+      : canonicalLegacyPath(request.nextUrl.pathname);
+
+    // Links throughout the existing site use unprefixed paths. Keep those
+    // links locale-safe by restoring the selected locale from the cookie.
+    // Skip public files (except legacy .html routes) so their URLs stay intact.
+    const isPublicFile = /\.(?!html(?:$|\/))[^/]+$/i.test(request.nextUrl.pathname);
+    if (locale !== "en" && !isPublicFile) {
+      const url = request.nextUrl.clone();
+      url.pathname = localizedPath(canonicalPath, locale);
+      return NextResponse.redirect(url, 307);
+    }
+
+    if (canonicalPath !== request.nextUrl.pathname) {
+      const url = request.nextUrl.clone();
+      url.pathname = localizedPath(canonicalPath, locale);
+      return NextResponse.redirect(url, 308);
+    }
+
     const requestHeaders = new Headers(request.headers);
-    requestHeaders.set("x-connect-path", request.nextUrl.pathname);
+    requestHeaders.set("x-connect-locale", locale);
+    requestHeaders.set("x-connect-path", canonicalPath);
     return NextResponse.next({ request: { headers: requestHeaders } });
   }
 

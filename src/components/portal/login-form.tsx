@@ -143,6 +143,8 @@ export function LoginForm({ next }: { next?: string }) {
           {t("login.noAccount")}{" "}
           <Link
             href={signupUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-brand-light underline-offset-4 hover:underline"
           >
             {t("common.createAccount")}

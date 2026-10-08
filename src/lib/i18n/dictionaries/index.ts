@@ -9,10 +9,14 @@ export type Dictionary = Record<DictionaryKey, string>;
 const dictionaries: Record<Locale, Dictionary> = { en, ar, fr };
 
 export function getDictionary(locale: Locale): Dictionary {
-  return dictionaries[locale] ?? dictionaries.en;
+  return dictionaries[locale];
 }
 
 /** Plain lookup — safe to call from Server or Client Components alike. */
 export function translate(locale: Locale, key: DictionaryKey): string {
-  return dictionaries[locale]?.[key] ?? dictionaries.en[key] ?? key;
+  const value = dictionaries[locale][key];
+  if (typeof value !== "string") {
+    throw new Error(`Missing ${locale.toUpperCase()} translation for "${key}"`);
+  }
+  return value;
 }

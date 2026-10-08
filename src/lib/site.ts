@@ -6,6 +6,16 @@ import { getTradingEdgeCopy } from "@/lib/i18n/trading-edge";
 export const signupUrl =
   "https://portal.bbcorp.trade/auth/jwt/sign-up/b/72nzf8/prod/BPOM9S";
 
+/** Identifies direct signup links and local routes that redirect to signup. */
+export function isSignupDestination(href: unknown): boolean {
+  return typeof href === "string" && (
+    href === signupUrl ||
+    href.startsWith(`${signupUrl}/`) ||
+    href === "/register" ||
+    href.startsWith("/register?")
+  );
+}
+
 export const site = {
   name: "Connect Funded",
   shortName: "Connect Funded",

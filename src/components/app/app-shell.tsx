@@ -27,6 +27,7 @@ import { useLocale } from "@/components/i18n/locale-provider";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
 import type { DictionaryKey } from "@/lib/i18n/dictionaries";
+import { localizedPath } from "@/lib/i18n/locale";
 import { RouteTransition } from "@/components/motion/route-transition";
 
 const shellLabelKeys: Partial<Record<string, DictionaryKey>> = {
@@ -193,7 +194,7 @@ function SidebarContent({
   pathname: string;
   onNavigate?: () => void;
 }) {
-  const { t } = useLocale();
+  const { t, locale } = useLocale();
   return (
     <div className="flex h-full min-h-0 flex-col">
       <div className="border-line-soft flex h-16 shrink-0 items-center gap-2.5 border-b px-5">
@@ -263,7 +264,7 @@ function SidebarContent({
         <div className="border-line-soft mt-5 border-t px-3 pt-4">
           <LocaleSwitcher className="mb-3 w-full justify-center" />
           <Link
-            href="/"
+            href={localizedPath("/", locale)}
             onClick={onNavigate}
             className="text-faint hover:text-brand-light inline-flex items-center gap-1.5 text-[0.8125rem] transition-colors"
           >

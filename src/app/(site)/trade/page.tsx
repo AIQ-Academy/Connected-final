@@ -12,16 +12,21 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container, Section } from "@/components/ui/container";
 import { assetClassList, instrumentCountForClass } from "@/lib/asset-classes";
 import { signupUrl } from "@/lib/site";
+import { getServerLocale } from "@/lib/i18n/server";
+import { pageCopy } from "@/lib/i18n/page-copy";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getServerLocale();
   return {
-    title: "Markets",
-    description: "Trade forex, precious metals, global indices, energies, crypto CFDs and share CFDs from a single account, with raw spreads and zero commission.",
+    title: pageCopy(locale, "tradeHub.badge"),
+    description: pageCopy(locale, "tradeHub.metaDescription"),
     alternates: await routeAlternates("/trade"),
   };
 }
 
-export default function TradeHubPage() {
+export default async function TradeHubPage() {
+  const locale = await getServerLocale();
+  const t = (key: Parameters<typeof pageCopy>[1]) => pageCopy(locale, key);
   const total = assetClassList.reduce(
     (sum, asset) => sum + instrumentCountForClass(asset.slug),
     0,
@@ -36,25 +41,22 @@ export default function TradeHubPage() {
         <GridBackdrop className="opacity-70" />
         <Container className="relative">
           <Reveal>
-            <Badge tone="brand">Markets</Badge>
+            <Badge tone="brand">{t("tradeHub.badge")}</Badge>
             <h1 className="text-h1 mt-6 max-w-4xl">
-              All asset classes. One balance. One login.
+              {t("tradeHub.title")}
             </h1>
             <p className="text-lead text-muted mt-6 max-w-2xl">
-              {total} instruments across forex, metals, indices, energies,
-              digital assets and share CFDs — all margined against the same
-              account, with no per-class permissions to request and no
-              transfers between products.
+              {t("tradeHub.lead").replace("{total}", String(total))}
             </p>
           </Reveal>
 
           <Reveal delay={0.08} className="mt-9 flex flex-wrap gap-3">
             <ButtonLink href={signupUrl} size="lg">
-              Open an account
+              {t("tradeHub.openAccount")}
               <ArrowRight />
             </ButtonLink>
             <ButtonLink href="/products" variant="soft" size="lg">
-              All instruments
+              {t("tradeHub.allInstruments")}
             </ButtonLink>
           </Reveal>
         </Container>

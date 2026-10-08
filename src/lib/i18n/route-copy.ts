@@ -494,7 +494,12 @@ const copy = {
 } as const satisfies Record<Locale, Record<string, string>>;
 
 export type RouteCopyKey = keyof typeof copy.en;
+const completeCopy: Record<Locale, Record<RouteCopyKey, string>> = copy;
 
 export function routeCopy(locale: Locale, key: RouteCopyKey): string {
-  return copy[locale][key] ?? copy.en[key];
+  const value = completeCopy[locale][key];
+  if (typeof value !== "string") {
+    throw new Error(`Missing ${locale.toUpperCase()} route copy for "${key}"`);
+  }
+  return value;
 }

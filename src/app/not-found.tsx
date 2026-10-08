@@ -5,6 +5,8 @@ import { Aurora, GridBackdrop } from "@/components/ui/aurora";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { signupUrl } from "@/lib/site";
+import { getServerLocale } from "@/lib/i18n/server";
+import { localizedPath } from "@/lib/i18n/locale";
 
 import "./marketing.css";
 
@@ -19,14 +21,15 @@ const destinations = [
   { href: "/contact", label: "Contact" },
 ];
 
-export default function NotFound() {
+export default async function NotFound() {
+  const locale = await getServerLocale();
   return (
     <main className="bg-noise relative grid min-h-dvh place-items-center overflow-hidden py-20">
       <Aurora intensity="medium" />
       <GridBackdrop />
 
       <Container className="relative text-center">
-        <Link href="/" aria-label="Connect Funded home" className="inline-block">
+        <Link href={localizedPath("/", locale)} aria-label="Connect Funded home" className="inline-block">
           <Logo />
         </Link>
 
@@ -45,10 +48,10 @@ export default function NotFound() {
         </p>
 
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/" size="lg">
+          <ButtonLink href={localizedPath("/", locale)} size="lg">
             Back to the home page
           </ButtonLink>
-          <ButtonLink href="/markets" variant="soft" size="lg">
+          <ButtonLink href={localizedPath("/markets", locale)} variant="soft" size="lg">
             Open the market terminal
           </ButtonLink>
         </div>
@@ -60,7 +63,9 @@ export default function NotFound() {
           {destinations.map((item) => (
             <Link
               key={item.href}
-              href={item.href}
+              href={item.href === signupUrl ? item.href : localizedPath(item.href, locale)}
+              target={item.href === signupUrl ? "_blank" : undefined}
+              rel={item.href === signupUrl ? "noopener noreferrer" : undefined}
               className="border-line text-muted hover:text-ink hover:border-brand-light/60 rounded-full border px-3.5 py-1.5 font-mono text-[0.6875rem] tracking-[0.1em] uppercase transition-colors"
             >
               {item.label}

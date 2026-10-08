@@ -1,11 +1,11 @@
 "use client";
 
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
-import { useRouter } from "next/navigation";
+import { createContext, useContext, useLayoutEffect, useMemo, type ReactNode } from "react";
+import { usePathname, useRouter } from "next/navigation";
 
 import type { DictionaryKey } from "@/lib/i18n/dictionaries";
 import { translate } from "@/lib/i18n/dictionaries";
-import { defaultLocale, directionFor, LOCALE_COOKIE, localizedPath, locales, type Locale } from "@/lib/i18n/locale";
+import { defaultLocale, directionFor, isLocale, LOCALE_COOKIE, localizedPath, locales, type Locale } from "@/lib/i18n/locale";
 
 export { locales };
 export type { Locale };
@@ -14,6 +14,7 @@ type LocaleContextValue = {
   locale: Locale;
   direction: "ltr" | "rtl";
   setLocale: (locale: Locale) => void;
+  prefetchLocale: (locale: Locale) => void;
   t: (key: DictionaryKey) => string;
   formatNumber: (value: number, options?: Intl.NumberFormatOptions) => string;
   formatCurrency: (value: number, options?: { currency?: string; decimals?: number }) => string;
@@ -40,44 +41,48 @@ export function LocaleProvider({
   /** Locale resolved server-side from the cookie, so the first paint already matches. */
   initialLocale?: Locale;
 }) {
-  const [locale, setLocaleState] = useState<Locale>(initialLocale ?? defaultLocale);
-  const direction = directionFor(locale);
-
+  const pathname = usePathname();
   const router = useRouter();
+  const pathLocale = pathname?.split("/")[1];
+  const activeLocale = isLocale(pathLocale) ? pathLocale : initialLocale ?? defaultLocale;
+  const direction = directionFor(activeLocale);
 
-  useEffect(() => {
-    document.documentElement.lang = locale;
+  useLayoutEffect(() => {
+    document.documentElement.lang = activeLocale;
     document.documentElement.dir = direction;
-    document.body.dataset.locale = locale;
-    window.localStorage.setItem(STORAGE_KEY, locale);
-    writeLocaleCookie(locale);
-  }, [direction, locale]);
+    document.body.dataset.locale = activeLocale;
+    window.localStorage.setItem(STORAGE_KEY, activeLocale);
+    writeLocaleCookie(activeLocale);
+
+  }, [activeLocale, direction]);
 
   const value = useMemo<LocaleContextValue>(
     () => ({
-      locale,
+      locale: activeLocale,
       direction,
+      prefetchLocale: (next) => {
+        if (typeof window === "undefined" || next === activeLocale) return;
+        const target = localizedPath(pathname || window.location.pathname, next);
+        router.prefetch(target);
+      },
       setLocale: (next) => {
-        if (next === locale || typeof window === "undefined") return;
-        setLocaleState(next);
-        document.documentElement.lang = next;
-        document.documentElement.dir = directionFor(next);
+        if (next === activeLocale || typeof window === "undefined") return;
+        const target = localizedPath(pathname || window.location.pathname, next);
         window.localStorage.setItem(STORAGE_KEY, next);
         writeLocaleCookie(next);
-        const target = localizedPath(window.location.pathname, next);
         router.push(`${target}${window.location.search}${window.location.hash}`);
       },
-      t: (key) => translate(locale, key),
-      formatNumber: (value, options) => new Intl.NumberFormat(localeTag(locale), options).format(value),
-      formatCurrency: (value, { currency = "USD", decimals = 0 } = {}) => new Intl.NumberFormat(localeTag(locale), {
+      t: (key) => translate(activeLocale, key),
+      formatNumber: (value, options) => new Intl.NumberFormat(localeTag(activeLocale), options).format(value),
+      formatCurrency: (value, { currency = "USD", decimals = 0 } = {}) => new Intl.NumberFormat(localeTag(activeLocale), {
         style: "currency",
         currency,
         minimumFractionDigits: decimals,
         maximumFractionDigits: decimals,
       }).format(value),
-      formatDate: (value, options) => new Intl.DateTimeFormat(localeTag(locale), options).format(value),
+      formatDate: (value, options) => new Intl.DateTimeFormat(localeTag(activeLocale), options).format(value),
     }),
-    [direction, locale, router],
+    [activeLocale, direction, pathname, router],
   );
 
   return <LocaleContext.Provider value={value}>{children}</LocaleContext.Provider>;

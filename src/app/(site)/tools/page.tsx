@@ -8,11 +8,14 @@ import { FeaturePageImage } from "@/components/sections/feature-page-image";
 import { GridBackdrop } from "@/components/ui/aurora";
 import { Badge } from "@/components/ui/badge";
 import { Container, Section } from "@/components/ui/container";
+import { getServerLocale } from "@/lib/i18n/server";
+import { pageCopy } from "@/lib/i18n/page-copy";
 
 export async function generateMetadata(): Promise<Metadata> {
+  const locale = await getServerLocale();
   return {
-    title: "Trading Tools",
-    description: "A position calculator, an economic calendar, a live market terminal and the full instrument spec sheet — everything you need before the ticket.",
+    title: pageCopy(locale, "toolsPage.badge"),
+    description: pageCopy(locale, "toolsPage.lead"),
     alternates: await routeAlternates("/tools"),
   };
 }
@@ -20,37 +23,39 @@ export async function generateMetadata(): Promise<Metadata> {
 const tools = [
   {
     icon: Calculator,
-    title: "Position calculator",
+    titleKey: "toolsPage.positionTitle",
     href: "/tools/calculator",
-    body: "Margin, pip value, spread cost and the exact loss at your stop, for any instrument at any lot size and leverage.",
+    bodyKey: "toolsPage.positionBody",
   },
   {
     icon: CalendarDays,
-    title: "Economic calendar",
+    titleKey: "toolsPage.calendarTitle",
     href: "/tools/economic-calendar",
-    body: "The scheduled releases that move a retail book, filtered by impact and region, with the markets each one reaches.",
+    bodyKey: "toolsPage.calendarBody",
   },
   {
     icon: LineChart,
-    title: "Market terminal",
+    titleKey: "toolsPage.terminalTitle",
     href: "/markets",
-    body: "Live quotes, full TradingView charting, technical ratings and a screener across every asset class we quote.",
+    bodyKey: "toolsPage.terminalBody",
   },
   {
     icon: Table2,
-    title: "Specs & conditions",
+    titleKey: "toolsPage.specsTitle",
     href: "/trading/conditions",
-    body: "Spread, tick size, price precision, leverage cap, margin and session hours for every symbol on the book.",
+    bodyKey: "toolsPage.specsBody",
   },
   {
     icon: BookOpen,
-    title: "Trading Academy",
+    titleKey: "toolsPage.academyTitle",
     href: "/education",
-    body: "Structured courses from order types through to risk models, plus a glossary written against our own specifications.",
+    bodyKey: "toolsPage.academyBody",
   },
 ] as const;
 
-export default function ToolsPage() {
+export default async function ToolsPage() {
+  const locale = await getServerLocale();
+  const t = (key: Parameters<typeof pageCopy>[1]) => pageCopy(locale, key);
   return (
     <>
       <Section
@@ -58,18 +63,16 @@ export default function ToolsPage() {
         data-hero-stage=""
         className="bg-deep isolate min-h-[610px] overflow-hidden pt-32 pb-24 scroll-mt-24 sm:min-h-[700px] sm:pt-40 sm:pb-28"
       >
-        <FeaturePageImage src="/images/tools.jpg" alt="Position sizing calculator and economic calendar trading tools" objectPosition="center" motionVariant="tools" />
+        <FeaturePageImage src="/images/tools.jpg" alt={t("toolsPage.imageAlt")} objectPosition="center" motionVariant="tools" />
         <GridBackdrop className="opacity-70" />
         <Container className="relative flex items-center">
           <Reveal>
-            <Badge tone="brand">Tools</Badge>
+            <Badge tone="brand">{t("toolsPage.badge")}</Badge>
             <h1 className="text-h1 mt-6 max-w-3xl text-white">
-              Everything you need before the ticket.
+              {t("toolsPage.title")}
             </h1>
             <p className="text-lead mt-6 max-w-2xl text-white/80">
-              Size the position, check what is scheduled, read the tape and
-              confirm the specification. All of it free, and none of it behind
-              an account.
+              {t("toolsPage.lead")}
             </p>
           </Reveal>
         </Container>
@@ -88,13 +91,13 @@ export default function ToolsPage() {
                     <tool.icon className="size-5" />
                   </span>
                   <h2 className="font-display text-ink mt-5 text-lg font-semibold">
-                    {tool.title}
+                    {t(tool.titleKey)}
                   </h2>
                   <p className="text-muted mt-2.5 flex-1 text-sm leading-relaxed">
-                    {tool.body}
+                    {t(tool.bodyKey)}
                   </p>
                   <span className="text-brand-light mt-5 inline-flex items-center gap-1.5 text-[0.8125rem] font-semibold transition-transform duration-300 group-hover:translate-x-1">
-                    Open
+                    {t("toolsPage.open")}
                     <ArrowRight className="size-4" />
                   </span>
                 </Link>
