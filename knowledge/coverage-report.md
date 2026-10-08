@@ -1,17 +1,17 @@
 # Website knowledge coverage report
 
-Generated: 2026-10-08T12:03:52.154Z
+Generated: 2026-10-07T14:40:00.130Z
 Content version: website-source-v2
 
 ## Coverage counts
 
 | Measure | Count |
 | --- | ---: |
-| pages scanned | 32 |
-| pages indexed | 32 |
-| sections scanned | 909 |
-| knowledge items | 41 |
-| numerical facts | 123 |
+| pages scanned | 27 |
+| pages indexed | 27 |
+| sections scanned | 759 |
+| knowledge items | 36 |
+| numerical facts | 81 |
 | trading condition records | 3 |
 | account condition records | 6 |
 | faq records | 2 |
@@ -25,16 +25,11 @@ Domain counts are source record counts, not counts of individual live database e
 
 - `/`
 - `/about`
-- `/accounts`
 - `/broker`
 - `/broker/coming-soon`
 - `/contact`
 - `/education`
 - `/faq`
-- `/funded`
-- `/funded/coming-soon`
-- `/glossary`
-- `/how-it-works`
 - `/legal/:slug`
 - `/markets`
 - `/news/:slug`
@@ -64,9 +59,9 @@ Domain counts are source record counts, not counts of individual live database e
 
 | Language | Pages with indexed content |
 | --- | ---: |
-| EN | 32 |
-| FR | 32 |
-| AR | 32 |
+| EN | 27 |
+| FR | 27 |
+| AR | 27 |
 
 ## Missing or runtime-only information
 
@@ -80,4 +75,4 @@ Domain counts are source record counts, not counts of individual live database e
 - Parameterized routes are indexed as templates. Their live record values depend on the current published database content.
 - Authentication-only account records and visitor-specific values are intentionally not copied into the public knowledge index.
 
-Potential exact duplicates: 1. Potential numerical conflicts requiring human review: 11. Every numerical value and its source context/version is retained in `coverage-report.json`.
+Potential exact duplicates: 1. Potential numerical conflicts requiring human review: 7. Every numerical value and its source context/version is retained in `coverage-report.json`.
