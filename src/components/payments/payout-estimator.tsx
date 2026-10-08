@@ -5,7 +5,8 @@ import { useMemo, useState } from "react";
 
 import { paymentMethods } from "@/lib/content";
 import { useHydrated } from "@/lib/use-hydrated";
-import { cn, formatCurrency } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/i18n/locale-provider";
 
 /**
  * Business days it realistically takes each rail to land, used only to draw the
@@ -53,14 +54,12 @@ function addBusinessDays(from: Date, days: number) {
   return date;
 }
 
-const dateFormatter = new Intl.DateTimeFormat("en-GB", {
-  weekday: "short",
-  day: "numeric",
-  month: "short",
-  timeZone: "UTC",
-});
-
 export function PayoutEstimator() {
+  const { t, locale, direction, formatCurrency: formatAmount } = useLocale();
+  const dateFormatter = useMemo(() => new Intl.DateTimeFormat(
+    locale === "fr" ? "fr-FR" : locale === "ar" ? "ar" : "en-GB",
+    { weekday: "short", day: "numeric", month: "short", timeZone: "UTC" },
+  ), [locale]);
   const [amount, setAmount] = useState(4_000);
   const [railName, setRailName] = useState(payoutRails[0]?.name ?? "");
 
@@ -90,13 +89,13 @@ export function PayoutEstimator() {
               htmlFor="payout-amount"
               className="text-faint font-mono text-[0.6875rem] tracking-[0.14em] uppercase"
             >
-              Payout request
+              {t("ui.payoutRequest")}
             </label>
             <output
               htmlFor="payout-amount"
               className="text-ink font-display tabular mt-3 block text-4xl font-semibold sm:text-5xl"
             >
-              {formatCurrency(amount, { decimals: 0 })}
+              {formatAmount(amount, { decimals: 0 })}
             </output>
             <input
               id="payout-amount"
@@ -108,7 +107,7 @@ export function PayoutEstimator() {
               onChange={(event) => setAmount(Number(event.target.value))}
               className="cf-range mt-6 w-full"
               style={{ ["--range-progress" as string]: `${progress}%` }}
-              aria-valuetext={`${formatCurrency(amount, { decimals: 0 })} requested`}
+              aria-valuetext={t("ui.payoutRequested").replace("{amount}", formatAmount(amount, { decimals: 0 }))}
             />
             <div className="text-faint mt-2 flex justify-between font-mono text-[0.6875rem]">
               <span>$500</span>
@@ -129,7 +128,7 @@ export function PayoutEstimator() {
                       : "border-line text-muted hover:border-line-soft hover:text-ink",
                   )}
                 >
-                  {formatCurrency(preset, { decimals: 0 })}
+                  {formatAmount(preset, { decimals: 0 })}
                 </button>
               ))}
             </div>
@@ -137,7 +136,7 @@ export function PayoutEstimator() {
 
           <fieldset>
             <legend className="text-faint font-mono text-[0.6875rem] tracking-[0.14em] uppercase">
-              Payout rail
+              {t("ui.payoutRail")}
             </legend>
             <div className="mt-4 flex flex-wrap gap-2">
               {payoutRails.map((method) => (
@@ -162,41 +161,39 @@ export function PayoutEstimator() {
 
         <div className="bg-sunken/50 p-6 sm:p-8 lg:p-10">
           <p className="text-faint font-mono text-[0.6875rem] tracking-[0.14em] uppercase">
-            You receive
+            {t("ui.payoutReceive")}
           </p>
           <p className="text-mint font-display tabular mt-3 text-4xl font-semibold sm:text-5xl">
-            {formatCurrency(amount, { decimals: 0 })}
+            {formatAmount(amount, { decimals: 0 })}
           </p>
           <p className="text-muted mt-3 text-sm leading-relaxed">
-            The full amount, on every rail. A comparable{" "}
-            {formatCurrency(fee, { decimals: 2 })} processing charge would
-            normally come out of this transfer — we pay it instead.
+            {t("ui.payoutFeeNote").replace("{fee}", formatAmount(fee, { decimals: 2 }))}
           </p>
 
           <dl className="border-line-soft mt-7 space-y-4 border-t pt-6">
             <div className="flex items-baseline justify-between gap-4">
-              <dt className="text-muted text-[0.8125rem]">Approval</dt>
+              <dt className="text-muted text-[0.8125rem]">{t("ui.payoutApproval")}</dt>
               <dd className="text-ink font-mono text-[0.8125rem]">
-                Same business day
+                {t("ui.payoutSameDay")}
               </dd>
             </div>
             <div className="flex items-baseline justify-between gap-4">
-              <dt className="text-muted text-[0.8125rem]">Transfer speed</dt>
+              <dt className="text-muted text-[0.8125rem]">{t("ui.payoutTransferSpeed")}</dt>
               <dd className="text-ink font-mono text-[0.8125rem]">
                 {rail?.payout ?? "—"}
               </dd>
             </div>
             <div className="flex items-baseline justify-between gap-4">
-              <dt className="text-muted text-[0.8125rem]">Fee to you</dt>
+              <dt className="text-muted text-[0.8125rem]">{t("ui.payoutFee")}</dt>
               <dd className="text-mint font-mono text-[0.8125rem]">
-                {formatCurrency(0, { decimals: 2 })}
+                {formatAmount(0, { decimals: 2 })}
               </dd>
             </div>
           </dl>
 
           <div className="border-mint/25 bg-mint/5 mt-7 rounded-2xl border p-5">
             <p className="text-faint font-mono text-[0.6875rem] tracking-[0.14em] uppercase">
-              Indicative arrival
+              {t("ui.payoutArrival")}
             </p>
             <p className="text-ink mt-2.5 flex min-h-5 flex-wrap items-center gap-2 font-mono text-[0.8125rem]">
               {arrival ? (
@@ -206,6 +203,7 @@ export function PayoutEstimator() {
                     <>
                       <ArrowRight
                         className="text-faint size-3.5"
+                        style={direction === "rtl" ? { transform: "scaleX(-1)" } : undefined}
                         aria-hidden="true"
                       />
                       <span>{dateFormatter.format(arrival.latest)}</span>
@@ -213,14 +211,12 @@ export function PayoutEstimator() {
                   )}
                 </>
               ) : (
-                <span className="text-faint">Calculating…</span>
+                <span className="text-faint">{t("ui.payoutCalculating")}</span>
               )}
             </p>
             <p className="text-faint mt-3 flex items-start gap-2 text-xs leading-relaxed">
               <Check className="text-mint mt-px size-3.5 shrink-0" aria-hidden="true" />
-              Counted from a request submitted today, allowing one business day
-              for approval. Weekends and public holidays on the receiving side
-              are outside our control.
+              {t("ui.payoutArrivalNote")}
             </p>
           </div>
         </div>

@@ -36,7 +36,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "flex flex-col gap-5",
+        "flex flex-col gap-4 sm:gap-5",
         align === "center" && "items-center text-center",
         action && "sm:flex-row sm:items-end sm:justify-between sm:gap-10",
         className,
@@ -45,7 +45,7 @@ export function SectionHeading({
       <Reveal className={cn("max-w-2xl", align === "center" && "mx-auto")}>
         {eyebrow && <Eyebrow className="mb-4">{eyebrow}</Eyebrow>}
         <h2 className="text-h2">{title}</h2>
-        {lead && <p className="text-lead mt-4 text-muted">{lead}</p>}
+        {lead && <p className="text-lead mt-4 max-w-[65ch] leading-relaxed text-muted">{lead}</p>}
       </Reveal>
       {action && (
         <Reveal

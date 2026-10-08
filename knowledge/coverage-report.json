@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-07T14:42:50.501Z",
+  "generatedAt": "2026-10-08T12:03:52.154Z",
   "contentVersion": "website-source-v2",
   "scope": {
-    "discoveredPageFiles": 43,
+    "discoveredPageFiles": 48,
     "excludedPrivateRoutes": [
       {
         "route": "/admin/content",
@@ -72,11 +72,16 @@
     "indexedRoutes": [
       "/",
       "/about",
+      "/accounts",
       "/broker",
       "/broker/coming-soon",
       "/contact",
       "/education",
       "/faq",
+      "/funded",
+      "/funded/coming-soon",
+      "/glossary",
+      "/how-it-works",
       "/legal/:slug",
       "/markets",
       "/news/:slug",
@@ -99,14 +104,14 @@
       "/trading/how-it-works"
     ],
     "routesNotIndexed": [],
-    "indexedSourceFiles": 126
+    "indexedSourceFiles": 135
   },
   "counts": {
-    "pagesScanned": 27,
-    "pagesIndexed": 27,
-    "sectionsScanned": 759,
-    "knowledgeItems": 36,
-    "numericalFacts": 81,
+    "pagesScanned": 32,
+    "pagesIndexed": 32,
+    "sectionsScanned": 909,
+    "knowledgeItems": 41,
+    "numericalFacts": 123,
     "tradingConditionRecords": 3,
     "accountConditionRecords": 6,
     "faqRecords": 2,
@@ -115,9 +120,9 @@
     "paymentRecords": 3
   },
   "languageCoverage": {
-    "en": 27,
-    "fr": 27,
-    "ar": 27
+    "en": 32,
+    "fr": 32,
+    "ar": 32
   },
   "countDefinitions": {
     "domainCounts": "Trading-condition, account, FAQ, platform, instrument, and payment counts are source knowledge records, not counts of individual live database entities.",
@@ -137,8 +142,8 @@
       "sourceRoutes": [
         "/about"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "34a1a1a464933bb3224eeaf6e73710ef7f1c75fd92728b0a480fd706f0fa6455"
     },
     {
       "topic": "Forex",
@@ -152,8 +157,8 @@
       "sourceRoutes": [
         "/about"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "34a1a1a464933bb3224eeaf6e73710ef7f1c75fd92728b0a480fd706f0fa6455"
     },
     {
       "topic": "Gold",
@@ -167,8 +172,323 @@
       "sourceRoutes": [
         "/about"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "8f0458f6129d3cb190eabe6cf5f7e6d39a917cb9c4aff1e40731c171fe02219b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "34a1a1a464933bb3224eeaf6e73710ef7f1c75fd92728b0a480fd706f0fa6455"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$10,000",
+      "originalText": "Funded Account Tiers Funded Account Tiers Five evaluation tiers from $10,000 to $200,000. Compare every published rule, configure your challenge with add-ons, and see exac",
+      "context": "Funded Account Tiers Funded Account Tiers Five evaluation tiers from $10,000 to $200,000. Compare every published rule, configure your challenge with add-ons, and see exac",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$200,000.",
+      "originalText": "Funded Account Tiers Funded Account Tiers Five evaluation tiers from $10,000 to $200,000. Compare every published rule, configure your challenge with add-ons, and see exactly how the s",
+      "context": "Funded Account Tiers Funded Account Tiers Five evaluation tiers from $10,000 to $200,000. Compare every published rule, configure your challenge with add-ons, and see exactly how the s",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$2,000,000.",
+      "originalText": "shed rule, configure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceil",
+      "context": "shed rule, configure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceil",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$10",
+      "originalText": "onfigure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling",
+      "context": "onfigure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$200",
+      "originalText": "e your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert a",
+      "context": "e your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert a",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Expert advisors and custom indicators",
+      "value": "$2,000,000",
+      "originalText": "lan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert advisors and custom indicators Run any EA, cBot or indicator you like.",
+      "context": "lan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert advisors and custom indicators Run any EA, cBot or indicator you like.",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Expert advisors and custom indicators",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Copy-trading between your own accounts",
+      "value": "$400,000",
+      "originalText": "mal way. Copy-trading between your own accounts Mirror one of your accounts onto another up to $400,000 of combined allocation, which is the per-trader exposure limit. Hedging inside a single accoun",
+      "context": "mal way. Copy-trading between your own accounts Mirror one of your accounts onto another up to $400,000 of combined allocation, which is the per-trader exposure limit. Hedging inside a single accoun",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Copy-trading between your own accounts",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "New to funded evaluations",
+      "value": "$10,000",
+      "originalText": "hat one side passes is a breach for every account involved. New to funded evaluations Start at $10,000 or $25,000. The rulebook is identical to the largest tier, so the habits you build transfer up",
+      "context": "hat one side passes is a breach for every account involved. New to funded evaluations Start at $10,000 or $25,000. The rulebook is identical to the largest tier, so the habits you build transfer up",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "New to funded evaluations",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "New to funded evaluations",
+      "value": "$25,000.",
+      "originalText": "e passes is a breach for every account involved. New to funded evaluations Start at $10,000 or $25,000. The rulebook is identical to the largest tier, so the habits you build transfer upward without",
+      "context": "e passes is a breach for every account involved. New to funded evaluations Start at $10,000 or $25,000. The rulebook is identical to the largest tier, so the habits you build transfer upward without",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "New to funded evaluations",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$50,000",
+      "originalText": "ing a live book Size the account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing se",
+      "context": "ing a live book Size the account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing se",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$125",
+      "originalText": "Size the account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing sequence. Runni",
+      "context": "Size the account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing sequence. Runni",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$250",
+      "originalText": "account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing sequence. Running a pro",
+      "context": "account so your normal risk per trade sits between 0.25% and 0.5%. On $50,000 that is $125 to $250 a trade, which leaves real room inside the 5% daily limit for a losing sequence. Running a pro",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Copy-trading between your own accounts",
+      "value": "$400,000",
+      "originalText": "your risk, not your ambition. Yes. You can run several evaluations concurrently and hold up to $400,000 in combined funded allocation across accounts. Copy-trading between your own accounts is permi",
+      "context": "your risk, not your ambition. Yes. You can run several evaluations concurrently and hold up to $400,000 in combined funded allocation across accounts. Copy-trading between your own accounts is permi",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Copy-trading between your own accounts",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "14 days",
+      "originalText": "out where you stood. You can start a new evaluation immediately, and a breach inside the first 14 days qualifies for a discounted reset. Not mid-evaluation, because the profit target and the drawdo",
+      "context": "out where you stood. You can start a new evaluation immediately, and a breach inside the first 14 days qualifies for a discounted reset. Not mid-evaluation, because the profit target and the drawdo",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Pick a challenge size that matches your strategy.",
+      "value": "14 days",
+      "originalText": "at reaches funded status. If you have not placed a trade, you can request a full refund within 14 days of purchase instead. Trading accounts Pick a challenge size that matches your strategy. Pick a",
+      "context": "at reaches funded status. If you have not placed a trade, you can request a full refund within 14 days of purchase instead. Trading accounts Pick a challenge size that matches your strategy. Pick a",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Pick a challenge size that matches your strategy.",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Pick a challenge size that matches your strategy.",
+      "value": "$10,000",
+      "originalText": "that matches your strategy. Pick a challenge size that matches your strategy. Five tiers from $10,000 to $200,000, each running the same two-phase evaluation, the same 5% daily and 10% overall dra",
+      "context": "that matches your strategy. Pick a challenge size that matches your strategy. Five tiers from $10,000 to $200,000, each running the same two-phase evaluation, the same 5% daily and 10% overall dra",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Pick a challenge size that matches your strategy.",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Pick a challenge size that matches your strategy.",
+      "value": "$200,000,",
+      "originalText": "es your strategy. Pick a challenge size that matches your strategy. Five tiers from $10,000 to $200,000, each running the same two-phase evaluation, the same 5% daily and 10% overall drawdown, and th",
+      "context": "es your strategy. Pick a challenge size that matches your strategy. Five tiers from $10,000 to $200,000, each running the same two-phase evaluation, the same 5% daily and 10% overall drawdown, and th",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Pick a challenge size that matches your strategy.",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$2,000,000",
+      "originalText": "n fee comes back with your first payout. Segregated client funds Instant activation Scaling to $2,000,000 See payment methods seo.homeDescription try { var savedTheme = localStorage.getItem(\"theme\");",
+      "context": "n fee comes back with your first payout. Segregated client funds Instant activation Scaling to $2,000,000 See payment methods seo.homeDescription try { var savedTheme = localStorage.getItem(\"theme\");",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "48 hours",
+      "originalText": "Phase 1 profit target Phase 2 profit target Time limit None Payout frequency Payout release 24–48 hours MetaTrader 5, cTrader, Web Terminal All six asset classes Expert advisors and algorithmic exec",
+      "context": "Phase 1 profit target Phase 2 profit target Time limit None Payout frequency Payout release 24–48 hours MetaTrader 5, cTrader, Web Terminal All six asset classes Expert advisors and algorithmic exec",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Funded Account Tiers",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 light dark Switch theme /trading false",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 light dark Switch theme /trading false",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Funded Account Tiers",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "accounts",
+      "language": "en",
+      "sourcePage": "/accounts",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/accounts"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
     },
     {
       "topic": "Gold",
@@ -182,8 +502,8 @@
       "sourceRoutes": [
         "/broker/coming-soon"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "52f0b43e6c6708398e78503820fede0145b299cfd4edff49e192bddc9a47570d"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "cd18c562e1b2d0a519d1c5c42587f2aa78fee5c1f6a8d05b3eea894eb90ccaef"
     },
     {
       "topic": "Gold",
@@ -197,8 +517,8 @@
       "sourceRoutes": [
         "/broker"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "52f0b43e6c6708398e78503820fede0145b299cfd4edff49e192bddc9a47570d"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "cd18c562e1b2d0a519d1c5c42587f2aa78fee5c1f6a8d05b3eea894eb90ccaef"
     },
     {
       "topic": "Partnerships & affiliates",
@@ -212,8 +532,8 @@
       "sourceRoutes": [
         "/contact"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "675597a44c062922187512f4adaf61c6bb84b651e5e78a24118b4abcfb1274a0"
     },
     {
       "topic": "Contact",
@@ -227,8 +547,8 @@
       "sourceRoutes": [
         "/contact"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "675597a44c062922187512f4adaf61c6bb84b651e5e78a24118b4abcfb1274a0"
     },
     {
       "topic": "Contact",
@@ -242,8 +562,8 @@
       "sourceRoutes": [
         "/contact"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "675597a44c062922187512f4adaf61c6bb84b651e5e78a24118b4abcfb1274a0"
     },
     {
       "topic": "Gold",
@@ -257,8 +577,8 @@
       "sourceRoutes": [
         "/contact"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d66ce0150cb83613c9ddd6fd16a89de0d7efae84159e4628f6b602e9563c027e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "675597a44c062922187512f4adaf61c6bb84b651e5e78a24118b4abcfb1274a0"
     },
     {
       "topic": "Gold",
@@ -272,8 +592,8 @@
       "sourceRoutes": [
         "/education"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "c4cebecd2d2a36b86bc27f6dfa8728d4e69d17c272b60e1d3467aeb4b280c3e7"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a597f4ca68720a019d7b1cdd4f1f123e751736cb38a860163d5b0b46e3e92293"
     },
     {
       "topic": "Gold",
@@ -287,8 +607,323 @@
       "sourceRoutes": [
         "/faq"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "00ae82ab0266ca3063be57c53c9045e067f99cab29dfc2507dacd88c53265f9f"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "9fc15d0e8942b82bba99cd72a59a8732a60c4b886f5f7fb1504a19eacf11493e"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "funded",
+      "language": "en",
+      "sourcePage": "/funded/coming-soon",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/funded/coming-soon"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "cd18c562e1b2d0a519d1c5c42587f2aa78fee5c1f6a8d05b3eea894eb90ccaef"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "funded",
+      "language": "en",
+      "sourcePage": "/funded",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/funded"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "cd18c562e1b2d0a519d1c5c42587f2aa78fee5c1f6a8d05b3eea894eb90ccaef"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "glossary",
+      "language": "en",
+      "sourcePage": "/glossary",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/glossary"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4200eba475cfbb6091b6e2224f45689da7bfdddd8e1b65e91f84528980f2e6da"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$100,000",
+      "originalText": "-phase evaluation, clear KYC and get paid. Drawdown rules explained with a worked example on a $100,000 account. Your tier fixes both profit targets and the dollar value of both drawdown floors for",
+      "context": "-phase evaluation, clear KYC and get paid. Drawdown rules explained with a worked example on a $100,000 account. Your tier fixes both profit targets and the dollar value of both drawdown floors for",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "14 days",
+      "originalText": "to 90% of net realised profit, set by your tier and any split add-on. Payout cycles run every 14 days, or every 7 on Professional and with the weekly add-on. The drawdown floors carry over to the",
+      "context": "to 90% of net realised profit, set by your tier and any split add-on. Payout cycles run every 14 days, or every 7 on Professional and with the weekly add-on. The drawdown floors carry over to the",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$300",
+      "originalText": "Equity is above the starting balance, so it becomes the new anchor. Inside the daily floor by $300 — and still $8,500 above the overall floor. Equity is below the starting balance, so the ancho",
+      "context": "Equity is above the starting balance, so it becomes the new anchor. Inside the daily floor by $300 — and still $8,500 above the overall floor. Equity is below the starting balance, so the ancho",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$8,500",
+      "originalText": "the starting balance, so it becomes the new anchor. Inside the daily floor by $300 — and still $8,500 above the overall floor. Equity is below the starting balance, so the anchor reverts to it. Wh",
+      "context": "the starting balance, so it becomes the new anchor. Inside the daily floor by $300 — and still $8,500 above the overall floor. Equity is below the starting balance, so the anchor reverts to it. Wh",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "When a cycle closes",
+      "value": "14 days",
+      "originalText": "it. When a cycle closes The first cycle opens the day your funded account is issued and closes 14 days later, or 7 on Professional. From that moment the request button is live in the portal and sta",
+      "context": "it. When a cycle closes The first cycle opens the day your funded account is issued and closes 14 days later, or 7 on Professional. From that moment the request button is live in the portal and sta",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "When a cycle closes",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "The 24 to 48 hour window",
+      "value": "24 to 48 hour",
+      "originalText": "in the portal and stays live — a cycle you do not draw on simply rolls its profit forward. The 24 to 48 hour window Requests are reviewed on the business day they arrive. Once approved, funds leave withi",
+      "context": "in the portal and stays live — a cycle you do not draw on simply rolls its profit forward. The 24 to 48 hour window Requests are reviewed on the business day they arrive. Once approved, funds leave withi",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "The 24 to 48 hour window",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "Crypto",
+      "value": "24 to 48 hours",
+      "originalText": "indow Requests are reviewed on the business day they arrive. Once approved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one",
+      "context": "indow Requests are reviewed on the business day they arrive. Once approved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "Crypto",
+      "value": "24 hours",
+      "originalText": "proved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one to three business days depending on the rail. We absorb the f",
+      "context": "proved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one to three business days depending on the rail. We absorb the f",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "Crypto",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$100,000",
+      "originalText": "e daily level in a single print. Worked example of both drawdown floors across three days on a $100,000 account Moment Equity Daily anchor Daily floor Overall floor Headroom The breach case Had that",
+      "context": "e daily level in a single print. Worked example of both drawdown floors across three days on a $100,000 account Moment Equity Daily anchor Daily floor Overall floor Headroom The breach case Had that",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$5,100",
+      "originalText": "Daily anchor Daily floor Overall floor Headroom The breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200",
+      "context": "Daily anchor Daily floor Overall floor Headroom The breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$4,700,",
+      "originalText": "floor Overall floor Headroom The breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and th",
+      "context": "floor Overall floor Headroom The breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and th",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$98,100",
+      "originalText": "breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and the account would have closed there",
+      "context": "breach case Had that day-two loss reached $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and the account would have closed there",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$98,200",
+      "originalText": "d $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and the account would have closed there and then, with $8,100 still standing bet",
+      "context": "d $5,100 rather than $4,700, equity would have touched $98,100 — one hundred dollars below the $98,200 daily floor — and the account would have closed there and then, with $8,100 still standing bet",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$8,100",
+      "originalText": "dollars below the $98,200 daily floor — and the account would have closed there and then, with $8,100 still standing between you and the $90,000 overall floor. That is the whole lesson: after a go",
+      "context": "dollars below the $98,200 daily floor — and the account would have closed there and then, with $8,100 still standing between you and the $90,000 overall floor. That is the whole lesson: after a go",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$90,000",
+      "originalText": "d the account would have closed there and then, with $8,100 still standing between you and the $90,000 overall floor. That is the whole lesson: after a good day, the number you have to respect is t",
+      "context": "d the account would have closed there and then, with $8,100 still standing between you and the $90,000 overall floor. That is the whole lesson: after a good day, the number you have to respect is t",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "How It Works",
+      "value": "$2,000,000.",
+      "originalText": "it doubles again, with the split rising to 90% and never coming back down, up to a ceiling of $2,000,000. Capital doubles per milestone Split never decreases See the scaling plan Payout methods How it",
+      "context": "it doubles again, with the split rising to 90% and never coming back down, up to a ceiling of $2,000,000. Capital doubles per milestone Split never decreases See the scaling plan Payout methods How it",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "How It Works",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "Forex",
+      "value": "$3.1",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Trade global markets with MT5. Trade forex, indices, metals, energies, stocks and crypto wit",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ Trade global markets with MT5. Trade forex, indices, metals, energies, stocks and crypto wit",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "Forex",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+    },
+    {
+      "topic": "Gold",
+      "value": "1 day",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view number OANDA:XAUUSD Gold FX:EURUSD EU",
+      "category": "how-it-works",
+      "language": "en",
+      "sourcePage": "/how-it-works",
+      "section": "Gold",
+      "sourceRoutes": [
+        "/how-it-works"
+      ],
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
     },
     {
       "topic": "Gold",
@@ -302,14 +937,14 @@
       "sourceRoutes": [
         "/legal/:slug"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "f17f67c0098e869883e8f9b57b31db26b3059d7875115f911c43fb4767b06dcb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "cc884a6746761890a150ce69df57190f1c2fdd17a52cb77dbf4b506731487bd4"
     },
     {
       "topic": "Market Terminal",
       "value": "1 day",
-      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Trade $ Now View in trading view",
-      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Trade $ Now View in trading view",
+      "originalText": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Trade $ Now View in trading view",
+      "context": "trading false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Trade $ Now View in trading view",
       "category": "markets",
       "language": "en",
       "sourcePage": "/markets",
@@ -317,8 +952,8 @@
       "sourceRoutes": [
         "/markets"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "65d2f5f9b1fb4b9ddaebb7b33d72ad3ffbaeed05442c358d6f9c40a5fe14f911"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "7de823066a37897318dde06c333f51b90917b9c555cb1eb9e58a6353203821c3"
     },
     {
       "topic": "Gold",
@@ -332,8 +967,8 @@
       "sourceRoutes": [
         "/news/:slug"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "376bf7c8fd5695a999914ee4a09be8dc78437d101bd8bd8bf784165f05d4295d"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "521461f206d29a830325e599a488eb2cae7a7ae8906f7d19f39f191729bf3d8d"
     },
     {
       "topic": "Forex",
@@ -347,8 +982,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Forex",
@@ -362,8 +997,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Forex",
@@ -377,8 +1012,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Indices",
@@ -392,8 +1027,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Your account. Your balance. Our execution.",
@@ -407,8 +1042,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "home.steps.register.title",
@@ -422,8 +1057,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Withdrawals on your schedule",
@@ -437,8 +1072,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Withdrawals on your schedule",
@@ -452,8 +1087,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Withdrawals on your schedule",
@@ -467,8 +1102,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "home.steps.register.title",
@@ -482,8 +1117,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "A broker built for traders who read the spec sheet.",
@@ -497,8 +1132,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "home.steps.register.title",
@@ -512,14 +1147,14 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "home.steps.register.title",
       "value": "1 day",
-      "originalText": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 FAQ Open site search",
-      "context": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 FAQ Open site search",
+      "originalText": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 light dark Switch the",
+      "context": "nt true false --marquee-duration Resume ticker Pause ticker Close quote detail Chart preview · 1 day Day high Day low Spread Trade $ Now View in trading view size-3.5 size-4 light dark Switch the",
       "category": "home",
       "language": "en",
       "sourcePage": "/",
@@ -527,8 +1162,8 @@
       "sourceRoutes": [
         "/"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
     },
     {
       "topic": "Payment Methods",
@@ -542,8 +1177,8 @@
       "sourceRoutes": [
         "/payments"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "24f1d50564a9e6f5145c28f937cb113bf9e1f327167a132f53f62489e334855e"
     },
     {
       "topic": "Payment Methods",
@@ -557,8 +1192,8 @@
       "sourceRoutes": [
         "/payments"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "24f1d50564a9e6f5145c28f937cb113bf9e1f327167a132f53f62489e334855e"
     },
     {
       "topic": "Forex",
@@ -572,8 +1207,8 @@
       "sourceRoutes": [
         "/payments"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "24f1d50564a9e6f5145c28f937cb113bf9e1f327167a132f53f62489e334855e"
     },
     {
       "topic": "Gold",
@@ -587,8 +1222,8 @@
       "sourceRoutes": [
         "/payments"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "7dc2fa42ac525a26f2f574bccd3256c77b6af1c35a0c08b4faa07e241bfa28fa"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "24f1d50564a9e6f5145c28f937cb113bf9e1f327167a132f53f62489e334855e"
     },
     {
       "topic": "Bitcoin",
@@ -602,8 +1237,8 @@
       "sourceRoutes": [
         "/platforms"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "c785d343679ef19f1c5aaa05bc5dc3172ea8d2b5424df42d1c604dd49e3e7fa0"
     },
     {
       "topic": "EUR/USD",
@@ -617,8 +1252,8 @@
       "sourceRoutes": [
         "/platforms"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "c785d343679ef19f1c5aaa05bc5dc3172ea8d2b5424df42d1c604dd49e3e7fa0"
     },
     {
       "topic": "EUR/USD",
@@ -632,8 +1267,8 @@
       "sourceRoutes": [
         "/platforms"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "c785d343679ef19f1c5aaa05bc5dc3172ea8d2b5424df42d1c604dd49e3e7fa0"
     },
     {
       "topic": "EUR/USD",
@@ -647,8 +1282,8 @@
       "sourceRoutes": [
         "/platforms"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "79e8545ad1e3c3bcfe5e1ab118e1f1539c10b4f8d81a80784ef6d50021c9729b"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "c785d343679ef19f1c5aaa05bc5dc3172ea8d2b5424df42d1c604dd49e3e7fa0"
     },
     {
       "topic": "No dealing-desk intervention",
@@ -662,8 +1297,8 @@
       "sourceRoutes": [
         "/products"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "e8ab8d7db15e5633541db11be603a1513489c1e6188896d9a025aedb0e8b0a7b"
     },
     {
       "topic": "No dealing-desk intervention",
@@ -677,8 +1312,8 @@
       "sourceRoutes": [
         "/products"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "e8ab8d7db15e5633541db11be603a1513489c1e6188896d9a025aedb0e8b0a7b"
     },
     {
       "topic": "Gold",
@@ -692,8 +1327,8 @@
       "sourceRoutes": [
         "/products"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d9b5fd230b2d60b052c856586aa294fe755bddb7935b89389a3e8f57a0f6ea89"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "e8ab8d7db15e5633541db11be603a1513489c1e6188896d9a025aedb0e8b0a7b"
     },
     {
       "topic": "Gold",
@@ -707,8 +1342,8 @@
       "sourceRoutes": [
         "/tools/calculator"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2eda6911517306fd88a307a76a49177198f39ccf7dc89dba75ae1b48c552c5ae"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "fd5537d933cd3a6c045e5558584d5e8a108348bc3a365e857f413773a8a3ea37"
     },
     {
       "topic": "Gold",
@@ -722,8 +1357,8 @@
       "sourceRoutes": [
         "/tools/economic-calendar"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "c9ba87fcd74e8f504bf44cda2fd0e1d030b46ab06c28e1398bf4f8498ad837d1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "27d05e5e2ace50133b84882146c6499501499c67bf2afe554ea85d4194baf719"
     },
     {
       "topic": "Gold",
@@ -737,8 +1372,8 @@
       "sourceRoutes": [
         "/tools"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "7119979c480653f91aecc0ce35ef9a7cfd9eaa55e60ff7cd60106b8b372778b5"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "e5eb504bf39c8f8b67c951c29d390ac9af5462cc08d08b10cf4b8be5ebdad239"
     },
     {
       "topic": "Gold",
@@ -752,8 +1387,8 @@
       "sourceRoutes": [
         "/trade"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "185f64a0e61c95833c49d644e3e5d5924e97d913e7e806a77831747093953897"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2b4c29f4986ae52a6d62e5c4a37ef12483127d9d9bcc80c1c5d44e66154d0628"
     },
     {
       "topic": "Gold",
@@ -767,8 +1402,8 @@
       "sourceRoutes": [
         "/trade/:asset"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "e5af888c99cbf9186555945410dc0e2350539abe66fe9e9bcc15e82099e9bf02"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "bfd6d233e4d4de352ceeb3a7afa082e8b3d631bdad588ccb6498c3030050a58c"
     },
     {
       "topic": "Getting started",
@@ -782,8 +1417,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Getting started",
@@ -797,8 +1432,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Getting started",
@@ -812,8 +1447,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "High-volume or systematic",
@@ -827,8 +1462,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Bien débuter",
@@ -842,8 +1477,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Bien débuter",
@@ -857,8 +1492,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Bien débuter",
@@ -872,8 +1507,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Bien débuter",
@@ -887,8 +1522,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Forex",
@@ -902,8 +1537,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Forex",
@@ -917,8 +1552,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Crypto",
@@ -932,8 +1567,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Your account. Your balance. Our execution.",
@@ -947,8 +1582,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Live Trading Account Types",
@@ -962,8 +1597,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Gold",
@@ -977,8 +1612,8 @@
       "sourceRoutes": [
         "/trading/accounts"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
     },
     {
       "topic": "Gold",
@@ -992,8 +1627,8 @@
       "sourceRoutes": [
         "/trading/coming-soon"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "6c64ab42289c3da6d42de72554da134d81e0a9b69a1224d1198076dacbf030cf"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "98f942a430f04d01dd719e0cae0b052d95d0ffeed584bc64541d093bdd0ccaf4"
     },
     {
       "topic": "Gold",
@@ -1007,8 +1642,8 @@
       "sourceRoutes": [
         "/trading/conditions"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "b3ad51a1d3e226687cdc21cd937ca6d38b9ca4de1b7ffa52a38f2d9589583465"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "f6212d83f20212b8f9c4b7230176552b5b14cd46bd0a8f6b9a5810b69e1a9ae9"
     },
     {
       "topic": "How Live Trading Works",
@@ -1022,8 +1657,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Crypto",
@@ -1037,8 +1672,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Créez votre profil",
@@ -1052,8 +1687,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Indices",
@@ -1067,8 +1702,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "How Live Trading Works",
@@ -1082,8 +1717,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Forex",
@@ -1097,8 +1732,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Forex",
@@ -1112,8 +1747,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Crypto",
@@ -1127,8 +1762,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Your account. Your balance. Our execution.",
@@ -1142,8 +1777,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "How Live Trading Works",
@@ -1157,8 +1792,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Gold",
@@ -1172,8 +1807,8 @@
       "sourceRoutes": [
         "/trading/how-it-works"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
     },
     {
       "topic": "Forex",
@@ -1187,8 +1822,8 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "Forex",
@@ -1202,8 +1837,8 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "Crypto",
@@ -1217,8 +1852,8 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "Your account. Your balance. Our execution.",
@@ -1232,14 +1867,14 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "A trading experience designed to be understood.",
       "value": "$3.1",
-      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 FAQ Open site search Search Search pag",
-      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 FAQ Open site search Search Search pag",
+      "originalText": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 light dark Switch theme /trading false",
+      "context": "que intégré Niveau de marge en direct dans l'en-tête Optimisé tactile sur tablette 15,000+ 142 $3.1B+ true you@example.com error submitting size-3.5 size-4 light dark Switch theme /trading false",
       "category": "trading",
       "language": "en",
       "sourcePage": "/trading",
@@ -1247,8 +1882,8 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "Gold",
@@ -1262,8 +1897,8 @@
       "sourceRoutes": [
         "/trading"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
     },
     {
       "topic": "Gold",
@@ -1277,8 +1912,8 @@
       "sourceRoutes": [
         "/trading-edge"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "c84bdd12d57203acf6321f674221133fe46e997d41caf0211d8050b9f8a6edbf"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "2bc1e058c8e93fafb5807e711edfbf4ebf1c841fda2df4a321391a0c44f08e60"
     },
     {
       "topic": "Gold",
@@ -1292,8 +1927,8 @@
       "sourceRoutes": [
         "/trading-edge/strategies/:slug"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "71c05b4a96ba87f9a8e41f03aa8fc8eeba761ed7ce855e5c84717b4f57e413e1"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "8c6bd5ba9c767a978bbb908aeb9f12db063b70b1c23bf49d8d2d4b7311712988"
     },
     {
       "topic": "Trading Hub",
@@ -1307,8 +1942,8 @@
       "sourceRoutes": [
         "/trading-edge/:section"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "1b8a610966e49063031077448d81fefbee2aa307185ec0d1fc77e686ad6cab0a"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "aa4c45583f9f323d1558425422ad13996247b0a3b129888359d854c64f4f507e"
     },
     {
       "topic": "Create your account",
@@ -1322,8 +1957,8 @@
       "sourceRoutes": [
         "/register"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d635d5b68bb1f11a6e3c5d8929ff8364463d002fda9b90a170edecbf6107f43a"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "01351ff929dd70ba671115a38b733e77b48b20c4ab97b51f80848afbdc1a1b41"
     },
     {
       "topic": "Create your account",
@@ -1337,8 +1972,8 @@
       "sourceRoutes": [
         "/register"
       ],
-      "lastUpdated": "2026-10-07T14:42:50.501Z",
-      "contentVersion": "d635d5b68bb1f11a6e3c5d8929ff8364463d002fda9b90a170edecbf6107f43a"
+      "lastUpdated": "2026-10-08T12:03:52.154Z",
+      "contentVersion": "01351ff929dd70ba671115a38b733e77b48b20c4ab97b51f80848afbdc1a1b41"
     }
   ],
   "duplicateCandidates": [
@@ -1356,10 +1991,259 @@
         "sourceRoutes": [
           "/broker"
         ]
+      },
+      {
+        "id": "website:funded-coming-soon",
+        "title": "Gold",
+        "sourceRoutes": [
+          "/funded/coming-soon"
+        ]
+      },
+      {
+        "id": "website:funded",
+        "title": "Gold",
+        "sourceRoutes": [
+          "/funded"
+        ]
       }
     ]
   ],
   "conflictingValueCandidates": [
+    {
+      "key": "/accounts|profit split",
+      "values": [
+        {
+          "value": "$2,000,000.",
+          "occurrences": [
+            {
+              "topic": "Funded Account Tiers",
+              "value": "$2,000,000.",
+              "originalText": "shed rule, configure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceil",
+              "context": "shed rule, configure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceil",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Funded Account Tiers",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        },
+        {
+          "value": "$10",
+          "occurrences": [
+            {
+              "topic": "Funded Account Tiers",
+              "value": "$10",
+              "originalText": "onfigure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling",
+              "context": "onfigure your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Funded Account Tiers",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        },
+        {
+          "value": "$200",
+          "occurrences": [
+            {
+              "topic": "Funded Account Tiers",
+              "value": "$200",
+              "originalText": "e your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert a",
+              "context": "e your challenge with add-ons, and see exactly how the scaling plan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert a",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Funded Account Tiers",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        },
+        {
+          "value": "$2,000,000",
+          "occurrences": [
+            {
+              "topic": "Expert advisors and custom indicators",
+              "value": "$2,000,000",
+              "originalText": "lan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert advisors and custom indicators Run any EA, cBot or indicator you like.",
+              "context": "lan reaches $2,000,000. $10K – $200K Account sizes 80 – 90% Profit split No limit Time to pass $2,000,000 Scaling ceiling Expert advisors and custom indicators Run any EA, cBot or indicator you like.",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Expert advisors and custom indicators",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/accounts|profit target",
+      "values": [
+        {
+          "value": "14 days",
+          "occurrences": [
+            {
+              "topic": "Funded Account Tiers",
+              "value": "14 days",
+              "originalText": "out where you stood. You can start a new evaluation immediately, and a breach inside the first 14 days qualifies for a discounted reset. Not mid-evaluation, because the profit target and the drawdo",
+              "context": "out where you stood. You can start a new evaluation immediately, and a breach inside the first 14 days qualifies for a discounted reset. Not mid-evaluation, because the profit target and the drawdo",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Funded Account Tiers",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        },
+        {
+          "value": "48 hours",
+          "occurrences": [
+            {
+              "topic": "Funded Account Tiers",
+              "value": "48 hours",
+              "originalText": "Phase 1 profit target Phase 2 profit target Time limit None Payout frequency Payout release 24–48 hours MetaTrader 5, cTrader, Web Terminal All six asset classes Expert advisors and algorithmic exec",
+              "context": "Phase 1 profit target Phase 2 profit target Time limit None Payout frequency Payout release 24–48 hours MetaTrader 5, cTrader, Web Terminal All six asset classes Expert advisors and algorithmic exec",
+              "category": "accounts",
+              "language": "en",
+              "sourcePage": "/accounts",
+              "section": "Funded Account Tiers",
+              "sourceRoutes": [
+                "/accounts"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a01f35935290d13831a33eba85c638c302d4279bb888f3ba01f4b1da343787fd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/how-it-works|drawdown",
+      "values": [
+        {
+          "value": "$100,000",
+          "occurrences": [
+            {
+              "topic": "How It Works",
+              "value": "$100,000",
+              "originalText": "-phase evaluation, clear KYC and get paid. Drawdown rules explained with a worked example on a $100,000 account. Your tier fixes both profit targets and the dollar value of both drawdown floors for",
+              "context": "-phase evaluation, clear KYC and get paid. Drawdown rules explained with a worked example on a $100,000 account. Your tier fixes both profit targets and the dollar value of both drawdown floors for",
+              "category": "how-it-works",
+              "language": "en",
+              "sourcePage": "/how-it-works",
+              "section": "How It Works",
+              "sourceRoutes": [
+                "/how-it-works"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+            },
+            {
+              "topic": "How It Works",
+              "value": "$100,000",
+              "originalText": "e daily level in a single print. Worked example of both drawdown floors across three days on a $100,000 account Moment Equity Daily anchor Daily floor Overall floor Headroom The breach case Had that",
+              "context": "e daily level in a single print. Worked example of both drawdown floors across three days on a $100,000 account Moment Equity Daily anchor Daily floor Overall floor Headroom The breach case Had that",
+              "category": "how-it-works",
+              "language": "en",
+              "sourcePage": "/how-it-works",
+              "section": "How It Works",
+              "sourceRoutes": [
+                "/how-it-works"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+            }
+          ]
+        },
+        {
+          "value": "14 days",
+          "occurrences": [
+            {
+              "topic": "How It Works",
+              "value": "14 days",
+              "originalText": "to 90% of net realised profit, set by your tier and any split add-on. Payout cycles run every 14 days, or every 7 on Professional and with the weekly add-on. The drawdown floors carry over to the",
+              "context": "to 90% of net realised profit, set by your tier and any split add-on. Payout cycles run every 14 days, or every 7 on Professional and with the weekly add-on. The drawdown floors carry over to the",
+              "category": "how-it-works",
+              "language": "en",
+              "sourcePage": "/how-it-works",
+              "section": "How It Works",
+              "sourceRoutes": [
+                "/how-it-works"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "/how-it-works|hours",
+      "values": [
+        {
+          "value": "24 to 48 hours",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "24 to 48 hours",
+              "originalText": "indow Requests are reviewed on the business day they arrive. Once approved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one",
+              "context": "indow Requests are reviewed on the business day they arrive. Once approved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one",
+              "category": "how-it-works",
+              "language": "en",
+              "sourcePage": "/how-it-works",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/how-it-works"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+            }
+          ]
+        },
+        {
+          "value": "24 hours",
+          "occurrences": [
+            {
+              "topic": "Crypto",
+              "value": "24 hours",
+              "originalText": "proved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one to three business days depending on the rail. We absorb the f",
+              "context": "proved, funds leave within 24 to 48 hours. Crypto usually lands the same day, e-wallets within 24 hours, cards and bank transfers in one to three business days depending on the rail. We absorb the f",
+              "category": "how-it-works",
+              "language": "en",
+              "sourcePage": "/how-it-works",
+              "section": "Crypto",
+              "sourceRoutes": [
+                "/how-it-works"
+              ],
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "4ae00301e7cace5afcb77c511d4e954aa6bb4aba2eec25b98bc770b96b6ffd85"
+            }
+          ]
+        }
+      ]
+    },
     {
       "key": "/|leverage",
       "values": [
@@ -1378,8 +2262,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             }
           ]
         },
@@ -1398,8 +2282,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             }
           ]
         }
@@ -1423,8 +2307,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             },
             {
               "topic": "Withdrawals on your schedule",
@@ -1438,8 +2322,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             }
           ]
         },
@@ -1458,8 +2342,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             }
           ]
         },
@@ -1478,8 +2362,8 @@
               "sourceRoutes": [
                 "/"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "1a5010c84b933927dd76ebccd2301e533bc3ff20da2f8dd26a36729c53be572e"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "2619329cb3f7a41afd60912348fb7f0560d1665cd2e9923d189d14e77b929783"
             }
           ]
         }
@@ -1503,8 +2387,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1523,8 +2407,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             },
             {
               "topic": "High-volume or systematic",
@@ -1538,8 +2422,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1558,8 +2442,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1578,8 +2462,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1598,8 +2482,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1618,8 +2502,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1638,8 +2522,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1658,8 +2542,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         }
@@ -1683,8 +2567,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1703,8 +2587,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         },
@@ -1723,8 +2607,8 @@
               "sourceRoutes": [
                 "/trading/accounts"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "4b19aa4f580eccead28ee1cd34c621a4ecdd319e8a43c0102cd5ee873ddfb1eb"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "a3cd1d5da829726215482f7cc283ed412892cda18a5f81283be77dc0c31dd1bb"
             }
           ]
         }
@@ -1748,8 +2632,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         },
@@ -1768,8 +2652,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         },
@@ -1788,8 +2672,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         },
@@ -1808,8 +2692,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         }
@@ -1833,8 +2717,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         },
@@ -1853,8 +2737,8 @@
               "sourceRoutes": [
                 "/trading/how-it-works"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "9271b4113da0c31b1c3740b93fe06b02f8e45137c511280bca5d89469a4a08b1"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "210d95a5d47080044524942df8d5ade2a4462e175394cb9be79e7da292f15372"
             }
           ]
         }
@@ -1878,8 +2762,8 @@
               "sourceRoutes": [
                 "/trading"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
             }
           ]
         },
@@ -1898,8 +2782,8 @@
               "sourceRoutes": [
                 "/trading"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
             }
           ]
         },
@@ -1918,8 +2802,8 @@
               "sourceRoutes": [
                 "/trading"
               ],
-              "lastUpdated": "2026-10-07T14:42:50.501Z",
-              "contentVersion": "2687db346f5f76a643c49e0e914ab1cb399e5280b9b64e5a547f4dd730a6d5c2"
+              "lastUpdated": "2026-10-08T12:03:52.154Z",
+              "contentVersion": "0ebc4696b0333f8c6ee4e527cc34cac26dac0126ca6906cc3065c11acd25c8bf"
             }
           ]
         }

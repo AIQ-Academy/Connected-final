@@ -10,6 +10,7 @@ import { Aurora } from "@/components/ui/aurora";
 import { getSession } from "@/lib/auth";
 import { getServerLocale } from "@/lib/i18n/server";
 import { getDictionary } from "@/lib/i18n/dictionaries";
+import { localizedPath } from "@/lib/i18n/locale";
 
 export const metadata: Metadata = {
   title: "Client portal sign in",
@@ -56,7 +57,7 @@ export default async function LoginPage({
     <div className="grid min-h-dvh lg:grid-cols-2">
       <div className="relative flex flex-col justify-between px-5 py-8 sm:px-10 lg:px-14">
         <div className="flex items-center justify-between gap-4">
-          <Link href="/" aria-label="Connect Funded home">
+          <Link href={localizedPath("/", locale)} aria-label="Connect Funded home">
             <Logo />
           </Link>
           <LocaleSwitcher />
@@ -78,7 +79,7 @@ export default async function LoginPage({
         </div>
 
         <Link
-          href="/"
+          href={localizedPath("/", locale)}
           className="text-faint hover:text-ink inline-flex items-center gap-1.5 text-[0.8125rem] transition-colors"
         >
           <ArrowLeft className="size-3.5" />

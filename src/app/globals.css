@@ -11,6 +11,18 @@
    ========================================================================= */
 
 :root {
+  /* Stable semantic names for the shared blue-and-white brand system. */
+  --cf-primary-blue: #2340a2;
+  --cf-blue-deep: #182f7c;
+  --cf-blue-tint: #dce8ff;
+  --cf-white: #ffffff;
+  --cf-gray-soft: #f6f8fc;
+  --cf-gray-raised: #eff3f8;
+  --cf-success: #287456;
+  --cf-warning: #936c32;
+  --cf-error: #d32f4f;
+  --cf-focus-ring: #2340a2;
+
   --cf-palette-1: #536b8d;
   --cf-palette-2: #3156b8;
   --cf-palette-3: #557ab5;
@@ -18,9 +30,9 @@
   --cf-palette-5: #2340a2;
   --cf-palette-6: #aac6f1;
 
-  --cf-bg: #f6f8fc;
+  --cf-bg: var(--cf-gray-soft);
   --cf-bg-rgb: 246 248 252;
-  --cf-bg-raised: #eff3f8;
+  --cf-bg-raised: var(--cf-gray-raised);
   --cf-bg-panel: #ffffff;
   --cf-bg-sunken: #e9eff6;
   --cf-section-white: #ffffff;
@@ -36,10 +48,10 @@
   --cf-text-faint: #64748b;
 
   /* Primary and interactive surfaces use the Connect Funded logo navy. */
-  --cf-brand: #2340a2;
+  --cf-brand: var(--cf-primary-blue);
   --cf-brand-light: #2340a2;
-  --cf-brand-dim: #dce8ff;
-  --cf-brand-hover: #182f7c;
+  --cf-brand-dim: var(--cf-blue-tint);
+  --cf-brand-hover: var(--cf-blue-deep);
   --cf-brand-glow: 35 64 162;
   --cf-blue-glow: 0 0 255;
   --cf-sky-glow: 96 165 250;
@@ -93,9 +105,9 @@
   --cf-accent: #327452;
   --cf-accent-glow: 60 179 113;
 
-  --cf-mint: #287456;
-  --cf-amber: #936c32;
-  --cf-red: #d32f4f;
+  --cf-mint: var(--cf-success);
+  --cf-amber: var(--cf-warning);
+  --cf-red: var(--cf-error);
 
   --cf-shadow-color: 18 35 66;
   --cf-shadow-strength: 0.07;
@@ -107,10 +119,19 @@
 }
 
 .dark {
+  --cf-blue-deep: #3659c3;
+  --cf-blue-tint: #1c2d50;
+  --cf-gray-soft: #14213a;
+  --cf-gray-raised: #1a2a46;
+  --cf-success: #72d9a8;
+  --cf-warning: #e7bd78;
+  --cf-error: #ff5d75;
+  --cf-focus-ring: #a9c5ff;
+
   /* Layered blue-slate surfaces keep dark mode comfortable and branded. */
-  --cf-bg: #14213a;
+  --cf-bg: var(--cf-gray-soft);
   --cf-bg-rgb: 20 33 58;
-  --cf-bg-raised: #1a2a46;
+  --cf-bg-raised: var(--cf-gray-raised);
   --cf-bg-panel: #20334f;
   --cf-bg-sunken: #101c32;
   --cf-section-white: var(--cf-bg);
@@ -127,8 +148,8 @@
 
   --cf-brand: #2340a2;
   --cf-brand-light: #9dbbff;
-  --cf-brand-dim: #1c2d50;
-  --cf-brand-hover: #3659c3;
+  --cf-brand-dim: var(--cf-blue-tint);
+  --cf-brand-hover: var(--cf-blue-deep);
   --cf-brand-glow: 82 117 214;
   --cf-card-highlight: color-mix(in oklab, var(--cf-palette-5) 20%, var(--cf-bg-panel));
   --cf-card-highlight-border: color-mix(in oklab, var(--cf-palette-5) 70%, var(--cf-border));
@@ -178,9 +199,9 @@
   --cf-accent: #93cbb2;
   --cf-accent-glow: 147 203 178;
 
-  --cf-mint: #72d9a8;
-  --cf-amber: #e7bd78;
-  --cf-red: #ff5d75;
+  --cf-mint: var(--cf-success);
+  --cf-amber: var(--cf-warning);
+  --cf-red: var(--cf-error);
 
   --cf-shadow-color: 3 11 28;
   --cf-shadow-strength: 0.55;
@@ -208,10 +229,19 @@
   --color-brand-light: var(--cf-brand-light);
   --color-brand-dim: var(--cf-brand-dim);
   --color-accent: var(--cf-accent);
+  --color-primary-blue: var(--cf-primary-blue);
+  --color-blue-deep: var(--cf-blue-deep);
+  --color-blue-tint: var(--cf-blue-tint);
+  --color-white: var(--cf-white);
+  --color-gray-soft: var(--cf-gray-soft);
+  --color-gray-raised: var(--cf-gray-raised);
 
   --color-mint: var(--cf-mint);
   --color-amber: var(--cf-amber);
   --color-loss: var(--cf-red);
+  --color-success: var(--cf-success);
+  --color-warning: var(--cf-warning);
+  --color-error: var(--cf-error);
   --color-palette-neutral: var(--cf-palette-1);
   --color-palette-blue: var(--cf-palette-2);
   --color-palette-green: var(--cf-palette-3);
@@ -381,9 +411,10 @@ html[lang="ar"] body {
   }
 
   :focus-visible {
-    outline: 2px solid var(--cf-brand-light);
+    outline: 2px solid var(--cf-focus-ring);
     outline-offset: 3px;
     border-radius: 4px;
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--cf-focus-ring) 18%, transparent);
   }
 
   /* Firefox / Safari scrollbar treatment to match the terminal aesthetic. */
@@ -885,9 +916,8 @@ footer ul a {
   --account-glow: 104 202 255;
   transform-origin: center bottom;
   transition:
-    transform 0.42s var(--ease-out-expo),
-    box-shadow 0.42s ease,
-    filter 0.42s ease;
+    transform 0.28s var(--ease-out-expo),
+    box-shadow 0.28s ease;
 }
 .account-type-card[data-tier="pro"] { --account-glow: 205 218 235; }
 .account-type-card[data-tier="vip"] {
@@ -895,10 +925,9 @@ footer ul a {
   background-size: 160% 160%;
   background-position: 0% 50%;
   transition:
-    transform 0.46s var(--ease-out-expo),
-    box-shadow 0.46s ease,
-    filter 0.46s ease,
-    background-position 0.72s var(--ease-out-expo);
+    transform 0.28s var(--ease-out-expo),
+    box-shadow 0.28s ease,
+    background-position 0.45s var(--ease-out-expo);
 }
 .account-type-card:focus-within { box-shadow: 0 20px 48px -34px rgb(var(--account-glow) / 0.72); }
 .account-type-card article {
@@ -946,26 +975,24 @@ footer ul a {
 
 @media (hover: hover) and (pointer: fine) {
   .account-type-card:hover {
-    transform: translateY(-13px) scale(1.03) rotate(-0.35deg);
-    box-shadow: 0 36px 72px -34px rgb(var(--account-glow) / 0.9);
-    filter: saturate(1.08);
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 24px 52px -34px rgb(var(--account-glow) / 0.76);
     background-position: 100% 50%;
   }
-  .account-type-card:hover article { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.26), 0 0 36px -16px rgb(var(--account-glow) / 0.58); }
+  .account-type-card:hover article { box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.22), 0 0 28px -18px rgb(var(--account-glow) / 0.48); }
   .account-type-card:hover article::before { transition: transform 1s var(--ease-out-expo); transform: translateX(115%); }
   .account-type-card:hover .account-tier-icon {
     animation-play-state: paused;
-    transform: translateY(-4px) rotate(-7deg) scale(1.13);
+    transform: translateY(-2px) scale(1.06);
     box-shadow: 0 10px 24px -10px rgb(var(--account-glow) / 0.9);
   }
-  .account-type-card:hover .account-price { transform: translateY(-3px) scale(1.025); }
+  .account-type-card:hover .account-price { transform: translateY(-2px); }
   .account-type-card[data-tier="vip"]:hover {
-    transform: translateY(-16px) scale(1.04) rotate(-0.45deg);
-    box-shadow: 0 42px 82px -32px rgb(246 195 61 / 0.96);
-    filter: saturate(1.13);
+    transform: translateY(-6px) scale(1.015);
+    box-shadow: 0 28px 56px -32px rgb(246 195 61 / 0.78);
   }
   .account-type-card[data-tier="vip"]:hover article {
-    animation: vip-gold-glow 2.4s ease-in-out infinite;
+    box-shadow: inset 0 1px 0 rgb(255 249 220 / 0.28), 0 0 30px -16px rgb(255 204 72 / 0.62);
   }
 }
 

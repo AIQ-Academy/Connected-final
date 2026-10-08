@@ -12,7 +12,7 @@ export function LocaleSwitcher({
   className?: string;
   tone?: "default" | "onDark";
 }) {
-  const { locale, setLocale, t } = useLocale();
+  const { locale, setLocale, prefetchLocale, t } = useLocale();
   const onDark = tone === "onDark";
 
   return (
@@ -31,6 +31,8 @@ export function LocaleSwitcher({
           <button
             type="button"
             onClick={() => setLocale(item as Locale)}
+            onPointerEnter={() => prefetchLocale(item as Locale)}
+            onFocus={() => prefetchLocale(item as Locale)}
             aria-current={locale === item ? "true" : undefined}
             aria-label={t(`locale.${item}` as "locale.en" | "locale.fr" | "locale.ar")}
             aria-pressed={locale === item}

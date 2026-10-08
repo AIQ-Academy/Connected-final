@@ -182,6 +182,7 @@ export default async function MarketsPage() {
       <MarketHotNewsSection
         id="news"
         articles={news}
+        locale={locale}
         variant="compact"
         showViewAll={false}
       />

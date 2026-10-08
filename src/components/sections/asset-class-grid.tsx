@@ -186,6 +186,8 @@ export function AssetClassGrid({
                   <Link
                     key={slug}
                     href={slug === "crypto" ? "/register?type=broker" : assetClassHref(slug)}
+                    target={slug === "crypto" ? "_blank" : undefined}
+                    rel={slug === "crypto" ? "noopener noreferrer" : undefined}
                     className="inline-flex min-h-11 items-center gap-2 rounded-xl bg-white px-4 py-2 text-sm font-semibold text-[var(--cf-brand)] shadow-sm transition hover:-translate-y-0.5 hover:bg-white/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                   >
                     {t("asset.trade")} {t(assetCopyKeys[slug].label)}

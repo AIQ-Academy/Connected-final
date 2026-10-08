@@ -15,7 +15,7 @@ export function TableShell({
   return (
     <div
       className={cn(
-        "border-line-soft bg-panel overflow-hidden rounded-2xl border",
+        "border-line-soft bg-panel overflow-hidden rounded-2xl border shadow-sm",
         className,
       )}
     >
@@ -63,7 +63,7 @@ export function Td({ className, ...props }: ComponentProps<"td">) {
 export function Tr({ className, ...props }: ComponentProps<"tr">) {
   return (
     <tr
-      className={cn("hover:bg-sunken/50 transition-colors last:[&>td]:border-b-0", className)}
+      className={cn("transition-colors duration-200 odd:bg-transparent even:bg-sunken/20 hover:bg-sunken/60 last:[&>td]:border-b-0", className)}
       {...props}
     />
   );

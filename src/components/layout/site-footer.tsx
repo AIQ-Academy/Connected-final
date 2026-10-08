@@ -10,6 +10,7 @@ import { NewsletterForm } from "@/components/layout/newsletter-form";
 import { SocialLinks } from "@/components/layout/social-links";
 import { Container } from "@/components/ui/container";
 import { getFooterNav, getRiskDisclosure, site, type FooterColumnKey } from "@/lib/site";
+import { localizedPath } from "@/lib/i18n/locale";
 import { cn } from "@/lib/utils";
 
 const contactItems = [
@@ -81,14 +82,16 @@ export function SiteFooter() {
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Link
               href={site.signupUrl}
-              className="btn-glow group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-[0_0_24px_rgb(var(--cf-brand-glow)/0.45)] transition-all duration-300 hover:scale-[1.02] hover:bg-[var(--cf-brand-hover)] hover:shadow-[0_0_32px_rgb(var(--cf-brand-glow)/0.65)] sm:w-auto"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-glow group inline-flex w-full items-center justify-center gap-2 rounded-full bg-brand px-7 py-3.5 text-sm font-semibold text-white shadow-[0_0_24px_rgb(var(--cf-brand-glow)/0.4)] transition-[transform,box-shadow,background-color] duration-200 hover:-translate-y-0.5 hover:bg-[var(--cf-brand-hover)] hover:shadow-[0_0_28px_rgb(var(--cf-brand-glow)/0.55)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto"
             >
               {t("header.create")}
               <ArrowRight className="size-4 transition-transform duration-200 group-hover:translate-x-0.5 rtl:rotate-180" />
             </Link>
             <Link
               href="/contact"
-              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/35 px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:border-white/60 hover:bg-white/8 sm:w-auto"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/35 px-7 py-3.5 text-sm font-semibold text-white transition-colors duration-200 hover:border-white/60 hover:bg-white/8 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:w-auto"
             >
               {t("footer.talkToDesk")}
             </Link>
@@ -172,7 +175,7 @@ export function SiteFooter() {
         {/* Meta grid — brand + contact, link columns, newsletter. */}
         <div className="grid gap-12 border-b border-white/16 py-14 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1.6fr)_minmax(0,1.3fr)] lg:gap-16">
           <div>
-            <Link href="/" aria-label="Connect Funded home">
+            <Link href={localizedPath("/", locale)} aria-label="Connect Funded home">
               <Logo tone="onDark" />
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/72">

@@ -12,7 +12,8 @@ import {
   type PayoutMethod,
 } from "@/components/portal/payout-methods";
 import { Button } from "@/components/ui/button";
-import { cn, formatCurrency } from "@/lib/utils";
+import { useLocale } from "@/components/i18n/locale-provider";
+import { cn } from "@/lib/utils";
 
 export type PayoutAccountOption = {
   id: string;
@@ -29,6 +30,7 @@ export function PayoutRequestForm({
 }: {
   accounts: PayoutAccountOption[];
 }) {
+  const { t, formatCurrency } = useLocale();
   const [state, formAction, pending] = useActionState<ActionResult | null, FormData>(
     requestPayout,
     null,
@@ -51,11 +53,11 @@ export function PayoutRequestForm({
   const amountError = !hasAmount
     ? null
     : Number.isNaN(parsed) || parsed <= 0
-      ? "Enter the amount you want to withdraw."
+      ? t("ui.payoutAmountError")
       : parsed < MIN_PAYOUT
-        ? `The minimum payout request is ${formatCurrency(MIN_PAYOUT)}.`
+        ? t("ui.payoutMinimumError").replace("{amount}", formatCurrency(MIN_PAYOUT))
         : parsed > available
-          ? `That is more than the ${formatCurrency(available, { decimals: 2 })} available on ${selected?.login}.`
+          ? t("ui.payoutOverAvailableError").replace("{amount}", formatCurrency(available, { decimals: 2 })).replace("{login}", selected?.login ?? "")
           : null;
 
   // Once a request lands, the same figure cannot be sent twice by accident.
@@ -100,7 +102,7 @@ export function PayoutRequestForm({
       {accounts.length > 1 && (
         <fieldset>
           <legend className="text-muted mb-2.5 text-[0.8125rem] font-medium">
-            Withdraw from
+            {t("ui.payoutWithdrawFrom")}
           </legend>
           <div className="grid gap-2.5 sm:grid-cols-2">
             {accounts.map((account) => {
@@ -141,7 +143,7 @@ export function PayoutRequestForm({
                       </span>
                     </span>
                     <span className="text-muted tabular block text-[0.78125rem]">
-                      {formatCurrency(account.available, { decimals: 2 })} available
+                      {t("ui.payoutAvailable").replace("{amount}", formatCurrency(account.available, { decimals: 2 }))}
                     </span>
                   </span>
                 </label>
@@ -153,11 +155,11 @@ export function PayoutRequestForm({
 
       <div>
         <Field
-          label="Amount to withdraw"
+          label={t("ui.payoutAmountLabel")}
           htmlFor={amountId}
           required
           error={touched ? (amountError ?? undefined) : undefined}
-          hint={`Between ${formatCurrency(MIN_PAYOUT)} and ${formatCurrency(available, { decimals: 2 })} on ${selected.login}.`}
+          hint={`${formatCurrency(MIN_PAYOUT)}–${formatCurrency(available, { decimals: 2 })} · ${selected.login}`}
         >
           <div className="relative">
             <span
@@ -195,13 +197,13 @@ export function PayoutRequestForm({
           }}
           className="text-brand-light hover:text-brand mt-2 text-[0.78125rem] underline-offset-4 transition-colors hover:underline"
         >
-          Request the full {formatCurrency(available, { decimals: 2 })} available
+          {t("ui.payoutRequestFull").replace("{amount}", formatCurrency(available, { decimals: 2 }))}
         </button>
       </div>
 
       <fieldset>
         <legend className="text-muted mb-2.5 text-[0.8125rem] font-medium">
-          Payout method <span className="text-brand-light">*</span>
+          {t("ui.payoutRail")} <span className="text-brand-light">*</span>
         </legend>
         <div className="grid gap-2.5 sm:grid-cols-2">
           {payoutMethods.map((option) => {
@@ -248,7 +250,7 @@ export function PayoutRequestForm({
 
       <div className="border-line-soft bg-sunken/50 rounded-[var(--radius-md)] border px-4 py-3.5">
         <div className="flex items-baseline justify-between gap-4">
-          <span className="text-muted text-[0.8125rem]">Request total</span>
+          <span className="text-muted text-[0.8125rem]">{t("ui.payoutRequestTotal")}</span>
           <span className="font-display tabular text-[1.125rem] font-semibold">
             {hasAmount && !amountError && !Number.isNaN(parsed)
               ? formatCurrency(parsed, { decimals: 2 })
@@ -256,9 +258,7 @@ export function PayoutRequestForm({
           </span>
         </div>
         <p className="text-faint mt-1.5 text-[0.78125rem]">
-          Connect Funded covers the processing fee, so nothing is deducted from
-          the figure above. Your next {selected.cadence} window opens{" "}
-          {selected.nextWindow}.
+          {t("ui.payoutCoverageNote").replace("{cadence}", selected.cadence).replace("{date}", selected.nextWindow)}
         </p>
       </div>
 
@@ -267,21 +267,21 @@ export function PayoutRequestForm({
           {pending ? (
             <>
               <Loader2 className="animate-spin" aria-hidden="true" />
-              Sending your request
+              {t("ui.payoutSending")}
             </>
           ) : (
             <>
               <Wallet aria-hidden="true" />
-              Submit payout request
+              {t("ui.payoutSubmit")}
             </>
           )}
         </Button>
         <p className="text-faint text-[0.78125rem]" aria-live="polite">
           {pending
-            ? "Confirming the request with the desk."
+            ? t("ui.payoutConfirming")
             : duplicate
-              ? "That request is already with the desk. Change the amount to send another."
-              : "Requests are reviewed by the desk, then released within 24 to 48 hours."}
+              ? t("ui.payoutDuplicate")
+              : t("ui.payoutReviewTiming")}
         </p>
       </div>
     </form>

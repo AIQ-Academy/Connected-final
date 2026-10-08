@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 import { useId, useRef, type ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
@@ -34,6 +34,7 @@ export function TabList({
   size?: "sm" | "md";
 }) {
   const generatedId = useId();
+  const reducedMotion = useReducedMotion();
   const prefix = idPrefix ?? generatedId;
   const refs = useRef<Record<string, HTMLButtonElement | null>>({});
 
@@ -93,8 +94,8 @@ export function TabList({
             {selected && (
               <motion.span
                 layoutId={`${prefix}-tab-pill`}
-                transition={{ type: "spring", stiffness: 420, damping: 34 }}
-                className="bg-panel border-line-soft absolute inset-0 rounded-xl border"
+                transition={reducedMotion ? { duration: 0 } : { type: "spring", stiffness: 420, damping: 34 }}
+                className="bg-panel border-line-soft absolute inset-0 rounded-xl border shadow-sm"
               />
             )}
             <span className="relative flex items-center gap-1.5">

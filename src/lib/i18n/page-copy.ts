@@ -19,6 +19,13 @@ const copy = {
     "market.calendarTitle": "Every release that moves a funded account.", "market.calendarLead": "High and medium impact events across the US, euro area, UK, Japan, Canada, Australia, Switzerland and China. Connect Funded places no restriction on trading through a scheduled release.",
     "market.technical": "Technical ratings", "market.technicalTitle": "Multi-timeframe consensus, side by side.", "market.technicalLead": "Oscillator and moving-average ratings aggregated across timeframes. Useful as a bias check, never as a substitute for your own plan.",
     "market.overview": "Market overview", "market.allAssets": "All asset classes", "market.overviewLead": "Forex, metals, indices, energies, stocks and crypto are available from one MT5-connected trading account, subject to the published conditions.", "market.allInstruments": "See every instrument",
+    "tradeHub.badge": "Markets", "tradeHub.title": "All asset classes. One balance. One login.", "tradeHub.lead": "{total} instruments across forex, metals, indices, energies, digital assets and share CFDs — all margined against the same account, with no per-class permissions to request and no transfers between products.", "tradeHub.openAccount": "Open an account", "tradeHub.allInstruments": "All instruments", "tradeHub.metaDescription": "Trade forex, precious metals, global indices, energies, crypto CFDs and share CFDs from a single account, with raw spreads and zero commission.",
+    "toolsPage.badge": "Tools", "toolsPage.title": "Everything you need before the ticket.", "toolsPage.lead": "Size the position, check what is scheduled, read the tape and confirm the specification. All of it free, and none of it behind an account.", "toolsPage.imageAlt": "Position sizing calculator and economic calendar trading tools",
+    "toolsPage.positionTitle": "Position calculator", "toolsPage.positionBody": "Margin, pip value, spread cost and the exact loss at your stop, for any instrument at any lot size and leverage.",
+    "toolsPage.calendarTitle": "Economic calendar", "toolsPage.calendarBody": "The scheduled releases that move a retail book, filtered by impact and region, with the markets each one reaches.",
+    "toolsPage.terminalTitle": "Market terminal", "toolsPage.terminalBody": "Live quotes, full TradingView charting, technical ratings and a screener across every asset class we quote.",
+    "toolsPage.specsTitle": "Specs & conditions", "toolsPage.specsBody": "Spread, tick size, price precision, leverage cap, margin and session hours for every symbol on the book.",
+    "toolsPage.academyTitle": "Trading Academy", "toolsPage.academyBody": "Structured courses from order types through to risk models, plus a glossary written against our own specifications.", "toolsPage.open": "Open",
     "calculator.tools": "Trading tools", "calculator.heroTitle": "Know the risk before you take it.", "calculator.heroLead": "Margin, pip value, spread cost and the exact loss at your stop — for any instrument on the book, at any lot size and leverage.",
     "calculator.output": "Reading the output", "calculator.whatMeans": "What each number actually means", "calculator.figuresLead": "Four figures decide whether a trade is sized correctly. The rest is preference.",
     "calculator.notionalTerm": "Notional value", "calculator.notionalBody": "What the position controls, not what it costs. Lot size multiplied by the contract size for the asset class, multiplied by price.",
@@ -44,6 +51,13 @@ const copy = {
     "market.calendarTitle": "Toutes les annonces qui influencent un compte financé.", "market.calendarLead": "Événements à fort et moyen impact aux États-Unis, dans la zone euro, au Royaume-Uni, au Japon, au Canada, en Australie, en Suisse et en Chine. Connect Funded n’impose aucune restriction au trading lors des annonces prévues.",
     "market.technical": "Indicateurs techniques", "market.technicalTitle": "Consensus multi-unités de temps, côte à côte.", "market.technicalLead": "Indicateurs de momentum et moyennes mobiles agrégés sur plusieurs unités de temps. Un repère utile, qui ne remplace jamais votre propre plan.",
     "market.overview": "Vue d’ensemble des marchés", "market.allAssets": "Toutes les classes d’actifs", "market.overviewLead": "Le forex, les métaux, les indices, l’énergie, les actions et les cryptomonnaies sont accessibles depuis un seul compte de trading connecté à MT5, selon les conditions publiées.", "market.allInstruments": "Voir tous les instruments",
+    "tradeHub.badge": "Marchés", "tradeHub.title": "Toutes les classes d’actifs. Un seul solde. Un seul compte.", "tradeHub.lead": "{total} instruments sur le forex, les métaux, les indices, les énergies, les actifs numériques et les CFD sur actions — tous adossés au même compte, sans autorisation par classe à demander ni transfert entre produits.", "tradeHub.openAccount": "Ouvrir un compte", "tradeHub.allInstruments": "Tous les instruments", "tradeHub.metaDescription": "Tradez le forex, les métaux précieux, les indices mondiaux, les énergies, les CFD crypto et les CFD sur actions depuis un seul compte, avec des spreads bruts et sans commission.",
+    "toolsPage.badge": "Outils", "toolsPage.title": "Tout ce qu’il vous faut avant de passer un ordre.", "toolsPage.lead": "Dimensionnez votre position, consultez les événements à venir, suivez les marchés et vérifiez les spécifications. Tout est gratuit et accessible sans compte.", "toolsPage.imageAlt": "Calculateur de taille de position et calendrier économique",
+    "toolsPage.positionTitle": "Calculateur de position", "toolsPage.positionBody": "Marge, valeur du pip, coût du spread et perte exacte au stop, pour tout instrument, quelle que soit la taille du lot ou l’effet de levier.",
+    "toolsPage.calendarTitle": "Calendrier économique", "toolsPage.calendarBody": "Les publications susceptibles de faire bouger les marchés, filtrées par niveau d’impact et région, avec les marchés concernés.",
+    "toolsPage.terminalTitle": "Terminal de marché", "toolsPage.terminalBody": "Cours en direct, graphiques TradingView complets, évaluations techniques et screener pour toutes les classes d’actifs cotées.",
+    "toolsPage.specsTitle": "Spécifications et conditions", "toolsPage.specsBody": "Spread, taille du tick, précision des prix, levier maximal, marge et horaires de séance pour chaque instrument.",
+    "toolsPage.academyTitle": "Académie de trading", "toolsPage.academyBody": "Des cours structurés, des types d’ordres aux modèles de risque, ainsi qu’un glossaire conforme à nos propres spécifications.", "toolsPage.open": "Ouvrir",
     "calculator.tools": "Outils de trading", "calculator.heroTitle": "Mesurez le risque avant d’agir.", "calculator.heroLead": "Marge, valeur du pip, coût du spread et perte exacte au stop pour chaque instrument, taille de lot et effet de levier.",
     "calculator.output": "Lire les résultats", "calculator.whatMeans": "Que signifie chaque chiffre ?", "calculator.figuresLead": "Quatre chiffres permettent de vérifier le dimensionnement d’une position. Le reste relève de vos préférences.",
     "calculator.notionalTerm": "Valeur notionnelle", "calculator.notionalBody": "La valeur contrôlée par la position, et non son coût : taille du lot multipliée par la taille du contrat de la classe d’actifs, puis par le prix.",
@@ -69,6 +83,13 @@ const copy = {
     "market.calendarTitle": "كل إصدار اقتصادي يؤثر في الحساب الممول.", "market.calendarLead": "أحداث ذات تأثير مرتفع ومتوسط في الولايات المتحدة ومنطقة اليورو والمملكة المتحدة واليابان وكندا وأستراليا وسويسرا والصين. لا تفرض Connect Funded قيودًا على التداول أثناء الإصدارات المجدولة.",
     "market.technical": "التقييمات الفنية", "market.technicalTitle": "إجماع الأطر الزمنية المتعددة في عرض واحد.", "market.technicalLead": "تقييمات مؤشرات التذبذب والمتوسطات المتحركة مجمعة عبر أطر زمنية مختلفة. تساعد على مراجعة الاتجاه، لكنها لا تحل محل خطتك.",
     "market.overview": "نظرة عامة على الأسواق", "market.allAssets": "جميع فئات الأصول", "market.overviewLead": "يمكن تداول الفوركس والمعادن والمؤشرات والطاقة والأسهم والعملات الرقمية من حساب تداول واحد متصل بـ MT5، وفقًا للشروط المنشورة.", "market.allInstruments": "عرض جميع الأدوات",
+    "tradeHub.badge": "الأسواق", "tradeHub.title": "جميع فئات الأصول. رصيد واحد. حساب واحد.", "tradeHub.lead": "{total} أداة عبر الفوركس والمعادن والمؤشرات والطاقة والأصول الرقمية وعقود الفروقات على الأسهم — تُدار جميعها ضمن الحساب نفسه، دون الحاجة إلى طلب صلاحيات منفصلة لكل فئة أو تحويل الأموال بين المنتجات.", "tradeHub.openAccount": "افتح حسابًا", "tradeHub.allInstruments": "جميع الأدوات", "tradeHub.metaDescription": "تداول الفوركس والمعادن الثمينة والمؤشرات العالمية والطاقة وعقود الفروقات على العملات الرقمية والأسهم من حساب واحد، مع فروق أسعار خام وبدون عمولة.",
+    "toolsPage.badge": "الأدوات", "toolsPage.title": "كل ما تحتاج إليه قبل تنفيذ الصفقة.", "toolsPage.lead": "حدّد حجم الصفقة، واطّلع على الأحداث المجدولة، وتابع حركة السوق، وتأكد من المواصفات. كل ذلك مجانًا ومن دون الحاجة إلى حساب.", "toolsPage.imageAlt": "حاسبة حجم الصفقات والتقويم الاقتصادي وأدوات التداول",
+    "toolsPage.positionTitle": "حاسبة حجم الصفقة", "toolsPage.positionBody": "الهامش، وقيمة النقطة، وتكلفة السبريد، والخسارة الدقيقة عند وقف الخسارة، لأي أداة وبأي حجم عقد أو رافعة مالية.",
+    "toolsPage.calendarTitle": "التقويم الاقتصادي", "toolsPage.calendarBody": "الإعلانات المجدولة التي تحرك الأسواق، مع إمكانية التصفية حسب التأثير والمنطقة والأسواق التي قد تتأثر بكل إعلان.",
+    "toolsPage.terminalTitle": "منصة الأسواق", "toolsPage.terminalBody": "أسعار مباشرة، ورسوم TradingView كاملة، وتقييمات فنية، وأداة لفحص جميع فئات الأصول التي نقدم أسعارها.",
+    "toolsPage.specsTitle": "المواصفات والشروط", "toolsPage.specsBody": "السبريد، وحجم حركة السعر، ودقة التسعير، والحد الأقصى للرافعة، والهامش، وساعات التداول لكل أداة.",
+    "toolsPage.academyTitle": "أكاديمية التداول", "toolsPage.academyBody": "دورات منظمة تبدأ من أنواع الأوامر وتصل إلى نماذج إدارة المخاطر، إلى جانب مسرد يستند إلى مواصفاتنا.", "toolsPage.open": "افتح",
     "calculator.tools": "أدوات التداول", "calculator.heroTitle": "اعرف المخاطر قبل أن تخوضها.", "calculator.heroLead": "الهامش وقيمة النقطة وتكلفة السبريد والخسارة الدقيقة عند وقفك، لأي أداة وحجم عقد ورافعة مالية.",
     "calculator.output": "قراءة النتائج", "calculator.whatMeans": "ما معنى كل رقم؟", "calculator.figuresLead": "تحدد أربعة أرقام مدى ملاءمة حجم الصفقة. وما عدا ذلك يعود إلى تفضيلاتك.",
     "calculator.notionalTerm": "القيمة الاسمية", "calculator.notionalBody": "قيمة المركز الذي تتحكم به، لا تكلفته: حجم العقد مضروبًا في حجم العقد المعياري لفئة الأصل ثم في السعر.",
@@ -80,7 +101,12 @@ const copy = {
 } as const;
 
 export type PageCopyKey = keyof typeof copy.en;
+const completeCopy: Record<Locale, Record<PageCopyKey, string>> = copy;
 
 export function pageCopy(locale: Locale, key: PageCopyKey): string {
-  return copy[locale][key] ?? copy.en[key];
+  const value = completeCopy[locale][key];
+  if (typeof value !== "string") {
+    throw new Error(`Missing ${locale.toUpperCase()} page copy for "${key}"`);
+  }
+  return value;
 }

@@ -6,14 +6,17 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container, Section } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import type { NewsArticle } from "@/db/schema";
+import type { Locale } from "@/lib/i18n/locale";
 
 export function MarketHotNewsSection({
   articles,
+  locale,
   variant = "default",
   id,
   showViewAll = true,
 }: {
   articles: NewsArticle[];
+  locale: Locale;
   variant?: "default" | "compact";
   id?: string;
   showViewAll?: boolean;
@@ -38,12 +41,16 @@ export function MarketHotNewsSection({
           eyebrow={isCompact ? "Market desk" : "Hot news"}
           title={
             isCompact
-              ? "What is moving markets right now."
+              ? locale === "ar"
+                ? "ما الذي يحرّك الأسواق الآن؟"
+                : "What is moving markets right now."
               : "Market hot news"
           }
           lead={
             isCompact
-              ? "Desk analysis on the levels, flows and event risk that matter to an open position — updated as the session develops."
+              ? locale === "ar"
+                ? "تحليلات فريق التداول حول مستويات الأسعار وتدفقات السوق ومخاطر الأحداث التي تؤثر في الصفقات المفتوحة — مع تحديثها على مدار الجلسة."
+                : "Desk analysis on the levels, flows and event risk that matter to an open position — updated as the session develops."
               : "Breaking analysis from our trading desk: positioning, catalysts and the price action traders are watching across every asset class."
           }
           action={

@@ -28,6 +28,7 @@ import {
 import { getPrimaryNav, signupUrl, type NavGroup } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import { useLocale } from "@/components/i18n/locale-provider";
+import { localizedPath } from "@/lib/i18n/locale";
 
 const CINEMA_EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -114,7 +115,9 @@ export function SiteHeader() {
   const { scrolled, onHero } = useHeaderSurface(pathname);
   const introStage = useIntroStage(isHomeIntroPath(pathname));
   const onHeroSurface = onHero;
-  const controlsOnDark = onHeroSurface;
+  // Keep the header controls on a stable, theme-aware surface. A translucent
+  // hero underneath must never reduce the menu's text contrast.
+  const controlsOnDark = false;
 
   useEffect(() => {
     const syncHash = () => setCurrentHash(window.location.hash);
@@ -166,17 +169,11 @@ export function SiteHeader() {
 
   const navLink = (active: unknown) =>
     cn(
-      "relative whitespace-nowrap rounded-lg px-2.5 py-2 text-[15px] font-medium tracking-[-0.01em] transition-colors",
+      "relative whitespace-nowrap rounded-lg px-2 py-2 text-[15px] font-medium tracking-[-0.01em] transition-[color,background-color] duration-200 hover:bg-brand-dim/35 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-light/60",
       "after:pointer-events-none after:absolute after:end-3.5 after:bottom-1 after:start-3.5 after:h-[2px] after:origin-left after:rounded-full after:transition-transform after:duration-300 hover:after:scale-x-100",
-      onHeroSurface ? "after:bg-white/80" : "after:bg-brand-light",
+      "after:bg-brand-light",
       active ? "after:scale-x-100" : "after:scale-x-0",
-      onHeroSurface
-        ? active
-          ? "text-white"
-          : "text-white/70 hover:text-white"
-        : active
-          ? "text-ink"
-          : "text-muted hover:text-ink",
+      active ? "bg-brand-dim/35 text-ink" : "text-muted hover:text-ink",
     );
 
   const navLabel = (label: string) => label;
@@ -187,27 +184,21 @@ export function SiteHeader() {
       className={cn(
         "sticky top-0 z-50 transition-[background-color,border-color,box-shadow] duration-300",
         isProductLandingPath(pathname) && "-mb-[76px]",
-        onHeroSurface
-          ? "border-b border-transparent bg-transparent"
-          : cn(
-              "border-b border-line-soft/80 text-ink backdrop-blur-xl",
-              scrolled
-                ? "bg-[color-mix(in_srgb,var(--cf-bg-raised)_92%,transparent)] shadow-[0_16px_50px_-30px_rgb(var(--cf-shadow-color)/0.7)]"
-                : "bg-[color-mix(in_srgb,var(--cf-bg-raised)_72%,transparent)]",
-            ),
+        "border-b border-line-soft/80 bg-raised/95 text-ink backdrop-blur-xl",
+        scrolled && "shadow-[0_16px_50px_-30px_rgb(var(--cf-shadow-color)/0.7)]",
       )}
       onMouseLeave={scheduleClose}
     >
-      <Container className="px-3 sm:px-7 lg:px-8">
+      <Container className="max-w-[1640px] px-3 sm:px-7 lg:px-3">
         <motion.div
           initial={false}
           variants={barMotion}
           animate={introStage === "waiting" ? "hidden" : "shown"}
-            className="flex h-[76px] items-center justify-between gap-2 sm:gap-4 xl:gap-6"
+            className="flex h-[76px] items-center justify-between gap-2 sm:gap-4 xl:gap-4"
         >
           <motion.div variants={barItemMotion} className="shrink-0">
             <Link
-              href="/"
+              href={localizedPath("/", locale)}
               className="rounded-md"
               aria-label={`Connect Funded home`}
             >
@@ -224,7 +215,7 @@ export function SiteHeader() {
           <motion.nav
             variants={barItemMotion}
             aria-label="Primary"
-            className="hidden items-center gap-0.5 xl:flex"
+            className="me-4 hidden shrink-0 items-center gap-0.5 min-[1600px]:flex"
           >
             {primaryNav.map((group) => {
               const hasPanel = Boolean(group.columns);
@@ -278,9 +269,7 @@ export function SiteHeader() {
                       onClick={() => setOpenMenu(open ? null : group.label)}
                       className={cn(
                         "-ml-1 rounded-lg p-1.5 transition-colors",
-                        onHeroSurface
-                          ? "text-white/70 hover:text-white"
-                          : "text-[var(--cf-nav-muted)] hover:text-[var(--cf-nav-text)]",
+                        "text-muted hover:text-ink",
                       )}
                     >
                       <ChevronDown
@@ -381,7 +370,7 @@ export function SiteHeader() {
               aria-expanded={mobileOpen}
               onClick={() => setMobileOpen((v) => !v)}
               className={cn(
-                "grid size-9 place-items-center rounded-lg border xl:hidden",
+                "grid size-9 place-items-center rounded-lg border min-[1600px]:hidden",
                 controlsOnDark
                   ? "border-white/30 bg-white/10 text-white"
                   : "border-line bg-panel/80 text-ink hover:border-brand-light/60 hover:bg-panel",
@@ -442,7 +431,7 @@ function MegaMenu({
           transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
           onMouseEnter={onEnter}
           onMouseLeave={onLeave}
-          className="absolute inset-x-0 top-full hidden border-b border-line/70 bg-raised/95 shadow-[0_30px_60px_-30px_rgb(var(--cf-brand-glow)/0.18)] backdrop-blur-xl lg:block"
+          className="absolute inset-x-0 top-full hidden border-b border-line/70 bg-raised text-ink shadow-[0_30px_60px_-30px_rgb(var(--cf-brand-glow)/0.18)] min-[1600px]:block"
         >
           <Container className="relative">
             <div className="grid gap-10 py-9 lg:grid-cols-[1fr_1fr_minmax(0,340px)]">
@@ -458,7 +447,7 @@ function MegaMenu({
                           rel={link.external ? "noopener noreferrer" : undefined}
                           aria-current={isNavigationTargetActive(pathname, currentHash, link.href) ? "page" : undefined}
                           className={cn(
-                            "group -mx-3 block rounded-xl px-3 py-2.5 transition-colors hover:bg-brand-dim/25",
+                            "group -mx-3 block rounded-xl px-3 py-2.5 text-ink transition-colors hover:bg-brand-dim/40",
                             isNavigationTargetActive(pathname, currentHash, link.href) && "bg-brand-dim/25 text-brand-light",
                           )}
                         >
@@ -484,6 +473,8 @@ function MegaMenu({
               {group.featured && (
                 <Link
                   href={group.featured.href}
+                  target={group.featured.href === signupUrl ? "_blank" : undefined}
+                  rel={group.featured.href === signupUrl ? "noopener noreferrer" : undefined}
                   className="group relative overflow-hidden rounded-2xl border border-line bg-gradient-to-br from-brand-dim/55 via-raised to-panel p-6"
                 >
                   <div className="relative">
@@ -533,7 +524,7 @@ function MobileDrawer({
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.2 }}
-          className="bg-bg fixed inset-x-0 top-[76px] bottom-0 z-40 overflow-y-auto lg:hidden"
+          className="fixed inset-x-0 top-[76px] bottom-0 z-40 overflow-y-auto bg-raised text-ink shadow-xl min-[1600px]:hidden"
         >
           <Container className="py-6">
             <nav aria-label="Mobile" className="space-y-7">
@@ -567,7 +558,7 @@ function MobileDrawer({
                               onClick={onClose}
                               aria-current={isNavigationTargetActive(pathname, currentHash, link.href) ? "page" : undefined}
                               className={cn(
-                                "text-ink flex items-center justify-between rounded-lg px-3 py-3 text-[17px] font-medium transition-colors",
+                                "text-ink flex items-center justify-between rounded-lg px-3 py-3 text-[17px] font-medium transition-colors hover:bg-brand-dim/40",
                                 isNavigationTargetActive(pathname, currentHash, link.href) && "bg-brand-dim/25 text-brand-light",
                               )}
                             >
@@ -586,7 +577,7 @@ function MobileDrawer({
                     href={group.href ?? "#"}
                     onClick={onClose}
                     aria-current={isNavigationTargetActive(pathname, currentHash, group.href ?? "#") ? "page" : undefined}
-                    className={cn("block text-[18px] font-semibold", isNavigationTargetActive(pathname, currentHash, group.href ?? "#") && "text-brand-light")}
+                    className={cn("text-ink block rounded-lg px-3 py-2 text-[18px] font-semibold transition-colors hover:bg-brand-dim/40", isNavigationTargetActive(pathname, currentHash, group.href ?? "#") && "text-brand-light")}
                   >
                     {group.label}
                   </Link>

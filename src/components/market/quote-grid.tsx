@@ -17,22 +17,34 @@ import { ButtonLink } from "@/components/ui/button";
 import { LiveDot } from "@/components/ui/badge";
 import {
   ASSET_CLASSES,
-  assetClassLabels,
   type AssetClass,
   type Quote,
   type QuotesResponse,
 } from "@/lib/market";
 import { signupUrl } from "@/lib/site";
-import { cn, formatNumber } from "@/lib/utils";
+import { cn } from "@/lib/utils";
+import { useLocale } from "@/components/i18n/locale-provider";
 
 type SortKey = "symbol" | "price" | "changePct" | "spread";
 type SortDirection = "asc" | "desc";
 type FlashDirection = "up" | "down";
 
 const POLL_INTERVAL_MS = 6000;
+const assetClassTranslationKeys: Record<AssetClass, "asset.forex" | "asset.metals" | "asset.commodities" | "asset.indices" | "asset.crypto" | "asset.stocks"> = {
+  forex: "asset.forex",
+  metals: "asset.metals",
+  commodities: "asset.commodities",
+  indices: "asset.indices",
+  crypto: "asset.crypto",
+  stocks: "asset.stocks",
+};
 
-function fmt(value: number, decimals: number) {
-  return formatNumber(value, decimals);
+function fmt(value: number, decimals: number, locale: "en" | "fr" | "ar") {
+  const localeTag = locale === "fr" ? "fr-FR" : locale === "ar" ? "ar" : "en-US";
+  return new Intl.NumberFormat(localeTag, {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  }).format(value);
 }
 
 export function QuoteGrid({
@@ -46,6 +58,7 @@ export function QuoteGrid({
   compact?: boolean;
   className?: string;
 }) {
+  const { t, locale } = useLocale();
   const [quotes, setQuotes] = useState(initialQuotes);
   const [filter, setFilter] = useState<AssetClass | "all">(defaultAssetClass);
   const [sortKey, setSortKey] = useState<SortKey>("symbol");
@@ -175,7 +188,7 @@ export function QuoteGrid({
       <div className="border-line-soft flex flex-wrap items-center justify-between gap-3 border-b px-4 py-3.5 sm:px-5">
         <div
           role="group"
-          aria-label="Filter quotes by asset class"
+          aria-label={t("ui.quoteFilter")}
           className="flex flex-wrap items-center gap-1.5"
         >
           <FilterChip
@@ -183,7 +196,7 @@ export function QuoteGrid({
             onClick={() => setFilter("all")}
             count={quotes.length}
           >
-            All
+            {t("market.allMarkets")}
           </FilterChip>
           {availableClasses.map((assetClass) => (
             <FilterChip
@@ -192,7 +205,7 @@ export function QuoteGrid({
               onClick={() => setFilter(assetClass)}
               count={counts.get(assetClass) ?? 0}
             >
-              {assetClassLabels[assetClass]}
+              {t(assetClassTranslationKeys[assetClass])}
             </FilterChip>
           ))}
         </div>
@@ -200,12 +213,12 @@ export function QuoteGrid({
         <div className="flex items-center gap-3">
           <span className="text-faint hidden items-center gap-2 font-mono text-[0.6875rem] tracking-[0.1em] uppercase sm:flex">
             <LiveDot tone={paused ? "amber" : "mint"} />
-            {paused ? "Paused" : "Streaming"}
+            {paused ? t("ui.quotePaused") : t("ui.quoteStreaming")}
           </span>
           <button
             type="button"
             onClick={() => void refresh()}
-            aria-label="Refresh quotes now"
+            aria-label={t("ui.quoteRefresh")}
             className="border-line text-muted hover:text-ink hover:border-brand-light/60 grid size-8 place-items-center rounded-lg border transition-colors"
           >
             <RefreshCw className={cn("size-3.5", refreshing && "animate-spin")} />
@@ -214,7 +227,7 @@ export function QuoteGrid({
             type="button"
             onClick={() => setPaused((v) => !v)}
             aria-pressed={paused}
-            aria-label={paused ? "Resume live updates" : "Pause live updates"}
+            aria-label={paused ? t("ui.quoteResume") : t("ui.quotePause")}
             className="border-line text-muted hover:text-ink hover:border-brand-light/60 grid size-8 place-items-center rounded-lg border transition-colors"
           >
             {paused ? <Play className="size-3.5" /> : <Pause className="size-3.5" />}
@@ -225,12 +238,12 @@ export function QuoteGrid({
       <div className="overflow-x-auto">
         <table className="w-full min-w-[720px] border-collapse text-sm">
           <caption className="sr-only">
-            Live indicative quotes across every tradable asset class
+            {t("ui.quoteCaption")}
           </caption>
           <thead>
             <tr>
               <SortableTh
-                label="Instrument"
+                label={t("ui.quoteInstrument")}
                 sortKey="symbol"
                 activeKey={sortKey}
                 direction={sortDirection}
@@ -249,7 +262,7 @@ export function QuoteGrid({
                 scope="col"
                 className="border-line-soft text-faint bg-sunken/60 border-b px-3 py-3 text-end font-mono text-[0.6875rem] font-medium tracking-[0.12em] uppercase"
               >
-                Ask
+                {t("market.ask")}
               </th>
               <SortableTh
                 label="Spread"
@@ -272,13 +285,13 @@ export function QuoteGrid({
                 scope="col"
                 className="border-line-soft text-faint bg-sunken/60 hidden border-b px-3 py-3 text-end font-mono text-[0.6875rem] font-medium tracking-[0.12em] uppercase lg:table-cell"
               >
-                Trend
+                {t("ui.quoteTrend")}
               </th>
               <th
                 scope="col"
                 className="border-line-soft bg-sunken/60 w-10 border-b px-3 py-3"
               >
-                <span className="sr-only">Expand detail</span>
+                <span className="sr-only">{t("ui.quoteExpand")}</span>
               </th>
             </tr>
           </thead>
@@ -328,13 +341,13 @@ export function QuoteGrid({
                           (flash.direction === "up" ? "flash-up" : "flash-down"),
                       )}
                     >
-                      {fmt(quote.bid, quote.decimals)}
+                      {fmt(quote.bid, quote.decimals, locale)}
                     </td>
                     <td className="border-line-soft tabular text-muted border-b px-3 py-3 text-end font-mono text-[0.8125rem]">
-                      {fmt(quote.ask, quote.decimals)}
+                      {fmt(quote.ask, quote.decimals, locale)}
                     </td>
                     <td className="border-line-soft tabular text-faint hidden border-b px-3 py-3 text-end font-mono text-xs sm:table-cell">
-                      {fmt(quote.spread, quote.decimals)}
+                      {fmt(quote.spread, quote.decimals, locale)}
                     </td>
                     <td className="border-line-soft border-b px-3 py-3 text-end">
                       <span
@@ -372,7 +385,7 @@ export function QuoteGrid({
                         )}
                       />
                       <span className="sr-only">
-                        {isOpen ? "Hide" : "Show"} {quote.symbol} detail
+                        {isOpen ? t("ui.quoteHide") : t("ui.quoteShow")} {quote.symbol} {t("ui.quoteDetail")}
                       </span>
                     </td>
                   </tr>
@@ -420,13 +433,14 @@ export function QuoteGrid({
 }
 
 function QuoteDetail({ quote }: { quote: Quote }) {
+  const { t, locale } = useLocale();
   const range = quote.dayHigh - quote.dayLow || 1;
   const position = ((quote.price - quote.dayLow) / range) * 100;
 
   return (
     <div className="bg-sunken/40 grid gap-6 px-4 py-6 sm:px-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.1fr)_auto]">
       <div>
-        <p className="eyebrow mb-3">{assetClassLabels[quote.assetClass]}</p>
+        <p className="eyebrow mb-3">{t(assetClassTranslationKeys[quote.assetClass])}</p>
         <p className="text-ink font-display text-2xl font-semibold">
           {quote.displayName}
         </p>
@@ -434,17 +448,17 @@ function QuoteDetail({ quote }: { quote: Quote }) {
           {quote.symbol} · {quote.tvSymbol}
         </p>
         <dl className="mt-5 grid grid-cols-2 gap-x-8 gap-y-3 text-xs sm:grid-cols-3">
-          <Stat label="Day high" value={fmt(quote.dayHigh, quote.decimals)} />
-          <Stat label="Day low" value={fmt(quote.dayLow, quote.decimals)} />
-          <Stat label="Spread" value={fmt(quote.spread, quote.decimals)} />
+          <Stat label={t("market.high")} value={fmt(quote.dayHigh, quote.decimals, locale)} />
+          <Stat label={t("market.low")} value={fmt(quote.dayLow, quote.decimals, locale)} />
+          <Stat label={t("market.spread")} value={fmt(quote.spread, quote.decimals, locale)} />
           <Stat
-            label="Net change"
-            value={`${quote.change >= 0 ? "+" : ""}${fmt(quote.change, quote.decimals)}`}
+            label={t("market.change")}
+            value={`${quote.change >= 0 ? "+" : ""}${fmt(quote.change, quote.decimals, locale)}`}
             tone={quote.change >= 0 ? "mint" : "loss"}
           />
           <Stat
-            label="Feed"
-            value={quote.source === "live" ? "Provider" : "Indicative"}
+            label={t("ui.quoteFeed")}
+            value={quote.source === "live" ? t("ui.quoteProvider") : t("market.indicative")}
           />
         </dl>
       </div>
@@ -467,22 +481,22 @@ function QuoteDetail({ quote }: { quote: Quote }) {
             />
           </div>
           <div className="text-faint tabular mt-2 flex justify-between font-mono text-[0.6875rem]">
-            <span>{fmt(quote.dayLow, quote.decimals)}</span>
-            <span>Day range</span>
-            <span>{fmt(quote.dayHigh, quote.decimals)}</span>
+            <span>{fmt(quote.dayLow, quote.decimals, locale)}</span>
+            <span>{t("ui.quoteDayRange")}</span>
+            <span>{fmt(quote.dayHigh, quote.decimals, locale)}</span>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-start gap-2.5 lg:items-end lg:justify-center">
         <ButtonLink href={signupUrl} size="sm">
-          Trade {quote.symbol}
+          {t("ui.quoteTrade")} {quote.symbol}
         </ButtonLink>
         <Link
           href={`/markets#charts`}
           className="text-brand-light text-xs font-semibold hover:underline"
         >
-          Open full chart
+          {t("ui.quoteOpenChart")}
         </Link>
       </div>
     </div>
